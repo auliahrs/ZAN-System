@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/myCSS.css">
+    <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
     <title>Daftar Pra Perkahwinan Home</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <!-- HEADER BAR -->
-        <?php include('headerBar.php'); ?>
+        <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('leftMenu.php'); ?>
+            <?php include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -52,7 +52,7 @@
                                             <option value=" ">JABATAN AGAMA ISLAM LIPIS</option>
                                             <option value=" ">JABATAN AGAMA ISLAM MARAN</option>
                                         </select>
-                                        <button type="submit" name="search"><img src="./images/search.png" alt="Search Icon" width="30px"></button>
+                                        <button type="submit" name="search"><img src="/ZAN-System/images/search.png" alt="Search Icon" width="30px"></button>
                                     </form>
                                 </div>
                             </div>
@@ -74,17 +74,15 @@
                                             <td>29 - 30 APRIL 2023</td>
                                             <td>50</td>
                                             <td>35</td>
-                                            <td><button><img src="images/moredetail.png"></button></td>
-                                            <td><a href="A_DaftarPraPerkahwinan.php/?id=">Register</a></td>
+                                            <td><button><img src="/ZAN-System/images/moredetail.png"></button></td>
+                                            <td><a href="/ZAN-System/Manage Pre-marriage Course Application/Applicant/A_DaftarPraPerkahwinan.php/?id=">Register</a></td>
                                         </tr>
                                     </table>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </div>
             <!-- THE CONTENT ENDS HERE -->
         </div>

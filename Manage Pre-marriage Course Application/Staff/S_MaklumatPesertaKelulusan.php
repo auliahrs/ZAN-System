@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/myCSS.css">
+    <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
     <title>Daftar Tempat Kursus</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <!-- HEADER BAR -->
-        <?php include('headerBar.php'); ?>
+        <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('S_leftMenu.php'); ?>
+            <?php include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Kursus Pra Perkahwinan > Maklumat Peserta > Kehadiran</h3>
+                            <h3>Kursus Pra Perkahwinan > Maklumat Peserta > Kelulusan</h3>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                             <div class="row my-3">
                                 <div class="col-md-12 table-dpp">
                                     <p>(<span style="color:red">*</span>)<em> adalah wajib diisi</em></p>
-                                    <form action="S_MaklumatPesertaKehadiran.php" method="post">
+                                    <form action="/ZAN-System/Manage Pre-marriage Course Application/Staff/S_MaklumatPesertaKelulusan.php" method="post">
                                         <table>
                                             <tr>
                                                 <td><span style="color:red">*</span>Anjuran</td>
@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                             <hr class="pt-1" style="color:black">
-                            <form action="S_MaklumatPesertaKehadiran.php" method="get">
+                            <form action="/ZAN-System/Manage Pre-marriage Course Application/Staff/S_MaklumatPesertaKelulusan.php" method="get">
                                 <div class="row my-3">
                                     <div class="col-md-12">
                                         <div class="row">
@@ -98,15 +98,7 @@
                                                         <td>Tempat Kursus</td>
                                                         <td>:</td>
                                                         <td>MASJID SULTAN HAJI AHMAD SHAH</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Kehadiran</td>
-                                                        <td>:</td>
-                                                        <td>
-                                                            <select name="kehadiran" id="kehadiran">
-                                                                <option value="">TEST</option>
-                                                            </select>
-                                                        </td>
+                                                        <td><button type="submit" name="pengesahanLulus" value="pengesahanLulus">Pengesahan Lulus</button></td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -120,17 +112,15 @@
                                                         <th>No. KP</th>
                                                         <th>Jantina</th>
                                                         <th>Kehadiran</th>
-                                                        <th>Catatan</th>
-                                                        <th>Pilih</th>
+                                                        <th>Kelulusan</th>
                                                     </tr>
                                                     <tr>
                                                         <td>1.</td>
                                                         <td>AHMAD AIMAN BIN ADAM</td>
                                                         <td>990125060617</td>
                                                         <td>LELAKI</td>
-                                                        <td></td>
-                                                        <td><textarea name="value" rows="4" cols="50"></textarea></td>
-                                                        <td><input type="checkbox" name="choose"></td>
+                                                        <td>YA</td>
+                                                        <td>LULUS</td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -147,7 +137,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <!-- THE CONTENT ENDS HERE -->
         </div>
