@@ -13,7 +13,7 @@
 <body>
     <div class="container-fluid">
         <!-- HEADER BAR -->
-        <?php include('/ZAN-System/components/headerBar.php'); ?>
+        <?php include('/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
         <!-- BODY -->
         <div class="row">
