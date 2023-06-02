@@ -1,0 +1,12 @@
+// script.js
+
+function redirectToProfile() {
+  // Redirect to the profile detail page
+  window.location.href = "profile.php";
+}
+
+// Add event listener to the "Mohon" button
+document.getElementById("mohon-button").addEventListener("click", function() {
+  // Handle the button click event (navigate to Maklumat Pemohon page)
+  window.location.href = "maklumat-pemohon.php";
+});
