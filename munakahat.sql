@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2023 at 05:26 AM
+-- Generation Time: Jun 02, 2023 at 05:35 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -141,16 +141,26 @@ CREATE TABLE `pengguna` (
   `bil` int(11) NOT NULL,
   `email` varchar(20) NOT NULL,
   `jantina` varchar(20) NOT NULL,
-  `NRICpolis_lama` int(11) NOT NULL
+  `NRICpolis_lama` int(11) NOT NULL,
+  `umur` int(20) NOT NULL,
+  `bangsa` varchar(20) NOT NULL,
+  `alamatSemasa` varchar(50) NOT NULL,
+  `noTelRumah` int(20) NOT NULL,
+  `statusPelajaran` varchar(20) NOT NULL,
+  `bahagianPekerjaan` varchar(20) NOT NULL,
+  `jawatanPekerjaan` varchar(20) NOT NULL,
+  `praPerkahwinanID` varchar(20) NOT NULL,
+  `noTelPejabat` int(29) NOT NULL,
+  `statusPerkahwinan` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `pengguna`
 --
 
-INSERT INTO `pengguna` (`tarikhpermohonan`, `no.kp`, `nomborpermohonan`, `nama`, `alamat`, `no.Tel`, `tarikhkelahiran`, `tempatkelahiran`, `kewarganegaraan`, `namabank`, `nomborbank`, `bil`, `email`, `jantina`, `NRICpolis_lama`) VALUES
-('2021-06-17', '0132930449423', 323445, 'AHMAD ABU BIN DAUD', 'LOT 47 JALAN BAYA BESAR, 16150 KELUANG, PERAK', 192004433, '2003-06-10', 'HOSPITAL BAYA BESAR, 16150 KELUANG, PERAK', 'MALAYSIA', 'BANK ISLAM', 320304343, 1, '', '', 0),
-('2023-06-02', '013293044947', 34422545, 'AHMAD AIMAN BIN ADAM', 'LOT 97 JALAN BAYA BESAR, 16150 KELUANG, PERAK', 192004424, '2013-06-19', 'HOSPITAL BAYA BESAR, 16150 KELUANG, PERAK', 'MALAYSIA', 'BANK RAKYAT', 320304020, 2, '', '', 0);
+INSERT INTO `pengguna` (`tarikhpermohonan`, `no.kp`, `nomborpermohonan`, `nama`, `alamat`, `no.Tel`, `tarikhkelahiran`, `tempatkelahiran`, `kewarganegaraan`, `namabank`, `nomborbank`, `bil`, `email`, `jantina`, `NRICpolis_lama`, `umur`, `bangsa`, `alamatSemasa`, `noTelRumah`, `statusPelajaran`, `bahagianPekerjaan`, `jawatanPekerjaan`, `praPerkahwinanID`, `noTelPejabat`, `statusPerkahwinan`) VALUES
+('2021-06-17', '0132930449423', 323445, 'AHMAD ABU BIN DAUD', 'LOT 47 JALAN BAYA BESAR, 16150 KELUANG, PERAK', 192004433, '2003-06-10', 'HOSPITAL BAYA BESAR, 16150 KELUANG, PERAK', 'MALAYSIA', 'BANK ISLAM', 320304343, 1, '', '', 0, 0, '', '', 0, '', '', '', '', 0, ''),
+('2023-06-02', '013293044947', 34422545, 'AHMAD AIMAN BIN ADAM', 'LOT 97 JALAN BAYA BESAR, 16150 KELUANG, PERAK', 192004424, '2013-06-19', 'HOSPITAL BAYA BESAR, 16150 KELUANG, PERAK', 'MALAYSIA', 'BANK RAKYAT', 320304020, 2, '', '', 0, 0, '', '', 0, '', '', '', '', 0, '');
 
 -- --------------------------------------------------------
 
