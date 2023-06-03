@@ -24,14 +24,24 @@
         body{
             background-image : url(../Background.png);
             position: absolute;
-width: 1450px;
-height: 1014px;
+            width: 1450px;
+            height: 1014px;
+        }
+        img{
+            position: absolute;
+            width: 1420.81px;
+            height: 269.84px;
+        }
+
+        .loginform{
+            background-color: #eee;
         }
     </style>
 </head>
 <body>
-    
+<img src="../loginHeader.png" > <br>
 
+<div class="loginform"> 
 <form>
  
   <div class="form-outline mb-4">
@@ -39,19 +49,13 @@ height: 1014px;
     <label class="form-label" for="form2Example1">No Kad Pengenalan</label>
   </div>
 
-
- 
   <div class="form-outline mb-4">
     <input type="password" id="form2Example2" class="form-control" />
     <label class="form-label" for="form2Example2">Kata Laluan</label>
   </div>
 
-
   <div class="row mb-4">
     <div class="col d-flex justify-content-center">
-
-      
-
   
   </div>
 
@@ -62,24 +66,12 @@ height: 1014px;
     </div>
 
   <div class="text-center">
-    <p>Forgot Password <a href="#!">Register</a></p>
+    <p>Lupa Kata Laluan? <a href="#!">Register</a></p>
     <p>or sign up with:</p>
     <button type="button" class="btn btn-secondary btn-floating mx-1">
       <i class="fab fa-facebook-f"></i>
-    </button>
-
-    <button type="button" class="btn btn-secondary btn-floating mx-1">
-      <i class="fab fa-google"></i>
-    </button>
-
-    <button type="button" class="btn btn-secondary btn-floating mx-1">
-      <i class="fab fa-twitter"></i>
-    </button>
-
-    <button type="button" class="btn btn-secondary btn-floating mx-1">
-      <i class="fab fa-github"></i>
-    </button>
   </div>
 </form>
+</div>
 </body>
 </html>
