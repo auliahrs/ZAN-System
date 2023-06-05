@@ -2,7 +2,7 @@
 include 'connection.php';
 
 // Retrieve data from the database
-$stmt = $pdo->query("SELECT * FROM pemohon");
+$stmt = $pdo->query("SELECT * FROM pengguna");
 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
