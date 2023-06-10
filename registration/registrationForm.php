@@ -22,11 +22,11 @@
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
-            <div class="col-md-10">
+            <div class="col-md-10" style="display:flex; justify-content: center;">
              
-
+                <div style=''>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="width: 500px; text-align:center; justify-content: center;">
                         <div class="content-header">
                             <h3>Daftar Pengguna</h3>
                         </div>
@@ -34,99 +34,63 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="width: 500px;justify-content: center;">
                         <div class="content-body">
                             <form action="/ZAN-System/Manage Marriage Request/Applicant/A_MaklumatPasangan.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
                                         <table>
                                             <tr>
-                                                <td>No. Kad Pengenalan </td>
+                                                <td>No. Kad Pengenalan</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="text" name="noKP">
+                                                    <input type="text" name="noKP" style="width: 200px;">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Nama Pemohon </td>
+                                                <td>Nama</td>
                                                 <td>:</td>
-                                                <td><input type="text" name="nama">
+                                                <td>
+                                                    <input type="text" name="nama" style="width: 200px;">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Tarikh Lahir </td>
+                                                <td>Jantina</td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <select name="jantina" style="width: 200px;">
+                                                        <option value="lelaki">Lelaki</option>
+                                                        <option value="perempuan">Perempuan</option>
+                                                    </select>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td>Umur </td>
+                                                <td>No. Telefon</td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <input type="text" name="telefon" style="width: 200px;">
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td>Jantina </td>
+                                                <td>Emel</td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <input type="email" name="emel" style="width: 200px;">
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td>Bangsa </td>
+                                                <td>Kata Laluan</td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <input type="password" name="kataLaluan" style="width: 200px;">
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td>Kewarganegaraan </td>
+                                                <td>Pengesahan Kata Laluan</td>
                                                 <td>:</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Alamat </td>
-                                                <td>:</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>No. Telefon (Bimbit) </td>
-                                                <td>:</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>No. Telefon (Rumah) </td>
-                                                <td>:</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Taraf Pendidikan </td>
-                                                <td>:</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sektor Kerajaan </td>
-                                                <td>:</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Pekerjaan/Jawatan </td>
-                                                <td>:</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Alamat Tempat Kerja </td>
-                                                <td>:</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Status Kahwin </td>
-                                                <td>:</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Status Saudara Baru </td>
-                                                <td>:</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>No. Sijil Kursus Pra Perkahwinan </td>
-                                                <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <input type="password" name="pengesahanKataLaluan" style="width: 200px;">
+                                                </td>
                                             </tr>
                                         </table>
                                     </div>
@@ -134,16 +98,16 @@
 
                                 <div class="row my-3 link-button-general">
                                     <div class="col-md-6">
-
+                                        <button type="button" onclick="window.location.href='/ZAN-System/login-form.php'">Kembali</button>
                                     </div>
                                     <div class="col-md-6">
-                                        <button onclick="window.print()">Print</button>
-                                        <button name="simpan" type="submit" value="simpan">Simpan</button>
+                                        <button type="submit">Daftar</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
+                </div>
                 </div>
 
             </div>
