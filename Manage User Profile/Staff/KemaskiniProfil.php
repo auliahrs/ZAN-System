@@ -13,12 +13,12 @@
 <body>
     <div class="container-fluid">
         <!-- HEADER BAR -->
-        <?php //include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
+        <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php //include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
+        <?php include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->

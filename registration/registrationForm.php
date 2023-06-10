@@ -18,16 +18,17 @@
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
+            <?php //include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
             <div class="col-md-10">
+             
 
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Akaun > Daftar Akaun</h3>
+                            <h3>Daftar Pengguna</h3>
                         </div>
                     </div>
                 </div>
