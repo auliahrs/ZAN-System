@@ -15,7 +15,7 @@
         }   
         .h-custom {
         height: calc(100% - 73px);
-    }
+    
     @media (max-width: 450px) {
         .h-custom {
         height: 100%;
@@ -43,7 +43,7 @@
 
 <div class="loginform"> 
 <form>
- <?php include '../navigation.php';?>
+
   <div class="form-outline mb-4">
     <input type="email" id="form2Example1" class="form-control" />
     <label class="form-label" for="form2Example1">No Kad Pengenalan</label>
@@ -62,14 +62,10 @@
   <button type="submit" class="btn btn-primary btn-block mb-4">Masuk</button>
   <div class="col">
   
-      <a href="#!">Forgot password?</a>
+      <a href="#!">Forgot password?</a><a href="#!">Register</a></p>
     </div>
 
-  <div class="text-center">
-    <p>Lupa Kata Laluan? <a href="#!">Register</a></p>
-    <p>or sign up with:</p>
-    <button type="button" class="btn btn-secondary btn-floating mx-1">
-      <i class="fab fa-facebook-f"></i>
+ 
   </div>
 </form>
 </div>
