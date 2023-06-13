@@ -35,6 +35,11 @@
         <h5>Insentif Perkahwinan</h5>
         <a href="#">Senarai Pemohon Insentif</a>
     </div>
+    <!-- Pendaftaran Perkahwinan box -->
+    <div class="menu-box">
+        <h5>Pendaftaran Perkahwinan</h5>
+        <a href="#">Senarai Pendaftaran</a>
+    </div>
     <!-- Aduan box -->
     <div class="menu-box">
         <h5>Aduan/Khidmat Nasihat</h5>
