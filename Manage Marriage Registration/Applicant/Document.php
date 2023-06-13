@@ -56,6 +56,11 @@
       position: relative;
     }
   </style>
+  <script>
+    function goToNewInterface() {
+      window.location.href = "ComplaintStatus.php";
+    }
+  </script>
 </head>
 
 <body>
@@ -101,10 +106,6 @@
 <label for="upload-input" class="custom-button">Muat Naik Dokumen</label>
 
 <script>
-function goToNewInterface() {
-      window.location.href = "ComplaintStatus.php";
-
-
   document.getElementById("upload-input").addEventListener("change", function(event) {
     var file = event.target.files[0];
     // Handle the uploaded file here, e.g., send it to a server or perform operations with it
@@ -212,8 +213,5 @@ function goToNewInterface() {
         </div>
         <!-- BODY ENDS -->
 </div>
-
-    
 </body>
-
 </html>
