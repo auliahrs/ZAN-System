@@ -14,7 +14,7 @@
     <!-- Akaun box -->
     <div class="menu-box">
         <h5>Akaun</h5>
-        <a class="active" href="#">Kemaskini Profil</a>
+        <a class="active" href="#"> Profil</a>
         <a href="#">Senarai Akaun</a>
     </div>
     <!-- Kursus Pra Perkahwinan box -->
