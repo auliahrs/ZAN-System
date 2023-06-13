@@ -26,7 +26,7 @@
     <!-- Pendaftaran perkahwinan box -->
     <div class="menu-box">
         <h5>Pendaftaran Perkahwinan</h5>
-        <a href="#">Daftar Pemohon</a>
+        <a href="#">Daftar Perkahwinan</a>
     </div>
     <!-- Insentif perkahwinan box -->
     <div class="menu-box">
