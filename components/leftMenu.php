@@ -27,6 +27,7 @@
     <div class="menu-box">
         <h5>Pendaftaran Perkahwinan</h5>
         <a href="#">Daftar Perkahwinan</a>
+        <a href="#">Sijil & Kad Perakuan Nikah</a>
     </div>
     <!-- Insentif perkahwinan box -->
     <div class="menu-box">
