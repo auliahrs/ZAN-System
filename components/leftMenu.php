@@ -13,15 +13,15 @@
     <!-- Pra perkahwinan box -->
     <div class="menu-box">
         <h5>Pra Perkahwinan</h5>
-        <a class="active" href="/ZAN-System/Manage Pre-marriage Course Organization/Applicant/A_DaftarPraPerkahwinanHome.php">Daftar Pra Perkahwinan</a>
-        <a href="#">Kemaskini Perkahwinan</a>
+        <a class="active" href="/ZAN-System/Manage Pre-marriage Course Organization/Applicant/viewOrganizationList.php">Daftar Pra Perkahwinan</a>
+        <a href="/ZAN-System/Manage Pre-marriage Course Application/Applicant/regForm.php">Kemaskini Perkahwinan</a>
     </div>
     <!-- Permohonan perkahwinan box -->
     <div class="menu-box">
         <h5>Permohonan Berkahwin</h5>
-        <a href="/ZAN-System/Manage Marriage Request/Applicant/A_MaklumatPemohon.php">Maklumat Pemohon</a>
-        <a href="/ZAN-System/Manage Marriage Request/Applicant/A_MaklumatPasangan.php">Maklumat Pasangan</a>
-        <a href="/ZAN-System/Manage Marriage Request/Applicant/A_MaklumatPerkahwinan.php">Maklumat Perkahwinan</a>
+        <a href="/ZAN-System/Manage Marriage Request/Applicant/applicantForm.php">Maklumat Pemohon</a>
+        <a href="/ZAN-System/Manage Marriage Request/Applicant/spouseForm.php">Maklumat Pasangan</a>
+        <a href="/ZAN-System/Manage Marriage Request/Applicant/marriageForm.php">Maklumat Perkahwinan</a>
     </div>
     <!-- Pendaftaran perkahwinan box -->
     <div class="menu-box">

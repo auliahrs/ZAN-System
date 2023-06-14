@@ -18,7 +18,7 @@
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
+            <?php include('C:/xampp/htdocs/ZAN-System/components/leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -97,15 +97,23 @@
                                                 <td>:</td>
                                                 <td>
                                                     <select name="kebenaranJAIN" id="kebenaranJAIN">
-                                                        <option value="">TEST 1</option>
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="johor">JOHOR</option>
+                                                        <option value="kedah">KEDAH</option>
+                                                        <option value="kelantan">KELANTAN</option>
+                                                        <option value="melaka">MELAKA</option>
+                                                        <option value="negerisembilan">NEGERI SEMBILAN</option>
+                                                        <option value="pahang">PAHANG</option>
+                                                        <option value="perlis">PERLIS</option>
+                                                        <option value="pinang">PILAU PINANG</option>
+                                                        <option value="sabah">SABAH</option>
+                                                        <option value="sarawak">SARAWAK</option>
+                                                        <option value="selangor">SELANGOR</option>
+                                                        <option value="terengganu">TERENGGANU</option>
+                                                        <option value="kl">WILAYAH PERSEKUTUAN KUALA LUMPUR</option>
+                                                        <option value="labuan">WILAYAH PERSEKUTUAN LABUAN</option>
+                                                        <option value="putrajaya">WILAYAH PERSEKUTUAN PUTRAJAYA</option>
                                                     </select>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Muat Naik Pembayaran</td>
-                                                <td>:</td>
-                                                <td>
-                                                    <input type="file" name="buktiPembayaran">
                                                 </td>
                                             </tr>
                                         </table>
@@ -119,6 +127,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <button name="simpan" type="submit" value="simpan">Simpan</button>
+                                        <button onclick="paymentForm.php" name="upload" type="submit" value="upload">Muat Naik Bukti Pembayaran</button>
                                     </div>
                                 </div>
                             </form>

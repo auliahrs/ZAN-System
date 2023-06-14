@@ -18,7 +18,7 @@
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
+            <?php include('C:/xampp/htdocs/ZAN-System/components/leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
