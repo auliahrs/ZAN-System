@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
-    <title>Senarai Permohonan Berkahwin</title>
+    <title>Senarai Lulus Permohonan</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Permohonan Berkahwin > Senarai Permohonan</h3>
+                            <h3>Permohonan Berkahwin > Senarai Lulus Permohonan</h3>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                         <div class="content-body-staff">
                             <div class="row">
                                 <div class="col table-dpp">
-                                    <form action="/ZAN-System/Manage Marriage Request/Staff/S_SenaraiPermohonanBerkahwin.php" method="get">
+                                    <form action="/ZAN-System/Manage Marriage Request/Staff/viewApprovedApplication.php" method="get">
                                         <table>
                                             <tr>
                                                 <td>
@@ -69,9 +69,7 @@
                                             <td>KP1311BTG03</td>
                                             <td>AHMAD AIMAN BIN ADAM</td>
                                             <td>990125060617</td>
-                                            <td>
-
-                                            </td>
+                                            <td><img src="../../images/moredetail.png" width="30px" height="auto"><img src="../../images/approve.png" width="53px" height="auto"><img src="../../images/reject.png" width="40px" height="auto"></td>
                                         </tr>
                                     </table>
                                 </div>

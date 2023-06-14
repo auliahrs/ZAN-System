@@ -38,7 +38,7 @@
                             <div class="row my-3">
                                 <div class="col-md-12 table-dpp">
                                     <p>(<span style="color:red">*</span>)<em> adalah wajib diisi</em></p>
-                                    <form action="/ZAN-System/Manage Pre-marriage Course Organization/Staff/S_DaftarMaklumatKursus.php" method="post">
+                                    <form action="/ZAN-System/Manage Pre-marriage Course Organization/Staff/regCourseInfoForm.php" method="post">
                                         <table>
                                             <tr>
                                                 <td><span style="color:red">*</span>PAID</td>
