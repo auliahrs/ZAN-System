@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage User Profile/Staff/staffProfileView.php" method="post">
+                            <form action="/ZAN-System/Manage User Profile/Staff/StaffEditForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
                                         <table>
@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         
-                                        <button name="simpan" type="submit" value="simpan">Kemaskini</button>
+                                        <button name="simpan" type="submit" value="simpan" >Kemaskini</button>
                                     </div>
                                 </div>
                             </form>

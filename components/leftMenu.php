@@ -1,7 +1,7 @@
 <div class="col-md-2">
     <!-- profile box -->
     <div class="menu-box" style="margin-top:0">
-        <div class="row">
+        <div class="row" type="submit" href="/ZAN-System/Manage User Profile/Applicant/applicantViewProfile">
             <div class="col-md-2 my-auto">
                 <img src="/ZAN-System/images/profilepicture.png" alt="Prof Pic Image" width="35px">
             </div>
@@ -27,6 +27,7 @@
     <div class="menu-box">
         <h5>Pendaftaran Perkahwinan</h5>
         <a href="#">Daftar Perkahwinan</a>
+        <a href="#">Sijil & Kad Perakuan Nikah</a>
     </div>
     <!-- Insentif perkahwinan box -->
     <div class="menu-box">

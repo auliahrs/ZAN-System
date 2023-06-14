@@ -154,7 +154,7 @@
                                     </div>
                                     <div class="col-md-6">
                                        
-                                        <button name="simpan" type="submit" value="simpan">Update</button>
+                                        <button name="simpan" type="submit" value="simpan">Kemaskini</button>
                                     </div>
                                 </div>
                             </form>

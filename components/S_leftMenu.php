@@ -14,8 +14,8 @@
     <!-- Akaun box -->
     <div class="menu-box">
         <h5>Akaun</h5>
-        <a class="active" href="#"> Profil</a>
-        <a href="#">Senarai Akaun</a>
+        <a href="/ZAN-System/Manage User Profile/Staff/staffProfileView.php"> Profil</a>
+        <a href="/ZAN-System/Manage User Profile/Staff/viewApplicantProfile.php">Senarai Akaun</a>
     </div>
     <!-- Kursus Pra Perkahwinan box -->
     <div class="menu-box">
@@ -30,15 +30,16 @@
         <a href="/ZAN-System/Manage Marriage Request/Staff/S_SenaraiPermohonanBerkahwin.php">Senarai Permohonan</a>
         <a href="/ZAN-System/Manage Marriage Request/Staff/S_SenaraiLulusPermohonan.php">Senarai Lulus Permohonan</a>
     </div>
-    <!-- Insentif Perkahwinan box -->
-    <div class="menu-box">
-        <h5>Insentif Perkahwinan</h5>
-        <a href="#">Senarai Pemohon Insentif</a>
-    </div>
     <!-- Pendaftaran Perkahwinan box -->
     <div class="menu-box">
         <h5>Pendaftaran Perkahwinan</h5>
         <a href="#">Senarai Pendaftaran</a>
+        <a href="#">Sijil & Kad Perakuan Nikah</a>
+    </div>
+    <!-- Insentif Perkahwinan box -->
+    <div class="menu-box">
+        <h5>Insentif Perkahwinan</h5>
+        <a href="#">Senarai Pemohon Insentif</a>
     </div>
     <!-- Aduan box -->
     <div class="menu-box">
