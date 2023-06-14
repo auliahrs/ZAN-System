@@ -82,10 +82,10 @@
   </style>
   <script>
 function goToOldInterface() {
-      window.location.href = "DocumentPage.php";
+      window.location.href = "DocumentForm.php";
 }
     function goToNewInterface() {
-      window.location.href = "PaymentProofPage.php";
+      window.location.href = "PaymentProofForm.php";
     }
     
   </script>
@@ -144,8 +144,8 @@ function goToOldInterface() {
 </div>    
         </div>
         <div class="button-container">
-<a class="button button-back" href="#" onclick="goToOldInterface()">Back</a>
-    <a class="button button-submit" href="#" onclick="goToNewInterface()">Submit</a>
+<a class="button button-back" href="#" onclick="goToOldInterface()">Kembali</a>
+    <a class="button button-submit" href="#" onclick="goToNewInterface()">Seterusnya</a>
 </div>
                                     </div>
                                 </div>
