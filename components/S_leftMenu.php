@@ -14,8 +14,8 @@
     <!-- Akaun box -->
     <div class="menu-box">
         <h5>Akaun</h5>
-        <a class="active" href="#"> Profil</a>
-        <a href="#">Senarai Akaun</a>
+        <a href="/ZAN-System/Manage User Profile/Staff/staffProfileView.php"> Profil</a>
+        <a href="/ZAN-System/Manage User Profile/Staff/viewApplicantProfile.php">Senarai Akaun</a>
     </div>
     <!-- Kursus Pra Perkahwinan box -->
     <div class="menu-box">
