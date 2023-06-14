@@ -55,6 +55,28 @@
     .button-container{
       position: relative;
     }
+
+    .button {
+    background-color: #1A2F77;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+  }
+
+    .button-back {
+    left: 10px;
+  }
+  
+  .button-submit {
+    right: 10px;
+  }
   </style>
   <script>
     function goToNewInterface() {
@@ -94,13 +116,13 @@
                                         <table>
 
 <div class="document">
-    DOCUMENTS
+    DOKUMEN
 </div>
 
 <div class="docname">
   <span class="docname-text">Slip Permohonan Perkahwinan</span>
   <div>
-    <a class="custom-button" href="path/to/download/document.pdf" download>Muat Turun Dokumen</a>
+    <a class="custom-button" href="path/to/download/Slip_Permohonan_Kahwin.pdf" download>Muat Turun Dokumen</a>
 
     <input type="file" id="upload-input" style="display: none;">
 <label for="upload-input" class="custom-button">Muat Naik Dokumen</label>
@@ -119,7 +141,7 @@
 <div class="docname">
   <span class="docname-text">Borang Kebenaran Berkahwin</span>
   <div>
-    <a class="custom-button" href="path/to/download/document.pdf" download>Muat Turun Dokumen</a>
+    <a class="custom-button" href="path/to/download/Borang_Kebenaran_Kahwin.pdf" download>Muat Turun Dokumen</a>
 
     <input type="file" id="upload-input" style="display: none;">
 <label for="upload-input" class="custom-button">Muat Naik Dokumen</label>
@@ -138,7 +160,7 @@
 <div class="docname">
   <span class="docname-text">Catatan Akad Nikah</span>
   <div>
-    <a class="custom-button" href="path/to/download/document.pdf" download>Muat Turun Dokumen</a>
+    <a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Muat Turun Dokumen</a>
 
     <input type="file" id="upload-input" style="display: none;">
 <label for="upload-input" class="custom-button">Muat Naik Dokumen</label>
