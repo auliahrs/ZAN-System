@@ -38,19 +38,20 @@
                             <div class="row">
                                 <div class="col my-3">
                                     <form action="A_DaftarPraPerkahwinanHome.php" method="get">
-                                        <select name="anjuran" id="anjuran">
+                                        <select name="paid" id="paid">
                                             <option value="">Pilih Anjuran</option>
-                                            <option value=" ">JABATAN AGAMA ISLAM NEGERI PAHANG</option>
-                                            <option value=" ">JABATAN AGAMA ISLAM BENTONG</option>
-                                            <option value=" ">JABATAN AGAMA ISLAM BERA</option>
-                                            <option value=" ">JABATAN AGAMA ISLAM CAMERON HIGHLANDS</option>
-                                            <option value=" ">JABATAN AGAMA ISLAM CHENOR</option>
-                                            <option value=" ">JABATAN AGAMA ISLAM JENGKA</option>
-                                            <option value=" ">JABATAN AGAMA ISLAM JERANTUT</option>
-                                            <option value=" ">JABATAN AGAMA ISLAM KUANTAN</option>
-                                            <option value=" ">JABATAN AGAMA ISLAM KUANTAN BARAT</option>
-                                            <option value=" ">JABATAN AGAMA ISLAM LIPIS</option>
-                                            <option value=" ">JABATAN AGAMA ISLAM MARAN</option>
+                                            <option value="paid1">JABATAN AGAMA ISLAM NEGERI PAHANG</option>
+                                            <option value="paid2">PEJABAT AGAMA ISLAM BENTONG</option>
+                                            <option value="paid3">PEJABAT AGAMA ISLAM BERA</option>
+                                            <option value="paid4">PEJABAT AGAMA ISLAM CAMERON HIGHLANDS</option>
+                                            <option value="paid5">PEJABAT AGAMA ISLAM KUANTAN</option>
+                                            <option value="paid6">PEJABAT AGAMA ISLAM KUANTAN BARAT</option>
+                                            <option value="paid7">PEJABAT AGAMA ISLAM LIPIS</option>
+                                            <option value="paid9">PEJABAT AGAMA ISLAM MARAN</option>
+                                            <option value="paid10">PEJABAT AGAMA ISLAM PEKAN</option>
+                                            <option value="paid11">PEJABAT AGAMA ISLAM RAUB</option>
+                                            <option value="paid12">PEJABAT AGAMA ISLAM ROMPIN</option>
+                                            <option value="paid13">PEJABAT AGAMA ISLAM TEMERLOH</option>
                                         </select>
                                         <button type="submit" name="search"><img src="/ZAN-System/images/search.png" alt="Search Icon" width="30px"></button>
                                     </form>

@@ -43,7 +43,23 @@
                                             <tr>
                                                 <td><span style="color:red">*</span>PAID</td>
                                                 <td>:</td>
-                                                <td><input type="text" name="paid"></td>
+                                                <td>
+                                                    <select name="paid" id="paid">
+                                                            <option value="">Pilih Anjuran</option>
+                                                            <option value="paid1">JABATAN AGAMA ISLAM NEGERI PAHANG</option>
+                                                            <option value="paid2">PEJABAT AGAMA ISLAM BENTONG</option>
+                                                            <option value="paid3">PEJABAT AGAMA ISLAM BERA</option>
+                                                            <option value="paid4">PEJABAT AGAMA ISLAM CAMERON HIGHLANDS</option>
+                                                            <option value="paid5">PEJABAT AGAMA ISLAM KUANTAN</option>
+                                                            <option value="paid6">PEJABAT AGAMA ISLAM KUANTAN BARAT</option>
+                                                            <option value="paid7">PEJABAT AGAMA ISLAM LIPIS</option>
+                                                            <option value="paid9">PEJABAT AGAMA ISLAM MARAN</option>
+                                                            <option value="paid10">PEJABAT AGAMA ISLAM PEKAN</option>
+                                                            <option value="paid11">PEJABAT AGAMA ISLAM RAUB</option>
+                                                            <option value="paid12">PEJABAT AGAMA ISLAM ROMPIN</option>
+                                                            <option value="paid13">PEJABAT AGAMA ISLAM TEMERLOH</option>
+                                                    </select>
+                                                </td>
                                                 <td><span style="color:red">*</span>Kapasiti</td>
                                                 <td>:</td>
                                                 <td><input type="text" name="kapasiti"></td>
@@ -75,14 +91,26 @@
                                                 <td>:</td>
                                                 <td>
                                                     <select name="masaDari" id="masaDari">
-                                                        <option value="">TEST</option>
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="dari8">08:00</option>
+                                                        <option value="dari9">09:00</option>
+                                                        <option value="dari10">10:00</option>
+                                                        <option value="dari11">11:00</option>
+                                                        <option value="dari12">12:00</option>
+                                                        <option value="dar14">14:00</option>
                                                     </select>
                                                 </td>
                                                 <td><span style="color:red">*</span>Masa Hingga</td>
                                                 <td>:</td>
                                                 <td>
                                                     <select name="masaHingga" id="masaHingga">
-                                                        <option value="">TEST</option>
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="hingga12">12:00</option>
+                                                        <option value="hingga13">13:00</option>
+                                                        <option value="hingga14">14:00</option>
+                                                        <option value="hingga15">15:00</option>
+                                                        <option value="hingga16">16:00</option>
+                                                        <option value="hingga12">17:00</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -102,7 +130,13 @@
                                                 <td><input type="text" name="catatan"></td>
                                                 <td><span style="color:red">*</span>Terbit Umum</td>
                                                 <td>:</td>
-                                                <td><input type="text" name="terbitUmum"></td>
+                                                <td>
+                                                    <select name="terbit" id="terbit">
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="ya">YA</option>
+                                                        <option value="tidak">TIDAK</option>
+                                                    </select>
+                                                </td>
                                                 <td><button type="submit" name="simpan" value="simpan">SIMPAN</button></td>
                                             </tr>
                                         </table>
@@ -118,8 +152,24 @@
                                                 <tr>
                                                     <td>PAID</td>
                                                     <td>:</td>
-                                                    <td><input type="text" name="paid"></td>
-                                                    <td><button type="submit" name="search" value="search"><img src="/ZAN-System/images/search.png" alt="Search icon" width="30px" height="auto"></button></td>
+                                                    <td>
+                                                        <select name="paid" id="paid">
+                                                            <option value="">Pilih Anjuran</option>
+                                                            <option value="paid1">JABATAN AGAMA ISLAM NEGERI PAHANG</option>
+                                                            <option value="paid2">PEJABAT AGAMA ISLAM BENTONG</option>
+                                                            <option value="paid3">PEJABAT AGAMA ISLAM BERA</option>
+                                                            <option value="paid4">PEJABAT AGAMA ISLAM CAMERON HIGHLANDS</option>
+                                                            <option value="paid5">PEJABAT AGAMA ISLAM KUANTAN</option>
+                                                            <option value="paid6">PEJABAT AGAMA ISLAM KUANTAN BARAT</option>
+                                                            <option value="paid7">PEJABAT AGAMA ISLAM LIPIS</option>
+                                                            <option value="paid9">PEJABAT AGAMA ISLAM MARAN</option>
+                                                            <option value="paid10">PEJABAT AGAMA ISLAM PEKAN</option>
+                                                            <option value="paid11">PEJABAT AGAMA ISLAM RAUB</option>
+                                                            <option value="paid12">PEJABAT AGAMA ISLAM ROMPIN</option>
+                                                            <option value="paid13">PEJABAT AGAMA ISLAM TEMERLOH</option>
+                                                        </select>
+                                                    </td>
+                                                    <td><button type="submit" name="search" value="search" style="border: none; background-color: #D9D9D9"><img src="/ZAN-System/images/search.png" alt="Search icon" width="30px" height="auto"></button></td>
                                                 </tr>
                                             </table>
                                         </div>
