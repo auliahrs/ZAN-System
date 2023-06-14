@@ -7,13 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
-    <title>Daftar Jenis Perkahwinan</title>
-
-
+    <title>Senarai Permohonan Berkahwin</title>
 </head>
 
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
         <!-- HEADER BAR -->
         <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
@@ -29,25 +27,80 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Pendaftaran Perkahwinan > Daftar Perkahwinan</h3>
+                            <h3>Permohonan Berkahwin > Senarai Permohonan</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Registration/Applicant/UpdateRegForm.php" method="post">
-                                <div class="row my-3">
-                                    <div class="col table-dpp">
-                                        <table>
-
-
- 
-
-                                    </div>
+                        <div class="content-body-staff">
+                            <div class="row">
+                                <div class="col table-dpp">
+                                    <form action="/ZAN-System/Manage Marriage Request/Staff/S_SenaraiPermohonanBerkahwin.php" method="get">
+                                    </form>
                                 </div>
-                            </form>
+                            </div>
+                            <div class="row">
+                                <div class="col table-dpph">
+                                    <table>
+                                        <tr>
+                                            <th>BIL</th>
+                                            <th>Tarikh Pendaftaran</th>
+                                            <th>Nama Pemohon</th>
+                                            <th>Slip Permohonan Perkahwinan</th>
+                                            <th>Borang Kebenaran Berkahwin</th>
+                                            <th>Catatan Akad Nikah</th>
+                                            <th>Gambar Berukuran Passport</th>
+                                            <th>Salinan Kad Pengenalan Saksi-Saksi Perkahwinan</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>16/6/2023</td>
+                                            <td>AHMAD AIMAN BIN ADAM</td>
+                                            <td><div><a class="custom-button" href="path/to/download/Slip_Permohonan_Perkahwinan.pdf" download>Slip Permohonan Perkahwinan Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/Borang_Kebenaran_Berkahwinan.pdf" download>Borang Kebenaran Berkahwinan Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Catatan Akad Nikah Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/KadPengenalan.JPG" download>Gambar Berukuran Passport Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/Saksi IC.PNG" download>Salinan Kad Pengenalan Saksi-Saksi Perkahwinan Pemohon</a></td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.</td>
+                                            <td>7/6/2023</td>
+                                            <td>MOHAMAD KHOLID BIN ATAN</td>
+                                            <td><div><a class="custom-button" href="path/to/download/Slip_Permohonan_Perkahwinan.pdf" download>Slip Permohonan Perkahwinan Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/Borang_Kebenaran_Berkahwinan.pdf" download>Borang Kebenaran Berkahwinan Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Catatan Akad Nikah Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/KadPengenalan.JPG" download>Gambar Berukuran Passport Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/Saksi IC.PNG" download>Salinan Kad Pengenalan Saksi-Saksi Perkahwinan Pemohon</a></td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.</td>
+                                            <td>21/5/2023</td>
+                                            <td>SITI NUR MARIA ESTIMA TOYOTA BINTI MAT</td>
+                                            <td><div><a class="custom-button" href="path/to/download/Slip_Permohonan_Perkahwinan.pdf" download>Slip Permohonan Perkahwinan Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/Borang_Kebenaran_Berkahwinan.pdf" download>Borang Kebenaran Berkahwinan Pemohon</a></td>
+                                            <td><div><a class="custom-button" style="background-color: #800000; color: #FFFFFF;" href="path/to/download/Catata.pdf" >Catatan Akad Nikah Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/KadPengenalan.JPG" download>Gambar Berukuran Passport Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/Saksi IC.PNG" download>Salinan Kad Pengenalan Saksi-Saksi Perkahwinan Pemohon</a></td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4.</td>
+                                            <td>23/3/2023</td>
+                                            <td>ABDUL PAPAYA BIN BENDUL</td>
+                                            <td><div><a class="custom-button" href="path/to/download/Slip_Permohonan_Perkahwinan.pdf" download>Slip Permohonan Perkahwinan Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/Borang_Kebenaran_Berkahwinan.pdf" download>Borang Kebenaran Berkahwinan Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Catatan Akad Nikah Pemohon</a></td>
+                                            <td><div><a class="custom-button" href="path/to/download/KadPengenalan.JPG" download>Gambar Berukuran Passport Pemohon</a></td>
+                                            <td><div><a class="custom-button" style="background-color: #800000; color: #FFFFFF;" href="path/to/download/Saksi IC.PNG">Salinan Kad Pengenalan Saksi-Saksi Perkahwinan Pemohon</a></td>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -56,9 +109,7 @@
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
-</div>
-
-    
+    </div>
 </body>
 
 </html>
