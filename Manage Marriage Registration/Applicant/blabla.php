@@ -10,87 +10,26 @@
     <title>Daftar Jenis Perkahwinan</title>
 
     <style>
-    .PaymentProof {
-        background-color: #1A2F77;
-        color: #FFFFFF;
-        height: 40px;
-        text-align: center;
-        font-size: 20px;
-        line-height: 40px;
-        width: 1000px;
-        margin: 20px auto;
-    }
-    
-    .Receipt {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        margin: 50px 100px;
-    }
-    
-    .Receipt img {
-        max-width: 400px;
-        max-height: 400px;
-    }
-
     .custom-button {
       display: inline-block;
-      width: 100px;
-      height: 30px;
-      margin: 20px;
-      font-size: 14px;
-      border-radius: 5px;
-      text-align: center;
-      line-height: 30px;
-      background-color: #0047FF;
+      width: 300px;
+      height: 250px;
+      margin: 110px;
+      font-size: 20px;
+      border-radius: 10px;
+      background-color: #D7D7D7;
       cursor: pointer;
       transition: background-color 0.3s;
-      text-decoration: none;
-      color: #FFFFFF;
-
     }
 
     .custom-button:hover {
-      background-color: #1A2F77;
+      background-color: #A0A0A0;
     }
 
-    .button {
-    background-color: #1A2F77;
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 10px;
-  }
-
-  .button-container{
-      position: relative;
+    .custom-button:active {
+      background-color: #707070;
     }
-
-    .button-back {
-    left: 10px;
-  }
-  
-  .button-submit {
-    right: 10px;
-  }
   </style>
-  <script>
-function goToOldInterface() {
-      window.location.href = "DocumentPage.php";
-}
-    function goToNewInterface() {
-      window.location.href = "PaymentProofPage.php";
-    }
-    
-  </script>
-</style>
-
 </head>
 
 <body>
@@ -118,11 +57,11 @@ function goToOldInterface() {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Registration/Applicant/PaymentProofPage.php" method="post">
+                            <form action="/ZAN-System/Manage Marriage Registration/Applicant/MarriageTypePage.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
-                                        <div class="PaymentProof">
+        <div class="PaymentProof">
             BUKTI PEMBAYARAN (Resit)
         </div>
         <div class="Receipt">
@@ -147,6 +86,9 @@ function goToOldInterface() {
 <a class="button button-back" href="#" onclick="goToOldInterface()">Back</a>
     <a class="button button-submit" href="#" onclick="goToNewInterface()">Submit</a>
 </div>
+
+
+
                                     </div>
                                 </div>
                             </form>

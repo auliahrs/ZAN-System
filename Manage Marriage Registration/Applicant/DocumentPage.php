@@ -79,9 +79,13 @@
   }
   </style>
   <script>
+function goToOldInterface() {
+      window.location.href = "MarriageTypePage.php";
+}
     function goToNewInterface() {
-      window.location.href = "ComplaintStatus.php";
+      window.location.href = "PaymentProofPage.php";
     }
+    
   </script>
 </head>
 
@@ -119,23 +123,27 @@
     DOKUMEN
 </div>
 
+<!-- First doc -->
 <div class="docname">
   <span class="docname-text">Slip Permohonan Perkahwinan</span>
   <div>
     <a class="custom-button" href="path/to/download/Slip_Permohonan_Kahwin.pdf" download>Muat Turun Dokumen</a>
 
-    <input type="file" id="upload-input" style="display: none;">
-<label for="upload-input" class="custom-button">Muat Naik Dokumen</label>
+    <input type="file" id="upload-input-1" style="display: none;">
+    <label for="upload-input-1" class="custom-button">Muat Naik Dokumen</label>
+    <span id="file-name-1"></span>
 
-<script>
-  document.getElementById("upload-input").addEventListener("change", function(event) {
-    var file = event.target.files[0];
-    // Handle the uploaded file here, e.g., send it to a server or perform operations with it
-    console.log("Uploaded file:", file.name);
-  });
-</script>
+    <script>
+      document.getElementById("upload-input-1").addEventListener("change", function(event) {
+        var file = event.target.files[0];
+        // Handle the uploaded file here, e.g., send it to a server or perform operations with it
+        console.log("Uploaded file:", file.name);
+        document.getElementById("file-name-1").textContent = file.name;
+      });
+    </script>
   </div>
 </div>
+
 <br>
 <!-- second doc -->
 <div class="docname">
@@ -143,14 +151,16 @@
   <div>
     <a class="custom-button" href="path/to/download/Borang_Kebenaran_Kahwin.pdf" download>Muat Turun Dokumen</a>
 
-    <input type="file" id="upload-input" style="display: none;">
-<label for="upload-input" class="custom-button">Muat Naik Dokumen</label>
+    <input type="file" id="upload-input-2" style="display: none;">
+    <label for="upload-input-2" class="custom-button">Muat Naik Dokumen</label>
+    <span id="file-name-2"></span>
 
-<script>
-  document.getElementById("upload-input").addEventListener("change", function(event) {
-    var file = event.target.files[0];
-    // Handle the uploaded file here, e.g., send it to a server or perform operations with it
-    console.log("Uploaded file:", file.name);
+    <script>
+      document.getElementById("upload-input-2").addEventListener("change", function(event) {
+        var file = event.target.files[0];
+        // Handle the uploaded file here, e.g., send it to a server or perform operations with it
+        console.log("Uploaded file:", file.name);
+        document.getElementById("file-name-2").textContent = file.name;
   });
 </script>
   </div>
@@ -162,14 +172,16 @@
   <div>
     <a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Muat Turun Dokumen</a>
 
-    <input type="file" id="upload-input" style="display: none;">
-<label for="upload-input" class="custom-button">Muat Naik Dokumen</label>
+    <input type="file" id="upload-input-3" style="display: none;">
+    <label for="upload-input-3" class="custom-button">Muat Naik Dokumen</label>
+    <span id="file-name-3"></span>
 
-<script>
-  document.getElementById("upload-input").addEventListener("change", function(event) {
-    var file = event.target.files[0];
-    // Handle the uploaded file here, e.g., send it to a server or perform operations with it
-    console.log("Uploaded file:", file.name);
+    <script>
+      document.getElementById("upload-input-3").addEventListener("change", function(event) {
+        var file = event.target.files[0];
+        // Handle the uploaded file here, e.g., send it to a server or perform operations with it
+        console.log("Uploaded file:", file.name);
+        document.getElementById("file-name-3").textContent = file.name;
   });
 </script>
   </div>
@@ -180,14 +192,16 @@
   <span class="docname-text">Gambar Berukuran Passport</span>
   <div>
 
-    <input type="file" id="upload-input" style="display: none;">
-<label for="upload-input" class="custom-button">Muat Naik Dokumen</label>
+  <input type="file" id="upload-input-4" style="display: none;">
+    <label for="upload-input-4" class="custom-button">Muat Naik Dokumen</label>
+    <span id="file-name-4"></span>
 
-<script>
-  document.getElementById("upload-input").addEventListener("change", function(event) {
-    var file = event.target.files[0];
-    // Handle the uploaded file here, e.g., send it to a server or perform operations with it
-    console.log("Uploaded file:", file.name);
+    <script>
+      document.getElementById("upload-input-4").addEventListener("change", function(event) {
+        var file = event.target.files[0];
+        // Handle the uploaded file here, e.g., send it to a server or perform operations with it
+        console.log("Uploaded file:", file.name);
+        document.getElementById("file-name-4").textContent = file.name;
   });
 </script>
   </div>
@@ -198,14 +212,16 @@
   <span class="docname-text">Salinan Kad Pengenalan Saksi-Saksi Perkahwinan</span>
   <div>
 
-    <input type="file" id="upload-input" style="display: none;">
-<label for="upload-input" class="custom-button">Muat Naik Dokumen</label>
+  <input type="file" id="upload-input-5" style="display: none;">
+    <label for="upload-input-5" class="custom-button">Muat Naik Dokumen</label>
+    <span id="file-name-5"></span>
 
-<script>
-  document.getElementById("upload-input").addEventListener("change", function(event) {
-    var file = event.target.files[0];
-    // Handle the uploaded file here, e.g., send it to a server or perform operations with it
-    console.log("Uploaded file:", file.name);
+    <script>
+      document.getElementById("upload-input-5").addEventListener("change", function(event) {
+        var file = event.target.files[0];
+        // Handle the uploaded file here, e.g., send it to a server or perform operations with it
+        console.log("Uploaded file:", file.name);
+        document.getElementById("file-name-5").textContent = file.name;
   });
 </script>
   </div>
@@ -215,7 +231,7 @@
 <br>
 <br>
 <div class="button-container">
-<a class="button button-back" href="#">Back</a>
+<a class="button button-back" href="#" onclick="goToOldInterface()">Back</a>
     <a class="button button-submit" href="#" onclick="goToNewInterface()">Submit</a>
 </div>
 
