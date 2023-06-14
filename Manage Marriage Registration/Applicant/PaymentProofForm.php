@@ -118,7 +118,7 @@ function goToOldInterface() {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Registration/Applicant/PaymentProofPage.php" method="post">
+                            <form action="/ZAN-System/Manage Marriage Registration/Applicant/PaymentProofForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
