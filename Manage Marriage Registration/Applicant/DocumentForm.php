@@ -83,7 +83,7 @@ function goToOldInterface() {
       window.location.href = "MarriageTypeForm.php";
 }
     function goToNewInterface() {
-      window.location.href = "PaymentProofForm.php";
+      window.location.href = "PaymentProof/PaymentProofForm.php";
     }
     
   </script>
