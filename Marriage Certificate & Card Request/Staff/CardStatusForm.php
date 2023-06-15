@@ -10,8 +10,7 @@
     <title>Senarai Permohonan Berkahwin</title>
 
     <style>
-
-.Status{
+   .Status{
         background-color: #1A2F77;
             color: #FFFFFF;
             height: 40px;
@@ -22,18 +21,13 @@
             margin: 20px auto;
     }
 
-    body {
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
 
-    img {
-      padding: 20px 50px;
-      max-width: 60%;
-      max-height: 60%;
+    .kad {
+      padding: 20px 30px;
+      max-width: 70%;
+      max-height: 30%;
       display: block;
-      margin: 0 auto;
+      margin: auto;
     }
     </style>
 </head>
@@ -55,7 +49,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Permohonan Berkahwin > Senarai Permohonan</h3>
+                            <h3>Permohonan Berkahwin > Sijil & Kad Perakuan Nikah</h3>
                         </div>
                     </div>
                 </div>
@@ -65,7 +59,7 @@
                         <div class="content-body-staff">
                             <div class="row">
                                 <div class="col table-dpp">
-                                    <form action="/ZAN-System/Manage Marriage Request/Staff/CardStatusForm" method="get">
+                                <form action="/ZAN-System/Manage Marriage Request/Staff/CardStatusForm" method="get">
                                     </form>
                                 </div>
                             </div>
@@ -73,10 +67,61 @@
                                 <div class="col table-dpph">
                                 <div class="Status">Status Bagi Kad Perakuan Nikah</div>
                                     <table>
-                                    
-                                    <img src="\ZAN-System\images\Notis.png" alt="Displayed Image">
+                                    <div id="kad" class="kad"><img src="\ZAN-System\images\Notis.png" alt="kad"></kad>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br><br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br><br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br><br><br>
 
-
+                                    <br>
+                                    <br>
+                                    <tr>
+                                            <th>Nama Pemohon</th>
+                                            <th>Penghantaran Notis</th>
+                                        </tr>
+                                        <tr>
+                                            <td>AHMAD AIMAN BIN ADAM</td>
+                                            <td><a href="mailto:AimanAdam@gmail.com" target="_blank"><button>Hantar Notis Kepada Pemohon</button></a></td>
                                     </table>
                                 </div>
                             </div>

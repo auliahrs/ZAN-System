@@ -10,8 +10,15 @@
     <title>Daftar Jenis Perkahwinan</title>
 
     <style>
-    .custom-button {
-      display: inline-block;
+
+.custom-button-container {
+      display: flex;
+      gap: 20px;
+    }
+     .custom-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 300px;
       height: 250px;
       margin: 110px;
@@ -20,6 +27,8 @@
       background-color: #D7D7D7;
       cursor: pointer;
       transition: background-color 0.3s;
+      color: black; 
+      text-decoration: none;
     }
 
     .custom-button:hover {
@@ -63,8 +72,21 @@
                                         <table>
 
 
-  <button class="custom-button">Pendaftaran Nikah Dalam/Luar Negeri</button>
-  <button class="custom-button">Pendaftaran Nikah Sukarela</button>
+
+
+                                        <div class="custom-button-container">
+  <a class="custom-button" onclick="goToOldInterface()">Pendaftaran Nikah Dalam/Luar Negeri</a>
+  <a class="custom-button" onclick="goToOldInterface()">Pendaftaran Nikah Sukarela</a>
+</div>
+
+<script>
+    function goToOldInterface() {
+      window.location.href = "DocumentForm.php";
+    }
+
+    
+  </script>
+</div>
 
                                     </div>
                                 </div>
