@@ -9,7 +9,13 @@
                 <h5>Ahmad Aiman Bin Adam</h5>
             </div>
         </div>
+        </div>
+    <!-- Profil box -->
+    <div class="menu-box">
+        <h5>Akaun</h5>
+        <a class="active" href="/ZAN-System/Manage User Profile/Applicant/applicantProfileView.php">Profil</a>
     </div>
+   
     <!-- Pra perkahwinan box -->
     <div class="menu-box">
         <h5>Pra Perkahwinan</h5>
