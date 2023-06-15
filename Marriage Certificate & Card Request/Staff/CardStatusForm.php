@@ -9,6 +9,33 @@
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
     <title>Senarai Permohonan Berkahwin</title>
 
+    <style>
+
+.Status{
+        background-color: #1A2F77;
+            color: #FFFFFF;
+            height: 40px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 40px;
+            width: 1000px;
+            margin: 20px auto;
+    }
+
+    body {
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    img {
+      padding: 20px 50px;
+      max-width: 60%;
+      max-height: 60%;
+      display: block;
+      margin: 0 auto;
+    }
+    </style>
 </head>
 
 <body>
@@ -44,9 +71,10 @@
                             </div>
                             <div class="row">
                                 <div class="col table-dpph">
+                                <div class="Status">Status Bagi Kad Perakuan Nikah</div>
                                     <table>
                                     
-                                
+                                    <img src="\ZAN-System\images\Notis.png" alt="Displayed Image">
 
 
                                     </table>
