@@ -45,10 +45,15 @@
                                 <div class="col table-dpph">
                                     <table>
                                         <tr>
-                                            <th>BIL</th>
+                                            <th>Nama Pemohon</th>
+                                            <th>Bukti Pembayaran Pemohon</th>
+                                            <th>Status Pendaftaran</th>
                                         </tr>
                                         <tr>
+                                            <td>AHMAD AIMAN BIN ADAM</td>
                                             <td><button onclick="displayImage()">Bukti Pembayaran Pemohon</button><img id="Sijil" style="display: none;"><script>function displayImage() {var image = document.getElementById("Sijil"); image.src = "ZAN-System/images/sijil.png";image.style.display = "block";}</script></td>
+                                            <td><img src="/ZAN-System/images/approve.png" onclick="showLulusPopup()" style="cursor: pointer;"><script>function showLulusPopup() {alert("Pendaftaran Berjaya");}</script>          <img src="/ZAN-System/images/reject.png" onclick="showBatalPopup()" style="cursor: pointer;"><script>function showBatalPopup() {alert("Pendaftaran Dibatalkan");}</script></td>
+                                             
                                     </table>
                                 </div>
                             </div>
