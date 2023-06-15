@@ -34,7 +34,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="content-body">
+                        <div class="content-body-staff">
                             <form action="/ZAN-System/Manage User Profile/Staff/staffProfileView.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
@@ -43,7 +43,7 @@
                                                 <td>ID Staff</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="text" name="satffID" placeholder="800712115151">
+                                                    <input type="text" name="satffID" placeholder="1024">
                                                 </td>
                                             </tr>
                                             <tr>

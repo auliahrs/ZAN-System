@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-md-12" style="width: 500px;justify-content: center;">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Request/Applicant/A_MaklumatPasangan.php" method="post">
+                            <form action="/ZAN-System/login/loginForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
                                         <table>
@@ -98,7 +98,7 @@
 
                                 <div class="row my-3 link-button-general">
                                     <div class="col-md-6">
-                                        <button type="button" onclick="window.location.href='/ZAN-System/login-form.php'">Kembali</button>
+                                        <button type="button" onclick="window.location.href='/ZAN-System/login/loginForm.php'">Kembali</button>
                                     </div>
                                     <div class="col-md-6">
                                         <button type="submit">Daftar</button>

@@ -7,7 +7,7 @@
             </div>
             <div class="col-md-10 my-auto">
                 <h5>Rassidi Bin Mohd</h5>
-                <span>ID: 800712115151</span>
+                <span>ID: 1024</span>
             </div>
         </div>
     </div>
