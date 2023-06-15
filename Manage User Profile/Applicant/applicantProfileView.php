@@ -103,7 +103,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>No. Telefon (Rumah) </td>
+                                                <td>No. Telefon (Pejabat) </td>
                                                 <td>:</td>
                                                 <td>
                                                 06-123456
