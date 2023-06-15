@@ -37,7 +37,7 @@
                         <div class="content-body-staff">
                             <div class="row">
                                 <div class="col table-dpp">
-                                    <form action="/ZAN-System/Manage Marriage Request/Staff/S_SenaraiPermohonanBerkahwin.php" method="get">
+                                    <form action="/ZAN-System/Manage Marriage Request/Staff/UpdateRegForm" method="get">
                                     </form>
                                 </div>
                             </div>
@@ -53,6 +53,7 @@
                                             <th>Catatan Akad Nikah</th>
                                             <th>Gambar Berukuran Passport</th>
                                             <th>Salinan Kad Pengenalan Saksi-Saksi Perkahwinan</th>
+                                            <th>Bukti Pembayaran</th>
                                         </tr>
                                         <tr>
                                             <td>1.</td>
@@ -63,6 +64,7 @@
                                             <td><div><a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Catatan Akad Nikah Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/KadPengenalan.JPG" download>Gambar Berukuran Passport Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/Saksi IC.PNG" download>Salinan Kad Pengenalan Saksi-Saksi Perkahwinan Pemohon</a></td>
+                                            <td><img src="/ZAN-System/images/moredetail.png" onclick="redirectToInterface()" style="cursor: pointer;"><script>function redirectToInterface() {window.location.href = "/ZAN-System/Paymentproof/Applicant/PaymentProofForm.php";}</script></td>
                                             </td>
                                         </tr>
                                         <tr>
@@ -70,10 +72,11 @@
                                             <td>7/6/2023</td>
                                             <td>MOHAMAD KHOLID BIN ATAN</td>
                                             <td><div><a class="custom-button" href="path/to/download/Slip_Permohonan_Perkahwinan.pdf" download>Slip Permohonan Perkahwinan Pemohon</a></td>
-                                            <td><div><a class="custom-button" href="path/to/download/Borang_Kebenaran_Berkahwinan.pdf" download>Borang Kebenaran Berkahwinan Pemohon</a></td>
+                                            <td><div><a class="custom-button" style="background-color: #800000; color: #FFFFFF;" href="path/to/download/Catata.pdf" >Borang Kebenaran Berkahwinan Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Catatan Akad Nikah Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/KadPengenalan.JPG" download>Gambar Berukuran Passport Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/Saksi IC.PNG" download>Salinan Kad Pengenalan Saksi-Saksi Perkahwinan Pemohon</a></td>
+                                            <td><div><img src="/ZAN-System/images/moredetail.png" onclick="showPopup()" style="cursor: pointer;"><script>function showPopup() {alert("Dokumen Tidak mencukupi");}</script></td>
                                             </td>
                                         </tr>
                                         <tr>
@@ -85,6 +88,7 @@
                                             <td><div><a class="custom-button" style="background-color: #800000; color: #FFFFFF;" href="path/to/download/Catata.pdf" >Catatan Akad Nikah Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/KadPengenalan.JPG" download>Gambar Berukuran Passport Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/Saksi IC.PNG" download>Salinan Kad Pengenalan Saksi-Saksi Perkahwinan Pemohon</a></td>
+                                            <td><div><img src="/ZAN-System/images/moredetail.png" onclick="showPopup()" style="cursor: pointer;"><script>function showPopup() {alert("Dokumen Tidak mencukupi");}</script></td>
                                             </td>
                                         </tr>
                                         <tr>
@@ -96,6 +100,7 @@
                                             <td><div><a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Catatan Akad Nikah Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/KadPengenalan.JPG" download>Gambar Berukuran Passport Pemohon</a></td>
                                             <td><div><a class="custom-button" style="background-color: #800000; color: #FFFFFF;" href="path/to/download/Saksi IC.PNG">Salinan Kad Pengenalan Saksi-Saksi Perkahwinan Pemohon</a></td>
+                                            <td><div><img src="/ZAN-System/images/moredetail.png" onclick="showPopup()" style="cursor: pointer;"><script>function showPopup() {alert("Dokumen Tidak mencukupi");}</script></td>
                                             </td>
                                         </tr>
                                         <tr>
@@ -104,9 +109,10 @@
                                             <td>ARIF BIN FON</td>
                                             <td><div><a class="custom-button" href="path/to/download/Slip_Permohonan_Perkahwinan.pdf" download>Slip Permohonan Perkahwinan Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/Borang_Kebenaran_Berkahwinan.pdf" download>Borang Kebenaran Berkahwinan Pemohon</a></td>
-                                            <td><div><a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Catatan Akad Nikah Pemohon</a></td>
+                                            <td><div><a class="custom-button" style="background-color: #800000; color: #FFFFFF;" href="path/to/download/Catata.pdf" >Catatan Akad Nikah Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/KadPengenalan.JPG" download>Gambar Berukuran Passport Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/Saksi IC.PNG" download>Salinan Kad Pengenalan Saksi-Saksi Perkahwinan Pemohon</a></td>
+                                            <td><div><img src="/ZAN-System/images/moredetail.png" onclick="showPopup()" style="cursor: pointer;"><script>function showPopup() {alert("Dokumen Tidak mencukupi");}</script></td>
                                             </td>
                                         </tr>
                                     </table>
