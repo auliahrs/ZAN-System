@@ -52,10 +52,10 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="content-body">
+                        <div class="content-body-staff">
                             <form action="/ZAN-System/ManageBookingSession/Applicant/bookSession.php" method="post">
                                 <div class="row my-3">
-                                    <div class="col table-dpp">
+                                    <div class="col table-dpph">
                                         <table>
 
                                             <div class="document">BORANG PERMOHONAN KONSULTASI</div>
@@ -137,7 +137,9 @@
                                                     </tr>
                                                     <tr>
                                                         <th><label for="aduan">Maklumat Aduan/Khidmat Nasihat:&nbsp;</label></th>
-                                                        <td><textarea name="aduan" id="aduan" cols="50" rows="5"></textarea></td>
+                                                        <td><textarea name="aduan" id="aduan" cols="50" rows="5">
+                                                             
+                                                        </textarea></td>
                                                     </tr>
                                                 </table>
                                                 <div class="row my-2">
@@ -145,19 +147,21 @@
                                                 <div class="container">
                                                         <a href="/ZAN-System/ManageBookingSession/Applicant/updateConsultantProfile.php">
                                                                 <button type="button" class="btn btn-primary">TERIMA</button></a></div></div>
-                                                <div class="col">
-                                                <div class="container">
-                                                        <a href="/ZAN-System/ManageConsultationApplication/Applicant/applicationForm.php">
-                                                                <button type="button" class="btn btn-primary">BUANG</button></a></div></div>
+                                                                <center><button onclick="showConfirmation()">Delete</button></center>
+
+                                                                <script>
+                                                                    function showConfirmation() {
+                                                                        if (confirm("Are you sure you want to delete?")) {
+                                                                            // Code to perform delete operation
+                                                                            // You can call your delete function or perform any other desired action here
+                                                                            alert("Delete operation performed");
+                                                                        } else {
+                                                                            // Code to handle cancel or dismissal of the popup
+                                                                            alert("Delete operation canceled");
+                                                                        }
+                                                                    }
+                                                                </script>
                                             </form>
-
-
-
-                                                
-                                                
-
- 
-
                                     </div>
                                 </div>
                             </form>

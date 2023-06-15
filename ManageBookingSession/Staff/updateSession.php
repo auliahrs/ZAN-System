@@ -20,13 +20,12 @@
             width: 1000px;
             margin: 20px auto;
     }
-    .center{
-        margin-left: auto;
-        margin-right: auto;
+    h{
+        border: 1px solid black;
     }
     
-    </style>
 
+    </style>
 </head>
 
 <body>
@@ -46,7 +45,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Aduan/Khidmat Nasihat > Sesi Konsultasi</h3>
+                            <h3>Aduan/Khidmat Nasihat > Borang Aduan/Khidmat Nasihat</h3>
                         </div>
                     </div>
                 </div>
@@ -54,60 +53,87 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body-staff">
-                            <form action="/ZAN-System/ManageBookingSession/Applicant/bookSession.php" method="post">
+                            <form action="/ZAN-System/ManageBookingSession/Applicant/applicationForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpph">
                                         <table>
-                                        <div class="document">BIODATA PENASIHAT</div>
-                                                <table>
-                                                    
+
+                                            <div class="document">BORANG PERMOHONAN KONSULTASI</div>
+                                            <table>
+                                                <thead>
                                                     <tr>
-                                                        <table class="center">
-                                                            <tr>
-                                                                <th>INFO PENASIHAT&nbsp;&nbsp;&nbsp;</th>
-                                                                <th>TEMPAHAN SESI</th>
-                                                            </tr>
-                                                            <tr>
-                                                                
-                                                                <td>Staff ID: 21075</td>
-                                                                <td><input type="radio" name="datetime" datetime="2023-05-09T08:00">
-                                                                <label for="datetime">9 MAY 2023, JAM 0800 - JAM1000</label><br>
-                                                                <input type="radio" name="datetime" datetime="2023-05-09T014:00">
-                                                                <label for="datetime">9 MAY 2023, JAM 1400 - JAM1600</label><br>
-                                                                <input type="radio" name="datetime" datetime="2023-05-10T08:00">
-                                                                <label for="datetime">10 MAY 2023, JAM 0800 - JAM1000</label><br>
-                                                                <input type="radio" name="datetime" datetime="2023-05-10T14:00">
-                                                                <label for="datetime">10 MAY 2023, JAM 1400 - JAM1600</label><br>
-                                                                <input type="radio" name="datetime" datetime="2023-05-11T08:00">
-                                                                <label for="datetime">9 MAY 2023, JAM 0800 - JAM1000</label><br>
-                                                                <button type="button" onclick="addInput()">Add More</button>
-                                                                <br><br>
-                                                                <input type="submit" value="Submit"> 
-                                                                </td>
-                                                                <script>
-                                                                    function addInput() {
-                                                                        var inputContainer = document.getElementById('inputContainer');
-                                                                        var newInput = document.createElement('input');
-                                                                        newInput.type = 'text';
-                                                                        newInput.name = 'inputField[]';
-                                                                        newInput.placeholder = 'Input Field ' + (inputContainer.children.length + 1);
-                                                                        inputContainer.appendChild(newInput);
-                                                                    }
-                                                                </script>
-                                                            </tr>
-                                                        </table>
-                                                        
-                                                        <div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/bookSession.php">
-                                                                <button type="button" class="btn btn-primary">KEMASKINI</button></a>
-                                                                <div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/bookSession.php">
-                                                                <button type="button" class="btn btn-primary">BATALKAN</button></a>
-
-                                                <script>
-
-                                            </form>
+                                                        <th>INFO PEMOHON</th>
+                                                        <th></th>
+                                                        <th>INFO PASANGAN</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td>No. IC</td>
+                                                    <td>990125060617</td>
+                                                    <td>No. IC</td>
+                                                    <td>990611102390</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nama Pemohon</td>
+                                                    <td>AHMAD AIMAN BIN ADAM</td>
+                                                    <td>Nama</td>
+                                                    <td>FATIMAH ZAHRA BINTI MANAF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tarikh Lahir</td>
+                                                    <td>25/01/1999</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Umur</td>
+                                                    <td>24 Years Old</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bangsa</td>
+                                                    <td>Malay</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alamat</td>
+                                                    <td>No 4, Jalan Harmoni, Taman Harmoni, 26600 Pekan Pahang</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>No. Hp(Telefon Bimbit)</td>
+                                                    <td>0196973197</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>No. Hp(Telefon Rumah)</td>
+                                                    <td>03-22665964</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Peringkat Pendidikan</td>
+                                                    <td>DIPLOMA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sektor Pekerjaan</td>
+                                                    <td>KERAJAAN</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pekerjaan</td>
+                                                    <td>GURU</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alamat Pejabat</td>
+                                                    <td>SMK PEKAN</td>
+                                                </tr>
+    
+                                            </table>
+                                            <br>
+                                            <hr>
+                                            <br>
                                             
+                                            <form action="/ZAN-System/ManageBookingSession/Staff/updateSession.php" method="post">
+                                                <label for="session">SESI PERTAMA (9 MAY 2023, JAM 0800 - 1000)</label>
+                                                <textarea id="session" name="session" rows="4" cols="50"></textarea>
+                                            </form>
+                                            <div class="col">
+                                                <div class="container">
+                                                        <a href="/ZAN-System/ManageBookingSession/Staff/updateConsultantProfile.php">
+                                                                <button type="button" class="btn btn-primary">KEMASKINI</button></a></div></div>
 
  
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
-    <title>Borang Aduan/Khidmat Nasihat</title>
+    <title>updateBookSession</title>
 
     <style>
     .document{
@@ -74,7 +74,7 @@
                                                                 <label for="datetime">9 MAY 2023, JAM 0800 - JAM1000</label><br>
                                                                 <input type="radio" name="datetime" datetime="2023-05-09T014:00">
                                                                 <label for="datetime">9 MAY 2023, JAM 1400 - JAM1600</label><br>
-                                                                <input type="radio" name="datetime" datetime="2023-05-10T08:00">
+                                                                <input type="radio" name="datetime" datetime="2023-05-10T08:00" checked>
                                                                 <label for="datetime">10 MAY 2023, JAM 0800 - JAM1000</label><br>
                                                                 <input type="radio" name="datetime" datetime="2023-05-10T14:00">
                                                                 <label for="datetime">10 MAY 2023, JAM 1400 - JAM1600</label><br>
@@ -84,12 +84,20 @@
                                                             </tr>
                                                         </table>
                                                         
-                                                        <td><div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/bookSession.php">
-                                                                <button type="button" class="btn btn-primary">KEMASKINI</button></a></td>
-                                                                <td><div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/bookSession.php">
-                                                                <button type="button" class="btn btn-primary">BATALKAN</button></a></td>
+                                                        <div class="row my-2">
+                                                        <div class="col">
+                                                        <div class="container">
+                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/viewConsultantProfile.php">
+                                                                <button type="button" class="btn btn-primary">KEMASKINI</button></a>
+                                                                </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                <div class="container">
+                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/cancelBookSession.php">
+                                                                <button type="button" class="btn btn-primary">BATALKAN</button></a>
+                                                                </div>
+                                                                </div>
+                                                        </div>
 
                                                 <script>
 
