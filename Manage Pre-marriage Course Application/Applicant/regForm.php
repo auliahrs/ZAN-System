@@ -122,12 +122,13 @@
 
                                 <div class="row my-3 link-button-general">
                                     <div class="col-md-6">
-                                        <a href="#">
+                                        <a href="../../Manage Pre-marriage Course Organization/Applicant/viewOrganizationList.php">
                                             < Kembali</a>
                                     </div>
                                     <div class="col-md-6">
                                         <button name="simpan" type="submit" value="simpan">Simpan</button>
-                                        <button onclick="paymentForm.php" name="upload" type="submit" value="upload">Muat Naik Bukti Pembayaran</button>
+                                        <!-- Kat path jadi lain ?? hmm :( -->
+                                        <button onclick="./paymentForm.php" name="upload" type="submit" value="upload">Muat Naik Bukti Pembayaran</button>
                                     </div>
                                 </div>
                             </form>

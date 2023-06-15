@@ -43,6 +43,9 @@
                                                 <td>
                                                     <select name="menuCarian" id="menuCarian">
                                                         <option value="">PILIH CARIAN</option>
+                                                        <option value="tarikh">Tarikh Permohonan</option>
+                                                        <option value="namapemohon">Nama Pemohon</option>
+                                                        <option value="namapemohon">No Kad Pengenalan</option>
                                                     </select>
                                                 </td>
                                                 <td><input type="text" name="carian"></td>

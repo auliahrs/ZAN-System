@@ -66,7 +66,11 @@
                                                 <td>:</td>
                                                 <td>
                                                     <select name="tahun" id="tahun">
-                                                        <option value="">TEST</option>
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="20">2020</option>
+                                                        <option value="21">2021</option>
+                                                        <option value="22">2022</option>
+                                                        <option value="23">2023</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -75,7 +79,7 @@
                                                 <td>:</td>
                                                 <td>
                                                     <select name="siriKursus" id="siriKursus">
-                                                        <option value="">TEST</option>
+                                                        <option value="">-SILA PILIH-</option>
                                                     </select>
                                                 </td>
                                                 <td><button type="submit" name="senaraiPeserta" value="senaraiPeserta">SENARAI PESERTA</button></td>
