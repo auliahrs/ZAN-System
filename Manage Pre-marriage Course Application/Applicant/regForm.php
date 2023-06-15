@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
-    <title>Maklumat Pemohon</title>
+    <title>Daftar Pra Perkahwinan</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Permohonan Berkahwin > Maklumat Pemohon</h3>
+                            <h3>Pra Perkahwinan > Daftar Pra Perkahwinan</h3>
                         </div>
                     </div>
                 </div>
@@ -35,14 +35,21 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Request/Applicant/A_MaklumatPemohon.php" method="post">
+                            <form action="/ZAN-System/Manage Pre-marriage Course Application/Applicant/A_DaftarPraPerkahwinan.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
                                             <tr>
-                                                <td>No. Kad Pengenalan </td>
+                                                <td>Anjuran </td>
                                                 <td>:</td>
-                                                <td>990125060617</td>
+                                                <td>PEJABAT AGAMA ISLAM BENTONG</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tempat dan Tarikh </td>
+                                                <td>:</td>
+                                                <td>MASJID SULTAN HAJI AHMAD SHAH
+                                                    BENTONG, 28700 BENTONG, PAHANG
+                                                    (29 - 30 APRIL 2023)</td>
                                             </tr>
                                             <tr>
                                                 <td>Nama Pemohon </td>
@@ -50,49 +57,15 @@
                                                 <td>AHMAD AIMAN BIN ADAM</td>
                                             </tr>
                                             <tr>
-                                                <td>Tarikh Lahir </td>
+                                                <td>No. Kad Pengenalan </td>
                                                 <td>:</td>
-                                                <td>25 April 2001</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Umur </td>
-                                                <td>:</td>
-                                                <td>22 Tahun</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jantina </td>
-                                                <td>:</td>
-                                                <td>LELAKI</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Bangsa </td>
-                                                <td>:</td>
-                                                <td>Melayu</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Kewarganegaraan </td>
-                                                <td>:</td>
-                                                <td>Malaysia</td>
+                                                <td>999999-99-9999</td>
                                             </tr>
                                             <tr>
                                                 <td>Alamat </td>
                                                 <td>:</td>
-                                                <td>No 4, Jalan Harmoni,Taman Harmoni, 26600 Pekan Pahang</td>
-                                            </tr>
-                                            <tr>
-                                                <td>No. Telefon (Bimbit) </td>
-                                                <td>:</td>
-                                                <td>0132394855</td>
-                                            </tr>
-                                            <tr>
-                                                <td>No. Telefon (Rumah) </td>
-                                                <td>:</td>
-                                                <td>03 2230123</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Taraf Pendidikan </td>
-                                                <td>:</td>
-                                                <td>DIPLOMA</td>
+                                                <td>No 4, Jalan Harmoni,Taman Harmoni, 26600
+                                                    Pekan Pahang</td>
                                             </tr>
                                             <tr>
                                                 <td>Sektor Kerajaan </td>
@@ -100,29 +73,48 @@
                                                 <td>KERAJAAN</td>
                                             </tr>
                                             <tr>
-                                                <td>Pekerjaan/Jawatan </td>
+                                                <td>Tahap Pendidikan </td>
                                                 <td>:</td>
-                                                <td>Guru</td>
+                                                <td>DIPLOMA</td>
                                             </tr>
                                             <tr>
-                                                <td>Alamat Tempat Kerja </td>
+                                                <td>Jantina </td>
                                                 <td>:</td>
-                                                <td>SMK Pekan</td>
+                                                <td>LELAKI</td>
                                             </tr>
                                             <tr>
-                                                <td>Status Kahwin </td>
+                                                <td>No. Telefon </td>
                                                 <td>:</td>
-                                                <td>Bujang</td>
+                                                <td>013-232123</td>
                                             </tr>
                                             <tr>
-                                                <td>Status Saudara Baru </td>
+                                                <td>Cadangan Tarikh Akad Nikah </td>
                                                 <td>:</td>
-                                                <td>Tidak</td>
+                                                <td><input type="date" name="tarikhAkad"></td>
                                             </tr>
                                             <tr>
-                                                <td>No. Sijil Kursus Pra Perkahwinan </td>
+                                                <td>Kebenaran Jabatan Agama Islam Negeri </td>
                                                 <td>:</td>
-                                                <td>MY2344PHG897</td>
+                                                <td>
+                                                    <select name="kebenaranJAIN" id="kebenaranJAIN">
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="johor">JOHOR</option>
+                                                        <option value="kedah">KEDAH</option>
+                                                        <option value="kelantan">KELANTAN</option>
+                                                        <option value="melaka">MELAKA</option>
+                                                        <option value="negerisembilan">NEGERI SEMBILAN</option>
+                                                        <option value="pahang">PAHANG</option>
+                                                        <option value="perlis">PERLIS</option>
+                                                        <option value="pinang">PILAU PINANG</option>
+                                                        <option value="sabah">SABAH</option>
+                                                        <option value="sarawak">SARAWAK</option>
+                                                        <option value="selangor">SELANGOR</option>
+                                                        <option value="terengganu">TERENGGANU</option>
+                                                        <option value="kl">WILAYAH PERSEKUTUAN KUALA LUMPUR</option>
+                                                        <option value="labuan">WILAYAH PERSEKUTUAN LABUAN</option>
+                                                        <option value="putrajaya">WILAYAH PERSEKUTUAN PUTRAJAYA</option>
+                                                    </select>
+                                                </td>
                                             </tr>
                                         </table>
                                     </div>
@@ -130,11 +122,13 @@
 
                                 <div class="row my-3 link-button-general">
                                     <div class="col-md-6">
-
+                                        <a href="../../Manage Pre-marriage Course Organization/Applicant/viewOrganizationList.php">
+                                            < Kembali</a>
                                     </div>
                                     <div class="col-md-6">
-                                        <button onclick="window.print()">Print</button>
                                         <button name="simpan" type="submit" value="simpan">Simpan</button>
+                                        <!-- Kat path jadi lain ?? hmm :( -->
+                                        <button onclick="./paymentForm.php" name="upload" type="submit" value="upload">Muat Naik Bukti Pembayaran</button>
                                     </div>
                                 </div>
                             </form>
