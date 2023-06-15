@@ -150,9 +150,14 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                
+
                                             </tr>
-                                            <td><button name="simpan" type="submit" value="simpan">SIMPAN</button></td>
+                                            <tr>
+                                                <div>
+                                                    <td><button name="kembali" type="submit" value="kembali" style="margin-top: 20px;">KEMBALI</button></td>
+                                                    <td><button name="simpan" type="submit" value="simpan" style="margin-top: 20px;">SIMPAN</button></td>
+                                                </div>
+                                            </tr>
                                         </table>
                                     </form>
                                 </div>
