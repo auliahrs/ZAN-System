@@ -106,7 +106,7 @@ function goToOldInterface() {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Pendaftaran Perkahwinan > Daftar Perkahwinan > </h3>
+                            <h3>Pendaftaran Perkahwinan > Daftar Perkahwinan </h3>
                         </div>
                     </div>
                 </div>
