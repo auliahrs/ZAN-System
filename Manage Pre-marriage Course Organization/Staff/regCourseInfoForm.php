@@ -76,8 +76,13 @@
                                                 <td><span style="color:red">*</span>Tempat</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <select name="tempatKursus" id="tempatKursus">
-                                                        <option value="">TEST</option>
+                                                    <select name="tempat" id="tempat">
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="tempat1">DEWAN AS SAKINAH</option>
+                                                        <option value="tempat2">DEWAN SEMINAR MASJID TEPIAN PUTRA</option>
+                                                        <option value="tempat3">DEWAN SEMINAR BANDAR PEKAN</option>
+                                                        <option value="tempat4">DEWAN SEMINAR KUANTAN</option>
+                                                        <option value="daerah5">DEWAN SEMINAR TEMERLOH</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -128,6 +133,8 @@
                                                 <td>Catatan</td>
                                                 <td>:</td>
                                                 <td><input type="text" name="catatan"></td>
+                                            </tr>
+                                            <tr>
                                                 <td><span style="color:red">*</span>Terbit Umum</td>
                                                 <td>:</td>
                                                 <td>
@@ -137,7 +144,12 @@
                                                         <option value="tidak">TIDAK</option>
                                                     </select>
                                                 </td>
-                                                <td><button type="submit" name="simpan" value="simpan">SIMPAN</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" name="simpan" value="simpan">KEMBALI</button>
+                                                    <button type="submit" name="simpan" value="simpan">KEMBALI</button>
+                                                </td>
                                             </tr>
                                         </table>
                                     </form>

@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
     <title>TITLE GOES HERE</title>
 </head>
-
+<style>
+    
+  
+</style>
 <body>
     <div class="container-fluid">
         <!-- HEADER BAR -->
@@ -43,28 +46,28 @@
                                                 <td>ID Staff</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="text" name="satffID">
+                                                800712115151
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Nama Staff </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_namaPekerja">
+                                                Rassidi Bin Mohd
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>No. Telefon  </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_noTelPekerja">
+                                              011-11223434
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Emel </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_emelPekerja">
+                                             rassidi@jaip.com
                                                 </td>
                                             </tr>
                                             

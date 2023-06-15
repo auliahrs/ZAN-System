@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage User Profile/Staff/staffEditForm.php" method="post">
+                            <form action="/ZAN-System/Manage User Profile/Staff/staffProfileView.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
                                         <table>
@@ -43,28 +43,28 @@
                                                 <td>ID Staff</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="text" name="satffID">
+                                                    <input type="text" name="satffID" placeholder="800712115151">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Nama Staff </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_namaPekerja">
+                                                <input type="text" name="S_namaPekerja" placeholder="Rassidi Bin Mohd">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>No. Telefon  </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_noTelPekerja">
+                                                <input type="text" name="S_noTelPekerja" placeholder="011-11223434">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Emel </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_emelPekerja">
+                                                <input type="text" name="S_emelPekerja" placeholder="rassidi@jaip.com">
                                                 </td>
                                             </tr>
                                             
@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         
-                                        <button name="simpan" type="submit" value="simpan">Kemaskini</button>
+                                        <button name="simpan" type="submit" value="simpan">Simpan</button>
                                     </div>
                                 </div>
                             </form>

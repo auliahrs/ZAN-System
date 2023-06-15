@@ -37,23 +37,7 @@
                         <div class="content-body-staff">
                             <div class="row">
                                 <div class="col table-dpp">
-                                    <form action="/ZAN-System/Manage Marriage Request/Staff/viewApplicationList.php" method="get">
-                                        <table>
-                                            <tr>
-                                                <td>
-                                                    <select name="menuCarian" id="menuCarian">
-                                                        <option value="">PILIH CARIAN</option>
-                                                        <option value="tarikh">Tarikh Permohonan</option>
-                                                        <option value="namapemohon">Nama Pemohon</option>
-                                                        <option value="namapemohon">No Kad Pengenalan</option>
-                                                    </select>
-                                                </td>
-                                                <td><input type="text" name="carian"></td>
-                                                <form action="">
-                                                    <td><button type="submit" name="search" value="search" style="border: none; background-color: #D9D9D9"><img src="/ZAN-System/images/search.png" alt="Search icon" ></button></td>
-                                                </form>
-                                            </tr>
-                                        </table>
+                                    <form action="/ZAN-System/Manage Marriage Request/Staff/ViewProofForm" method="get">
                                     </form>
                                 </div>
                             </div>
@@ -61,21 +45,15 @@
                                 <div class="col table-dpph">
                                     <table>
                                         <tr>
-                                            <th>BIL</th>
-                                            <th>Tarikh Permohonan</th>
-                                            <th>No. Permohonan</th>
                                             <th>Nama Pemohon</th>
-                                            <th>No. KP</th>
-                                            <th>Pengesahan</th>
+                                            <th>Bukti Pembayaran Pemohon</th>
+                                            <th>Status Pendaftaran</th>
                                         </tr>
                                         <tr>
-                                            <td>1.</td>
-                                            <td>13/11/2022</td>
-                                            <td>KP1311BTG03</td>
                                             <td>AHMAD AIMAN BIN ADAM</td>
-                                            <td>990125060617</td>
-                                            <td><img src="../../images/moredetail.png" width="30px" height="auto"><img src="../../images/approve.png" width="53px" height="auto"><img src="../../images/reject.png" width="40px" height="auto"></td>
-                                        </tr>
+                                            <td><button onclick="displayImage()">Bukti Pembayaran Pemohon</button><img id="Receipt" style="display: none;"><script>function displayImage() {var image = document.getElementById("Receipt"); image.src = "/ZAN-System/images/Receipt.jpg";image.style.display = "block";}</script></td>
+                                            <td><img src="/ZAN-System/images/approve.png" onclick="showLulusPopup()" style="cursor: pointer;"><script>function showLulusPopup() {alert("Pendaftaran Berjaya");}</script>          <img src="/ZAN-System/images/reject.png" onclick="showBatalPopup()" style="cursor: pointer;"><script>function showBatalPopup() {alert("Pendaftaran Dibatalkan");}</script></td>
+                                             
                                     </table>
                                 </div>
                             </div>

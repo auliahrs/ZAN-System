@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Kursus Pra Perkahwinan > Maklumat Peserta > Kehadiran</h3>
+                            <h3>Kursus Pra Perkahwinan > Maklumat Peserta > Kelulusan</h3>
                         </div>
                     </div>
                 </div>
@@ -38,14 +38,26 @@
                             <div class="row my-3">
                                 <div class="col-md-12 table-dpp">
                                     <p>(<span style="color:red">*</span>)<em> adalah wajib diisi</em></p>
-                                    <form action="/ZAN-System/Manage Pre-marriage Course Application/Staff/S_MaklumatPesertaKehadiran.php" method="post">
+                                    <form action="/ZAN-System/Manage Pre-marriage Course Application/Staff/S_MaklumatPesertaKelulusan.php" method="post">
                                         <table>
                                             <tr>
                                                 <td><span style="color:red">*</span>Anjuran</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <select name="anjuran" id="anjuran">
-                                                        <option value="">TEST</option>
+                                                    <select name="paid" id="paid">
+                                                        <option value="">Pilih Anjuran</option>
+                                                        <option value="paid1">JABATAN AGAMA ISLAM NEGERI PAHANG</option>
+                                                        <option value="paid2">PEJABAT AGAMA ISLAM BENTONG</option>
+                                                        <option value="paid3">PEJABAT AGAMA ISLAM BERA</option>
+                                                        <option value="paid4">PEJABAT AGAMA ISLAM CAMERON HIGHLANDS</option>
+                                                        <option value="paid5">PEJABAT AGAMA ISLAM KUANTAN</option>
+                                                        <option value="paid6">PEJABAT AGAMA ISLAM KUANTAN BARAT</option>
+                                                        <option value="paid7">PEJABAT AGAMA ISLAM LIPIS</option>
+                                                        <option value="paid9">PEJABAT AGAMA ISLAM MARAN</option>
+                                                        <option value="paid10">PEJABAT AGAMA ISLAM PEKAN</option>
+                                                        <option value="paid11">PEJABAT AGAMA ISLAM RAUB</option>
+                                                        <option value="paid12">PEJABAT AGAMA ISLAM ROMPIN</option>
+                                                        <option value="paid13">PEJABAT AGAMA ISLAM TEMERLOH</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -54,7 +66,11 @@
                                                 <td>:</td>
                                                 <td>
                                                     <select name="tahun" id="tahun">
-                                                        <option value="">TEST</option>
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="20">2020</option>
+                                                        <option value="21">2021</option>
+                                                        <option value="22">2022</option>
+                                                        <option value="23">2023</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -63,7 +79,7 @@
                                                 <td>:</td>
                                                 <td>
                                                     <select name="siriKursus" id="siriKursus">
-                                                        <option value="">TEST</option>
+                                                        <option value="">-SILA PILIH-</option>
                                                     </select>
                                                 </td>
                                                 <td><button type="submit" name="senaraiPeserta" value="senaraiPeserta">SENARAI PESERTA</button></td>
@@ -73,7 +89,7 @@
                                 </div>
                             </div>
                             <hr class="pt-1" style="color:black">
-                            <form action="/ZAN-System/Manage Pre-marriage Course Application/Staff/S_MaklumatPesertaKehadiran.php" method="get">
+                            <form action="/ZAN-System/Manage Pre-marriage Course Application/Staff/S_MaklumatPesertaKelulusan.php" method="get">
                                 <div class="row my-3">
                                     <div class="col-md-12">
                                         <div class="row">
@@ -98,15 +114,7 @@
                                                         <td>Tempat Kursus</td>
                                                         <td>:</td>
                                                         <td>MASJID SULTAN HAJI AHMAD SHAH</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Kehadiran</td>
-                                                        <td>:</td>
-                                                        <td>
-                                                            <select name="kehadiran" id="kehadiran">
-                                                                <option value="">TEST</option>
-                                                            </select>
-                                                        </td>
+                                                        <td><button type="submit" name="pengesahanLulus" value="pengesahanLulus">Pengesahan Lulus</button></td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -120,17 +128,15 @@
                                                         <th>No. KP</th>
                                                         <th>Jantina</th>
                                                         <th>Kehadiran</th>
-                                                        <th>Catatan</th>
-                                                        <th>Pilih</th>
+                                                        <th>Kelulusan</th>
                                                     </tr>
                                                     <tr>
                                                         <td>1.</td>
                                                         <td>AHMAD AIMAN BIN ADAM</td>
                                                         <td>990125060617</td>
                                                         <td>LELAKI</td>
-                                                        <td></td>
-                                                        <td><textarea name="value" rows="4" cols="50"></textarea></td>
-                                                        <td><input type="checkbox" name="choose"></td>
+                                                        <td>YA</td>
+                                                        <td>LULUS</td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -147,7 +153,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <!-- THE CONTENT ENDS HERE -->
         </div>

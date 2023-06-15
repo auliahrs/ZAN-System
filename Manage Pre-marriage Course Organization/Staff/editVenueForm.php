@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
-    <title>Daftar Tempat Kursus</title>
+    <title>Kemaskini Tempat Kursus</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Kursus Pra Perkahwinan > Daftar Tempat Kursus</h3>
+                            <h3>Kursus Pra Perkahwinan > Daftar Tempat Kursus > Kemaskini</h3>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,12 @@
                                                 <td><span style="color:red">*</span>No. Telefon</td>
                                                 <td>:</td>
                                                 <td><input type="text" name="noTelefonKursus" value="019-5638514"></td>
-                                                <td><button name="simpan" type="submit" value="simpan">SIMPAN</button></td>
+                                            </tr>
+                                            <tr>
+                                                <div>
+                                                    <td><button name="kembali" type="submit" value="kembali" style="margin-top: 20px;">KEMBALI</button></td>
+                                                    <td><button name="simpan" type="submit" value="simpan" style="margin-top: 20px;">SIMPAN</button></td>
+                                                </div>
                                             </tr>
                                         </table>
                                     </form>

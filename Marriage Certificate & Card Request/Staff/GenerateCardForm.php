@@ -8,6 +8,69 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
     <title>Senarai Permohonan Berkahwin</title>
+
+    <style>
+    
+    .Card{
+        background-color: #1A2F77;
+            color: #FFFFFF;
+            height: 40px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 40px;
+            width: 1000px;
+            margin: 20px auto;
+    }
+     
+    .spinner {
+      display: none;
+      width: 40px;
+      height: 40px;
+      margin: 20px auto;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .image-container {
+      display: none;
+      text-align: center;
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      max-height: 300px;
+    }
+
+    .button-container{
+      position: relative;
+    }
+
+    .button {
+    background-color: #1A2F77;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  
+  .button-submit {
+    right: 10px;
+  }
+    </style>
 </head>
 
 <body>
@@ -37,46 +100,40 @@
                         <div class="content-body-staff">
                             <div class="row">
                                 <div class="col table-dpp">
-                                    <form action="/ZAN-System/Manage Marriage Request/Staff/viewApplicationList.php" method="get">
-                                        <table>
-                                            <tr>
-                                                <td>
-                                                    <select name="menuCarian" id="menuCarian">
-                                                        <option value="">PILIH CARIAN</option>
-                                                        <option value="tarikh">Tarikh Permohonan</option>
-                                                        <option value="namapemohon">Nama Pemohon</option>
-                                                        <option value="namapemohon">No Kad Pengenalan</option>
-                                                    </select>
-                                                </td>
-                                                <td><input type="text" name="carian"></td>
-                                                <form action="">
-                                                    <td><button type="submit" name="search" value="search" style="border: none; background-color: #D9D9D9"><img src="/ZAN-System/images/search.png" alt="Search icon" ></button></td>
-                                                </form>
-                                            </tr>
-                                        </table>
+                                    <form action="/ZAN-System/Manage Marriage Request/Staff/GenerateCardForm" method="get">
                                     </form>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col table-dpph">
+                                <div class="Card">Jana Kad Perakuan Nikah Pemohon</div>
                                     <table>
                                         <tr>
-                                            <th>BIL</th>
-                                            <th>Tarikh Permohonan</th>
-                                            <th>No. Permohonan</th>
                                             <th>Nama Pemohon</th>
-                                            <th>No. KP</th>
-                                            <th>Pengesahan</th>
+                                            <th>Kad Perakuan Nikah Bagi Pemohon</th>
                                         </tr>
                                         <tr>
-                                            <td>1.</td>
-                                            <td>13/11/2022</td>
-                                            <td>KP1311BTG03</td>
                                             <td>AHMAD AIMAN BIN ADAM</td>
-                                            <td>990125060617</td>
-                                            <td><img src="../../images/moredetail.png" width="30px" height="auto"><img src="../../images/approve.png" width="53px" height="auto"><img src="../../images/reject.png" width="40px" height="auto"></td>
-                                        </tr>
+                                            <td> <button onclick="showLoadingAndPopup()">Jana Kad Perakuan Nikah bagi Pemohon</button><div id="spinner" class="spinner"></div><script>function showLoadingAndPopup() {var spinner = document.getElementById("spinner");spinner.style.display = "block";setTimeout(function() {spinner.style.display = "none";alert("Penjanaan Kad Perakuan Nikah akan diproses.");}, 3000); }</script></td>
+
                                     </table>
+                                    <br>
+<br>
+<br>
+<div class="button-container">
+<a class="button button-back" href="#" onclick="goToOldInterface()">Kembali</a>
+    <a class="button button-submit" href="#" onclick="goToNewInterface()">Seterusnya</a>
+</div>
+
+<script>
+function goToOldInterface() {
+      window.location.href = "MarriageTypeForm.php";
+}
+    function goToNewInterface() {
+      window.location.href = "PaymentProofForm.php";
+    }
+    
+  </script>
                                 </div>
                             </div>
                         </div>

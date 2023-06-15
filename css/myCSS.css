@@ -23,6 +23,7 @@ body {
     margin: 10px 5px;
     text-align: center;
     padding: 10px 5px;
+    position: relative;
 }
 
 .menu-box a:link, .menu-box a:visited{

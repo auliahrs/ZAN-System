@@ -43,10 +43,13 @@
                                                 <td>
                                                     <select name="menuCarian" id="menuCarian">
                                                         <option value="">PILIH CARIAN</option>
+                                                        <option value="tarikh">Tarikh Permohonan</option>
+                                                        <option value="namapemohon">Nama Pemohon</option>
+                                                        <option value="namapemohon">No Kad Pengenalan</option>
                                                     </select>
                                                 </td>
                                                 <td><input type="text" name="carian"></td>
-                                                <td><button type="submit" name="search" value="search"><img src="/ZAN-System/images/search.png" alt="Search icon"></button></td>
+                                                <td><button type="submit" name="search" value="search" style="border: none; background-color: #D9D9D9"><img src="/ZAN-System/images/search.png" alt="Search icon"></button></td>
                                             </tr>
                                         </table>
                                     </form>
