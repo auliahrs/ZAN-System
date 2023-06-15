@@ -37,8 +37,8 @@
     <!-- Pendaftaran Perkahwinan box -->
     <div class="menu-box">
         <h5>Pendaftaran Perkahwinan</h5>
-        <a href="#">Senarai Pendaftaran</a>
-        <a href="#">Sijil & Kad Perakuan Nikah</a>
+        <a href="/ZAN-System/Manage Marriage Registration/Staff/UpdateRegForm.php">Senarai Pendaftaran</a>
+        <a href="/ZAN-System/Marriage Certificate & Card Request/Staff/GenerateCertForm.php">Sijil & Kad Perakuan Nikah</a>
     </div>
     <!-- Insentif Perkahwinan box -->
     <div class="menu-box">
