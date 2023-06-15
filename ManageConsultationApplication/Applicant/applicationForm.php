@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
-    <title>Borang Aduan/Khidmat Nasihat</title>
+    <title>applicationForm</title>
 
     <style>
     .document{
@@ -142,23 +142,23 @@
                                                         <?php
                                                         // Assuming you have already established a connection to the database
                                                         
-                                                        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                                                        /*if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                           // Retrieve the form data
                                                           
-                                                          $message = $_POST['butiranKonsultasi'];
+                                                          $K_butiranKonsultasi = $_POST['K_butiranKonsultasi'];
                                                         
                                                           // Perform some basic validation
-                                                          if (empty($message)) {
+                                                          if (empty($K_butiranKonsultasi)) {
                                                             echo "Please fill in all fields.";
                                                             exit;
                                                           }
                                                         
                                                           // Prepare the SQL statement
-                                                          $sql = "INSERT INTO permohonan_konsultasi (butiranKonsultasi) VALUES (?, ?, ?)";
+                                                          $sql = "INSERT INTO permohonan_konsultasi (K_butiranKonsultasi) VALUES (?)";
                                                           $stmt = $conn->prepare($sql);
                                                         
                                                           // Bind the parameters and execute the statement
-                                                          $stmt->bind_param("sss", $butiranKonsultasi);
+                                                          $stmt->bind_param("sss", $K_butiranKonsultasi);
                                                           $stmt->execute();
                                                         
                                                           // Check if the data was successfully inserted
@@ -171,16 +171,24 @@
                                                           // Close the statement and database connection
                                                           $stmt->close();
                                                           $conn->close();
-                                                        }
+                                                        }*/
                                                         ?>
                                                         
           
-                                                        ?> 
+                                                        
 
                                                     </tr>
                                                 </table>
-                                                <button type="button1" value="Submit">TAMBAH</button>
-                                                <button type="button2" value="Submit">LIHAT</button>
+                                                <div class="row my-2">
+                                                <div class="col">
+                                                <div class="container">
+                                                        <a href="/ZAN-System/ManageConsultationApplication/Applicant/applicationForm.php">
+                                                                <button type="button" class="btn btn-primary">TAMBAH</button></a></div></div>
+                                                <div class="col">
+                                                <div class="container">
+                                                        <a href="/ZAN-System/ManageConsultationApplication/Applicant/viewForm.php">
+                                                                <button type="button" class="btn btn-primary">LIHAT</button></a></div></div>
+                                                 
                                             </form>
 
 

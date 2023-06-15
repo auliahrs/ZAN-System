@@ -49,13 +49,13 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/ManageConsultationApplication/Applicant/applicationForm.php" method="post">
+                            <form action="/ZAN-System/ManageConsultationApplication/Applicant/deleteForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
                                         <div class="document">BORANG PERMOHONAN KONSULTASI</div>
                                         <center><p><b>INFO ADUAN/ KHIDMAT NASIHAT</b></p></center>
-                                            <form action="/ZAN-System/ManageBookingSession/Applicant/bookSession.php" method="post">
+                                            <form action="/ZAN-System/ManageConsultationSession/Applicant/deleteForm.php" method="post">
                                                 <table>
                                                     <tr>
                                                         <th><label for="aduan">Aduan/Khidmat Nasihat:&nbsp;</label></th>
@@ -66,12 +66,23 @@
                                                     </tr>
                                                     <tr>
                                                         <th><label for="aduan">Maklumat Aduan/Khidmat Nasihat:&nbsp;</label></th>
-                                                        <td><textarea name="aduan" id="aduan" cols="100" rows="15"></textarea></td>
+                                                        <td><textarea name="aduan" id="aduan" cols="100" rows="15">saya ingin mengadu hal rumah tangga saya</textarea></td>
                                                     </tr>
                                                 </table>
-                                                <button type="button1" value="Submit">KEMASKINI</button>
-                                                <button type="button2" value="Submit">BUANG</button>
-                                                <button type="button3" value="Submit">KEMBALI</button>
+                                                <center><button onclick="showConfirmation()">Delete</button></center>
+
+                                            <script>
+                                                function showConfirmation() {
+                                                    if (confirm("Are you sure you want to delete?")) {
+                                                        // Code to perform delete operation
+                                                        // You can call your delete function or perform any other desired action here
+                                                        alert("Delete operation performed");
+                                                    } else {
+                                                        // Code to handle cancel or dismissal of the popup
+                                                        alert("Delete operation canceled");
+                                                    }
+                                                }
+                                            </script>
                                             </form>
                                             
 

@@ -9,7 +9,21 @@
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
     <title>cancelBookSession</title>
 
-
+<style>
+    .button {
+    background-color: #1A2F77;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+  }
+  </style>
 </head>
 
 <body>
@@ -37,10 +51,25 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/ManageBookingSession/Applicant/bookSession.php" method="post">
+                            <form action="/ZAN-System/ManageBookingSession/Applicant/viewConsultantProfile.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
+                                        <center><button onclick="showConfirmation()">Delete</button></center>
+
+                                            <script>
+                                                function showConfirmation() {
+                                                    if (confirm("Are you sure you want to delete?")) {
+                                                        // Code to perform delete operation
+                                                        // You can call your delete function or perform any other desired action here
+                                                        alert("Delete operation performed");
+                                                    } else {
+                                                        // Code to handle cancel or dismissal of the popup
+                                                        alert("Delete operation canceled");
+                                                    }
+                                                }
+                                            </script>
+                                            </table>
 
 
  
