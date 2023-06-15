@@ -133,6 +133,8 @@
                                                 <td>Catatan</td>
                                                 <td>:</td>
                                                 <td><input type="text" name="catatan"></td>
+                                            </tr>
+                                            <tr>
                                                 <td><span style="color:red">*</span>Terbit Umum</td>
                                                 <td>:</td>
                                                 <td>
@@ -142,7 +144,12 @@
                                                         <option value="tidak">TIDAK</option>
                                                     </select>
                                                 </td>
-                                                <td><button type="submit" name="simpan" value="simpan">SIMPAN</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" name="simpan" value="simpan">KEMBALI</button>
+                                                    <button type="submit" name="simpan" value="simpan">KEMBALI</button>
+                                                </td>
                                             </tr>
                                         </table>
                                     </form>
