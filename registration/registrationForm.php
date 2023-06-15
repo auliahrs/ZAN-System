@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-md-12" style="width: 500px;justify-content: center;">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Request/Applicant/A_MaklumatPasangan.php" method="post">
+                            <form action="/ZAN-System/login/loginForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
                                         <table>
@@ -65,40 +65,42 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>No. Telefon</td>
+                                                <td>No Telefon</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="text" name="telefon" style="width: 200px;">
+                                                    <input type="text" name="NoTel" style="width: 200px;">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Emel</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="email" name="emel" style="width: 200px;">
+                                                    <input type="text" name="emel" style="width: 200px;">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Kata Laluan</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="password" name="kataLaluan" style="width: 200px;">
+                                                    <input type="text" name="kataLaluan" style="width: 200px;">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Pengesahan Kata Laluan</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="password" name="pengesahanKataLaluan" style="width: 200px;">
+                                                    <input type="text" name="pengesahanKataLaluan" style="width: 200px;">
                                                 </td>
                                             </tr>
+                                            
+                                            
                                         </table>
                                     </div>
                                 </div>
 
                                 <div class="row my-3 link-button-general">
                                     <div class="col-md-6">
-                                        <button type="button" onclick="window.location.href='/ZAN-System/login-form.php'">Kembali</button>
+                                        <button type="button" onclick="window.location.href='/ZAN-System/login/loginForm.php'">Kembali</button>
                                     </div>
                                     <div class="col-md-6">
                                         <button type="submit">Daftar</button>

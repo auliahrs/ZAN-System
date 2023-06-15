@@ -90,7 +90,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Permohonan Berkahwin > Senarai Permohonan</h3>
+                            <h3>Permohonan Berkahwin > Sijil & Kad Perakuan Nikah</h3>
                         </div>
                     </div>
                 </div>
@@ -126,11 +126,12 @@
 </div>
 
 <script>
-function goToOldInterface() {
-      window.location.href = "MarriageTypeForm.php";
-}
+    function goToOldInterface() {
+      window.location.href = "/ZAN-System/Marriage Certificate & Card Request/Staff/GenerateCertForm.php";
+    }
+
     function goToNewInterface() {
-      window.location.href = "PaymentProofForm.php";
+      window.location.href = "/ZAN-System/Marriage Certificate & Card Request/Staff/CardStatusForm.php";
     }
     
   </script>
