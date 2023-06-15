@@ -18,7 +18,7 @@
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
+            <?php include('C:/xampp/htdocs/ZAN-System/components/leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -60,7 +60,24 @@
                                                 <td>:</td>
                                                 <td>
                                                     <select name="TKNegara" id="TKNegara">
-                                                        <option value=""></option>
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="abkazia">ABKHAZIA</option>
+                                                        <option value="afghanistan">AFGHANISTAN</option>
+                                                        <option value="afrikaselatan">AFRIKA SELATAN</option>
+                                                        <option value="australia">AUSTRALIA</option>
+                                                        <option value="arab">ARAB SAUDI</option>
+                                                        <option value="brazil">BRAZIL</option>
+                                                        <option value="colombia">COLOMBIA</option>
+                                                        <option value="filipina">FILIPINA</option>
+                                                        <option value="indonesia">INDONESIA</option>
+                                                        <option value="jepun">JEPUN</option>
+                                                        <option value="malaysia">MALAYSIA</option>
+                                                        <option value="pakistan">PAKISTAN</option>
+                                                        <option value="palestin">PALESTIN</option>
+                                                        <option value="thailand">THAILAND</option>
+                                                        <option value="ukraine">UKRAINE</option>
+                                                        <option value="uk">UNITED KINGDOM</option>
+                                                        <option value="vietnam">VIETNAM</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -69,7 +86,22 @@
                                                 <td>:</td>
                                                 <td>
                                                     <select name="TKNegeri" id="TKNegeri">
-                                                        <option value=""></option>
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="johor">JOHOR</option>
+                                                        <option value="kedah">KEDAH</option>
+                                                        <option value="kelantan">KELANTAN</option>
+                                                        <option value="melaka">MELAKA</option>
+                                                        <option value="negerisembilan">NEGERI SEMBILAN</option>
+                                                        <option value="pahang">PAHANG</option>
+                                                        <option value="perlis">PERLIS</option>
+                                                        <option value="pinang">PILAU PINANG</option>
+                                                        <option value="sabah">SABAH</option>
+                                                        <option value="sarawak">SARAWAK</option>
+                                                        <option value="selangor">SELANGOR</option>
+                                                        <option value="terengganu">TERENGGANU</option>
+                                                        <option value="kl">WILAYAH PERSEKUTUAN KUALA LUMPUR</option>
+                                                        <option value="labuan">WILAYAH PERSEKUTUAN LABUAN</option>
+                                                        <option value="putrajaya">WILAYAH PERSEKUTUAN PUTRAJAYA</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -98,8 +130,10 @@
                                                 <td>Jenis Mas Kahwin</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="text" name="jenisMasKahwin">
-
+                                                    <select name="jenisMas" id="jenisMas">
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="tunai">TUNAI</option>
+                                                        <option value="hutang">HUTANG</option>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -135,7 +169,17 @@
                                                 <td>:</td>
                                                 <td>
                                                     <select name="hubungan" id="hubungan">
-                                                        <option value=""></option>
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="hubungan1">BAPA</option>
+                                                        <option value="hubungan2">DATUK SEBELAH BAPA KE ATAS</option>
+                                                        <option value="hubungan3">ADIK BERADIK LELAKI SEIBU SEBAPA</option>
+                                                        <option value="hubungan4">ADIK BERADIK LELAKI SEBAPA</option>
+                                                        <option value="hubungan5">ANAK SAUDARA LELAKI SEBELAH BAPA SEIBU SEBAPA KE BAWAH</option>
+                                                        <option value="hubungan6">BAPA SAUDARA SEBELAH BAPA SEIBU SEBAPA</option>
+                                                        <option value="hubungan7">BAPA SAUDARA SEBELAH BAPA SEBAPA</option>
+                                                        <option value="hubungan8">BAPA SAUDARA BAPA SEIBU SEBAPA</option>
+                                                        <option value="hubungan9">BAPA SAUDARA BAPA SEBAPA</option>
+                                                        <option value="hubungan10">WALI SULTAN</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -257,7 +301,10 @@
                                                     <td>Kategori Nikah</td>
                                                     <td>:</td>
                                                     <td>
-                                                        <input type="text" name="kategoriNikah">
+                                                        <select name="jenisMas" id="jenisMas">
+                                                            <option value="">-SILA PILIH-</option>
+                                                            <option value="bukan">BUKAN PERNIKAHAN SEMULA</option>
+                                                            <option value="semula">PERNIKAHAN SEMULA</option>
                                                     </td>
                                                 </tr>
                                             </table>

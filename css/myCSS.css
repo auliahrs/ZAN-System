@@ -23,6 +23,7 @@ body {
     margin: 10px 5px;
     text-align: center;
     padding: 10px 5px;
+    position: relative;
 }
 
 .menu-box a:link, .menu-box a:visited{
@@ -138,4 +139,16 @@ td a:hover, td a:active{
     color: black;
     font-size: 18px;
     padding: 5px;
+}
+
+.upload{
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.upload tr, .upload td{
+    background-color: #D9D9D9;
+    padding: 8px;
+    border: 1px solid black;
 }

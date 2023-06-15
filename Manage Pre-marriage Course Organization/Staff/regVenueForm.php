@@ -38,12 +38,21 @@
                             <div class="row my-3">
                                 <div class="col-md-12 table-dpp">
                                     <p>(<span style="color:red">*</span>)<em> adalah wajib diisi</em></p>
-                                    <form action="/ZAN-System/Manage Pre-marriage Course Organization/Staff/S_DaftarTempatKursus.php" method="post">
+                                    <form action="/ZAN-System/Manage Pre-marriage Course Organization/Staff/regVenueForm.php" method="post">
                                         <table>
                                             <tr>
                                                 <td><span style="color:red">*</span>Tempat</td>
                                                 <td>:</td>
-                                                <td><input type="text" name="tempatKursus"></td>
+                                                <td>
+                                                    <select name="tempat" id="tempat">
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="tempat1">DEWAN AS SAKINAH</option>
+                                                        <option value="tempat2">DEWAN SEMINAR MASJID TEPIAN PUTRA</option>
+                                                        <option value="tempat3">DEWAN SEMINAR BANDAR PEKAN</option>
+                                                        <option value="tempat4">DEWAN SEMINAR KUANTAN</option>
+                                                        <option value="daerah5">DEWAN SEMINAR TEMERLOH</option>
+                                                    </select>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td><span style="color:red">*</span>Alamat</td>
@@ -53,7 +62,23 @@
                                             <tr>
                                                 <td><span style="color:red">*</span>Daerah</td>
                                                 <td>:</td>
-                                                <td><input type="text" name="daerahKursus"></td>
+                                                <td>
+                                                    <select name="daerah" id="daerah">
+                                                        <option value="">-SILA PILIH-</option>
+                                                        <option value="daerah1">BENTONG</option>
+                                                        <option value="daerah2">BERA</option>
+                                                        <option value="daerah3">CAMERON HIGHLANDS</option>
+                                                        <option value="daerah4">JERANTUT</option>
+                                                        <option value="daerah5">KUANTAN</option>
+                                                        <option value="daerah6">KUANTAN BARAT</option>
+                                                        <option value="daerah7">LIPIS</option>
+                                                        <option value="daerah8">MARAN</option>
+                                                        <option value="daerah9">PEKAN</option>
+                                                        <option value="daerah10">RAUB</option>
+                                                        <option value="daerah11">ROMPIN</option>
+                                                        <option value="daerah12">TEMERLOH</option>
+                                                    </select>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td><span style="color:red">*</span>No. Telefon</td>
@@ -74,7 +99,16 @@
                                                 <tr>
                                                     <td>Tempat</td>
                                                     <td>:</td>
-                                                    <td><input type="text" name="tempat"></td>
+                                                    <td>
+                                                        <select name="tempat" id="tempat">
+                                                            <option value="">-SILA PILIH-</option>
+                                                            <option value="tempat1">DEWAN AS SAKINAH</option>
+                                                            <option value="tempat2">DEWAN SEMINAR MASJID TEPIAN PUTRA</option>
+                                                            <option value="tempat3">DEWAN SEMINAR BANDAR PEKAN</option>
+                                                            <option value="tempat4">DEWAN SEMINAR KUANTAN</option>
+                                                            <option value="daerah5">DEWAN SEMINAR TEMERLOH</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                             </table>
                                         </div>
@@ -83,7 +117,24 @@
                                                 <tr>
                                                     <td>Daerah</td>
                                                     <td>:</td>
-                                                    <td><input type="text" name="daerah"></td>
+                                                    <td>
+                                                        <select name="daerah" id="daerah">
+                                                            <option value="">-SILA PILIH-</option>
+                                                            <option value="daerah1">BENTONG</option>
+                                                            <option value="daerah2">BERA</option>
+                                                            <option value="daerah3">CAMERON HIGHLANDS</option>
+                                                            <option value="daerah4">JERANTUT</option>
+                                                            <option value="daerah5">KUANTAN</option>
+                                                            <option value="daerah6">KUANTAN BARAT</option>
+                                                            <option value="daerah7">LIPIS</option>
+                                                            <option value="daerah8">MARAN</option>
+                                                            <option value="daerah9">PEKAN</option>
+                                                            <option value="daerah10">RAUB</option>
+                                                            <option value="daerah11">ROMPIN</option>
+                                                            <option value="daerah12">TEMERLOH</option>
+                                                        </select>
+                                                        <button type="submit" style="border: none; background-color: #D9D9D9"><img src="../../images/search.png" width="30px" height="auto" style="margin-left: 10px"></button>
+                                                    </td>
                                                 </tr>
                                             </table>
                                         </div>

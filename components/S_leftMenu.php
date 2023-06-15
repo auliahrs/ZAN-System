@@ -20,15 +20,19 @@
     <!-- Kursus Pra Perkahwinan box -->
     <div class="menu-box">
         <h5>Kursus Pra Perkahwinan</h5>
-        <a href="/ZAN-System/Manage Pre-marriage Course Organization/Staff/S_DaftarTempatKursus.php">Daftar Tempat Kursus</a>
-        <a href="/ZAN-System/Manage Pre-marriage Course Organization/Staff/S_DaftarMaklumatKursus.php">Daftar Maklumat Kursus</a>
+        <a href="/ZAN-System/Manage Pre-marriage Course Organization/Staff/regVenueForm.php">Daftar Tempat Kursus</a>
+        <a href="/ZAN-System/Manage Pre-marriage Course Organization/Staff/regCourseInfoForm.php">Daftar Maklumat Kursus</a>
         <a href="#">Maklumat Peserta</a>
+            <div class="submenu">
+                <a href="/ZAN-System/Manage Pre-marriage Course Organization/Staff/attendanceForm.php">Kehadiran</a>
+                <a href="/ZAN-System/Manage Pre-marriage Course Organization/Staff/approvalForm.php">Kehadiran</a>
+            </div>
     </div>
     <!-- Permohonan Berkahwin box -->
-    <div class="menu-box">
+    <div class="menu-box dropdown">
         <h5>Permohonan Berkahwin</h5>
-        <a href="/ZAN-System/Manage Marriage Request/Staff/S_SenaraiPermohonanBerkahwin.php">Senarai Permohonan</a>
-        <a href="/ZAN-System/Manage Marriage Request/Staff/S_SenaraiLulusPermohonan.php">Senarai Lulus Permohonan</a>
+        <a href="/ZAN-System/Manage Marriage Request/Staff/viewApplicationListForm.php">Senarai Permohonan</a>
+        <a href="/ZAN-System/Manage Marriage Request/Staff/viewApprovedApplication.php">Senarai Lulus Permohonan</a>
     </div>
     <!-- Pendaftaran Perkahwinan box -->
     <div class="menu-box">
