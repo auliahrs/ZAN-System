@@ -37,7 +37,7 @@
                         <div class="content-body-staff">
                             <div class="row">
                                 <div class="col table-dpp">
-                                    <form action="/ZAN-System/Manage Marriage Request/Staff/UpdateRegForm" method="get">
+                                    <form action="/ZAN-System/Manage Marriage Request/Staff/ViewProofForm" method="get">
                                     </form>
                                 </div>
                             </div>
