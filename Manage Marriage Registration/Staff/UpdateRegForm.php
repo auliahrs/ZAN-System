@@ -64,7 +64,7 @@
                                             <td><div><a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Catatan Akad Nikah Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/KadPengenalan.JPG" download>Gambar Berukuran Passport Pemohon</a></td>
                                             <td><div><a class="custom-button" href="path/to/download/Saksi IC.PNG" download>Salinan Kad Pengenalan Saksi-Saksi Perkahwinan Pemohon</a></td>
-                                            <td><img src="/ZAN-System/images/moredetail.png" onclick="redirectToInterface()" style="cursor: pointer;"><script>function redirectToInterface() {window.location.href = "/ZAN-System/Paymentproof/Applicant/PaymentProofForm.php";}</script></td>
+                                            <td><img src="/ZAN-System/images/moredetail.png" onclick="redirectToInterface()" style="cursor: pointer;"><script>function redirectToInterface() {window.location.href = "/ZAN-System/Paymentproof/Staff/ViewProofForm.php";}</script></td>
                                             </td>
                                         </tr>
                                         <tr>

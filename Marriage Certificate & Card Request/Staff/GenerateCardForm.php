@@ -126,11 +126,12 @@
 </div>
 
 <script>
-function goToOldInterface() {
-      window.location.href = "MarriageTypeForm.php";
-}
+    function goToOldInterface() {
+      window.location.href = "/ZAN-System/Marriage Certificate & Card Request/Staff/GenerateCertForm.php";
+    }
+
     function goToNewInterface() {
-      window.location.href = "PaymentProofForm.php";
+      window.location.href = "/ZAN-System/Marriage Certificate & Card Request/Staff/CardStatusForm.php";
     }
     
   </script>

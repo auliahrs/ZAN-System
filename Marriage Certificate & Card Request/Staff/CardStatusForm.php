@@ -121,7 +121,7 @@
                                         </tr>
                                         <tr>
                                             <td>AHMAD AIMAN BIN ADAM</td>
-                                            <td><a href="mailto:hattarahman1@gmail.com" target="_blank"><button>Hantar Notis Kepada Pemohon</button></a></td>
+                                            <td><a href="mailto:AimanAdam@gmail.com" target="_blank"><button>Hantar Notis Kepada Pemohon</button></a></td>
                                     </table>
                                 </div>
                             </div>

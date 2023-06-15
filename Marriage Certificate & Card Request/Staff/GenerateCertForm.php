@@ -165,7 +165,7 @@
 
 <script>
     function goToNewInterface() {
-      window.location.href = "PaymentProof/PaymentProofForm.php";
+      window.location.href = "/ZAN-System/Marriage Certificate & Card Request/Staff/GenerateCardForm.php";
     }
     
   </script>

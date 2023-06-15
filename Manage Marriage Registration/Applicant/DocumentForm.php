@@ -83,7 +83,7 @@ function goToOldInterface() {
       window.location.href = "MarriageTypeForm.php";
 }
     function goToNewInterface() {
-      window.location.href = "PaymentProof/PaymentProofForm.php";
+      window.location.href = "/ZAN-System/PaymentProof/Applicant/PaymentProofForm.php";
     }
     
   </script>
