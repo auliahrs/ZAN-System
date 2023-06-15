@@ -8,6 +8,6 @@
     <div class="col-md-3 mw-3 my-auto">
         <a href="/ZAN-System/notification.php"><img src="/ZAN-System/images/notification.png" alt="notification icon"></a>
         <a href="/ZAN-System/contact.php"><img src="/ZAN-System/images/contact.png" alt="contact icon"></a>
-        <a href="/ZAN-System/logout.php"><img src="/ZAN-System/images/logout.png" alt="logout icon"></a>
+        <a href="/ZAN-System/login/loginForm.php"><img src="/ZAN-System/images/logout.png" alt="logout icon"></a>
     </div>
 </div>

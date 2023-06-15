@@ -53,7 +53,7 @@
                                             <option value="paid12">PEJABAT AGAMA ISLAM ROMPIN</option>
                                             <option value="paid13">PEJABAT AGAMA ISLAM TEMERLOH</option>
                                         </select>
-                                        <button type="submit" name="search"><img src="/ZAN-System/images/search.png" alt="Search Icon" width="30px"></button>
+                                        <button type="submit" name="search" style="border: none; background-color: white"><img src="/ZAN-System/images/search.png" alt="Search Icon" width="30px"></button>
                                     </form>
                                 </div>
                             </div>
@@ -75,8 +75,12 @@
                                             <td>29 - 30 APRIL 2023</td>
                                             <td>50</td>
                                             <td>35</td>
-                                            <td><button><img src="/ZAN-System/images/moredetail.png"></button></td>
-                                            <td><a href="/ZAN-System/Manage Pre-marriage Course Application/Applicant/A_DaftarPraPerkahwinan.php/?id=">Register</a></td>
+                                            <td>
+                                                <form action="viewMoreDetail.php">
+                                                    <button style="border: none; background-color: #D9D9D9"><img src="/ZAN-System/images/moredetail.png"></button>
+                                                </form>
+                                            </td>
+                                            <td><a href="/ZAN-System/Manage Pre-marriage Course Application/Applicant/regForm.php/?id=">Register</a></td>
                                         </tr>
                                     </table>
                                 </div>
