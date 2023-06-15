@@ -44,8 +44,20 @@
                                                 <td><span style="color:red">*</span>Anjuran</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <select name="anjuran" id="anjuran">
-                                                        <option value="">TEST</option>
+                                                    <select name="paid" id="paid">
+                                                        <option value="">Pilih Anjuran</option>
+                                                        <option value="paid1">JABATAN AGAMA ISLAM NEGERI PAHANG</option>
+                                                        <option value="paid2">PEJABAT AGAMA ISLAM BENTONG</option>
+                                                        <option value="paid3">PEJABAT AGAMA ISLAM BERA</option>
+                                                        <option value="paid4">PEJABAT AGAMA ISLAM CAMERON HIGHLANDS</option>
+                                                        <option value="paid5">PEJABAT AGAMA ISLAM KUANTAN</option>
+                                                        <option value="paid6">PEJABAT AGAMA ISLAM KUANTAN BARAT</option>
+                                                        <option value="paid7">PEJABAT AGAMA ISLAM LIPIS</option>
+                                                        <option value="paid9">PEJABAT AGAMA ISLAM MARAN</option>
+                                                        <option value="paid10">PEJABAT AGAMA ISLAM PEKAN</option>
+                                                        <option value="paid11">PEJABAT AGAMA ISLAM RAUB</option>
+                                                        <option value="paid12">PEJABAT AGAMA ISLAM ROMPIN</option>
+                                                        <option value="paid13">PEJABAT AGAMA ISLAM TEMERLOH</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -104,7 +116,9 @@
                                                         <td>:</td>
                                                         <td>
                                                             <select name="kehadiran" id="kehadiran">
-                                                                <option value="">TEST</option>
+                                                                <option value="">-SILA PILIH-</option>
+                                                                <option value="hadir">HADIR</option>
+                                                                <option value="tidakhadir">TIDAK HADIR</option>
                                                             </select>
                                                         </td>
                                                     </tr>
@@ -128,7 +142,7 @@
                                                         <td>AHMAD AIMAN BIN ADAM</td>
                                                         <td>990125060617</td>
                                                         <td>LELAKI</td>
-                                                        <td></td>
+                                                        <td>HADIR</td>
                                                         <td><textarea name="value" rows="4" cols="50"></textarea></td>
                                                         <td><input type="checkbox" name="choose"></td>
                                                     </tr>
