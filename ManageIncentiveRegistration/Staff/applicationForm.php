@@ -6,6 +6,21 @@ $stmt = $pdo->query("SELECT i.I_tarikh, i.insentifID, p.P_nama, p.noIC
                      FROM insentif_perkahwinan AS i
                      JOIN pengguna AS p ON i.noIC = p.noIC");
 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['lihat'])) {
+        if (isset($_POST['selectednoIC'])) {
+            $selectednoIC = $_POST['selectednoIC'];
+            // Perform necessary actions based on the selectednoIC value
+            // Example: Store the selectednoIC in the session or redirect to another page
+            // You can add your own logic here based on your requirements
+            // For now, let's just echo the selectednoIC value
+            echo "Selected noIC: " . $selectednoIC;
+        } else {
+            echo "No noIC selected.";
+        }
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -81,7 +96,7 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('../../components/leftMenu.php'); ?>
+            <?php include('../../components/S_leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -98,7 +113,8 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <div class="col-md-12">
                         <div class="content-body">
                             <div class="box-content">
-                                <form method="post" action="maklumatPemohon.php">
+                            <form method="post" action="maklumatPemohon.php">
+
                                     <table>
                                         <thead>
                                             <tr>
@@ -107,7 +123,7 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                                 <th>No. Permohonan</th>
                                                 <th>Nama Pemohon</th>
                                                 <th>No. KP</th>
-                                                <th>Pilih</th>
+                                                <th>Pengesahan</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -121,8 +137,10 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                                     <td><?php echo $row['P_nama']; ?></td>
                                                     <td><?php echo $row['noIC']; ?></td>
                                                     <td>
-                                                        <input type="hidden" name="selectednoIC[]" value="<?php echo $row['noIC']; ?>">
-                                                        <input type="checkbox">
+                                                    <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
+                                                    <button type="submit" name="approve" class="mohon-button">Approve</button>
+<button type="submit" name="reject" class="mohon-button">Reject</button>
+
                                                     </td>
                                                 </tr>
                                                 <?php
@@ -131,7 +149,8 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                         </tbody>
                                     </table>
                                     <div class="box-footer">
-                                        <button type="submit" name="mohon" class="mohon-button">Mohon</button>
+                                    <button type="submit" name="lihat" class="mohon-button">Lihat</button>
+
                                     </div>
                                 </form>
                             </div>

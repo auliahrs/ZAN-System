@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 15, 2023 at 08:04 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Jun 16, 2023 at 02:20 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.0.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -209,16 +209,17 @@ CREATE TABLE `pengguna` (
   `P_jawatanPekerjaan` varchar(20) NOT NULL,
   `P_noTelPejabat` varchar(15) NOT NULL,
   `P_statusPerkahwinan` varchar(10) NOT NULL,
-  `praperkahwinanID` varchar(20) NOT NULL
+  `praperkahwinanID` varchar(20) NOT NULL,
+  `P_telefonBimbit` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `pengguna`
 --
 
-INSERT INTO `pengguna` (`noIC`, `P_nama`, `P_email`, `P_jantina`, `P_NRICpolis_lama`, `P_tarikhLahir`, `P_umur`, `P_bangsa`, `P_warganegara`, `P_alamatIC`, `P_alamatSemasa`, `P_NoTelRumah`, `P_statusPelajaran`, `P_bahagianPekerjaan`, `P_jawatanPekerjaan`, `P_noTelPejabat`, `P_statusPerkahwinan`, `praperkahwinanID`) VALUES
-('013293044942', 'AHMAD ABU BIN DAUD', 'abu33@gmail.com', 'Lelaki', '', '2023-06-12', 26, 'Melayu', 'Malaysia', 'Kampung Mengkuang', 'Kampung Mengkuang', '012244244', 'Sarjana Muda', 'Kerajaan', 'Admin', '34673', 'Berkahwin', '35224'),
-('013293044947', 'AHMAD AIMAN BIN ADAM', 'aiman32@gmail.com', 'Lelaki', '', '2008-06-05', 23, 'Melayu', 'Malaysia', 'Kampung Mengkuang ss', 'Kampung Mengkuang ss', '013845537', 'Sarjana Muda', 'Kerajaan', 'AdminData', '34673', 'Berkahwin', '53223');
+INSERT INTO `pengguna` (`noIC`, `P_nama`, `P_email`, `P_jantina`, `P_NRICpolis_lama`, `P_tarikhLahir`, `P_umur`, `P_bangsa`, `P_warganegara`, `P_alamatIC`, `P_alamatSemasa`, `P_NoTelRumah`, `P_statusPelajaran`, `P_bahagianPekerjaan`, `P_jawatanPekerjaan`, `P_noTelPejabat`, `P_statusPerkahwinan`, `praperkahwinanID`, `P_telefonBimbit`) VALUES
+('013293044942', 'AHMAD ABU BIN DAUD', 'abu33@gmail.com', 'Lelaki', '', '2023-06-12', 26, 'Melayu', 'Malaysia', 'Kampung Mengkuang', 'Kampung Mengkuang', '012244244', 'Sarjana Muda', 'Kerajaan', 'Admin', '34673', 'Berkahwin', '35224', '0112345123'),
+('013293044947', 'AHMAD AIMAN BIN ADAM', 'aiman32@gmail.com', 'Lelaki', '', '2008-06-05', 23, 'Melayu', 'Malaysia', 'Kampung Mengkuang ss', 'Kampung Mengkuang ss', '013845537', 'Sarjana Muda', 'Kerajaan', 'AdminData', '34673', 'Berkahwin', '53223', '019338443');
 
 -- --------------------------------------------------------
 
@@ -346,10 +347,7 @@ ALTER TABLE `pendaftaran_perkahwinan`
 -- Indexes for table `pengguna`
 --
 ALTER TABLE `pengguna`
-  ADD PRIMARY KEY (`noIC`),
-  ADD KEY `P_ praPerkahwinanID` (`praperkahwinanID`),
-  ADD KEY `praPerkahwinanID` (`praperkahwinanID`),
-  ADD KEY `praperkahwinanID_2` (`praperkahwinanID`);
+  ADD PRIMARY KEY (`noIC`);
 
 --
 -- Indexes for table `permohonan_konsultasi`

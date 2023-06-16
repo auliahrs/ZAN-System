@@ -38,7 +38,7 @@
     <!-- Insentif perkahwinan box -->
     <div class="menu-box">
         <h5>Insentif Perkahwinan</h5>
-        <a href="/ZAN-System/ManageIncentiveRegistration/Applicant/applicantForm.php">Permohonan</a>
+        <a href="/ZAN-System/ManageIncentiveRegistration/Applicant/applicationForm.php">Permohonan</a>
         <a href="#">Keputusan</a>
     </div>
     <!-- Aduan box -->

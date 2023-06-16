@@ -1,3 +1,7 @@
+<?php
+include('../manageApplicationController.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,84 +39,88 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Request/Applicant/A_MaklumatPemohon.php" method="post">
+                            <form action="/ZAN-System/Manage Marriage Request/Applicant/spouseForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
+                                        <?php
+                                        $controller = new manageApplicationController();
+                                        $applicantData = $controller->getApplicantData('013293044947'); //assume ni hasil dari login
+                                        ?>
                                         <table>
                                             <tr>
                                                 <td>No. Kad Pengenalan </td>
                                                 <td>:</td>
-                                                <td>990125060617</td>
+                                                <td><?php echo $applicantData['noIC']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Nama Pemohon </td>
                                                 <td>:</td>
-                                                <td>AHMAD AIMAN BIN ADAM</td>
+                                                <td><?php echo $applicantData['P_nama']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Tarikh Lahir </td>
                                                 <td>:</td>
-                                                <td>25 April 2001</td>
+                                                <td><?php echo $applicantData['P_tarikhLahir']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Umur </td>
                                                 <td>:</td>
-                                                <td>22 Tahun</td>
+                                                <td><?php echo $applicantData['P_umur']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Jantina </td>
                                                 <td>:</td>
-                                                <td>LELAKI</td>
+                                                <td><?php echo $applicantData['P_jantina']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Bangsa </td>
                                                 <td>:</td>
-                                                <td>Melayu</td>
+                                                <td><?php echo $applicantData['P_bangsa']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Kewarganegaraan </td>
                                                 <td>:</td>
-                                                <td>Malaysia</td>
+                                                <td><?php echo $applicantData['P_warganegara']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Alamat </td>
                                                 <td>:</td>
-                                                <td>No 4, Jalan Harmoni,Taman Harmoni, 26600 Pekan Pahang</td>
+                                                <td><?php echo $applicantData['P_alamatIC']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>No. Telefon (Bimbit) </td>
                                                 <td>:</td>
-                                                <td>0132394855</td>
+                                                <td><?php echo $applicantData['P_telefonBimbit']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>No. Telefon (Rumah) </td>
                                                 <td>:</td>
-                                                <td>03 2230123</td>
+                                                <td><?php echo $applicantData['P_NoTelRumah']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Taraf Pendidikan </td>
                                                 <td>:</td>
-                                                <td>DIPLOMA</td>
+                                                <td><?php echo $applicantData['P_statusPelajaran']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Sektor Kerajaan </td>
                                                 <td>:</td>
-                                                <td>KERAJAAN</td>
+                                                <td><?php echo $applicantData['P_bahagianPekerjaan']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Pekerjaan/Jawatan </td>
                                                 <td>:</td>
-                                                <td>Guru</td>
+                                                <td><?php echo $applicantData['P_jawatanPekerjaan']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Alamat Tempat Kerja </td>
                                                 <td>:</td>
-                                                <td>SMK Pekan</td>
+                                                <td><?php echo $applicantData['P_alamatSemasa']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Status Kahwin </td>
                                                 <td>:</td>
-                                                <td>Bujang</td>
+                                                <td><?php echo $applicantData['P_statusPerkahwinan']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Status Saudara Baru </td>
@@ -122,7 +130,7 @@
                                             <tr>
                                                 <td>No. Sijil Kursus Pra Perkahwinan </td>
                                                 <td>:</td>
-                                                <td>MY2344PHG897</td>
+                                                <td><?php echo $applicantData['praperkahwinanID']; ?></td>
                                             </tr>
                                         </table>
                                     </div>
