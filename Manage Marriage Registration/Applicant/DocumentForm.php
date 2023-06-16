@@ -117,20 +117,45 @@ function goToOldInterface() {
                             <form action="/ZAN-System/Manage Marriage Registration/Applicant/DocumentForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
+                                    <?php
+                                    
+                                    include('MarriageRegController.php');
+                                    
+                                        $controller = new MarriageRegController();
+                                        $applicantData = $controller->getApplicantData('013293044947'); //assume from login
+                                        ?>
                                         <table>
+                                        
 
 <div class="document">
     DOKUMEN
 </div>
+<table>
+                                            <tr>
+                                                <td>No. Kad Pengenalan </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['noIC']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nama Pemohon </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_nama']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tarikh Lahir </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_tarikhLahir']; ?></td>
+                                            </tr>
+</table>
 
 <!-- First doc -->
 <div class="docname">
   <span class="docname-text">Slip Permohonan Perkahwinan</span>
   <div>
-    <a class="custom-button" href="path/to/download/Slip_Permohonan_Kahwin.pdf" download>Muat Turun Dokumen</a>
+    <a class="custom-button" href="path/to/download/Slip_Permohonan_Kahwin.pdf" download>Muat Turun Dokumen Asal</a>
 
     <input type="file" id="upload-input-1" style="display: none;">
-    <label for="upload-input-1" class="custom-button">Muat Naik Dokumen</label>
+    <label for="upload-input-1" class="custom-button">Muat Naik Dokumen Baru</label>
     <span id="file-name-1"></span>
 
     <script>
@@ -149,10 +174,10 @@ function goToOldInterface() {
 <div class="docname">
   <span class="docname-text">Borang Kebenaran Berkahwin</span>
   <div>
-    <a class="custom-button" href="path/to/download/Borang_Kebenaran_Kahwin.pdf" download>Muat Turun Dokumen</a>
+    <a class="custom-button" href="path/to/download/Borang_Kebenaran_Kahwin.pdf" download>Muat Turun Dokumen Asal</a>
 
     <input type="file" id="upload-input-2" style="display: none;">
-    <label for="upload-input-2" class="custom-button">Muat Naik Dokumen</label>
+    <label for="upload-input-2" class="custom-button">Muat Naik Dokumen Baru</label>
     <span id="file-name-2"></span>
 
     <script>
@@ -170,10 +195,10 @@ function goToOldInterface() {
 <div class="docname">
   <span class="docname-text">Catatan Akad Nikah</span>
   <div>
-    <a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Muat Turun Dokumen</a>
+    <a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Muat Turun Dokumen Asal</a>
 
     <input type="file" id="upload-input-3" style="display: none;">
-    <label for="upload-input-3" class="custom-button">Muat Naik Dokumen</label>
+    <label for="upload-input-3" class="custom-button">Muat Naik Dokumen Baru</label>
     <span id="file-name-3"></span>
 
     <script>
@@ -193,7 +218,7 @@ function goToOldInterface() {
   <div>
 
   <input type="file" id="upload-input-4" style="display: none;">
-    <label for="upload-input-4" class="custom-button">Muat Naik Dokumen</label>
+    <label for="upload-input-4" class="custom-button">Muat Naik Dokumen Baru</label>
     <span id="file-name-4"></span>
 
     <script>
@@ -213,7 +238,7 @@ function goToOldInterface() {
   <div>
 
   <input type="file" id="upload-input-5" style="display: none;">
-    <label for="upload-input-5" class="custom-button">Muat Naik Dokumen</label>
+    <label for="upload-input-5" class="custom-button">Muat Naik Dokumen Baru</label>
     <span id="file-name-5"></span>
 
     <script>

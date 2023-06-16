@@ -8,7 +8,7 @@ $stmt = $pdo->query("SELECT i.I_tarikh, i.insentifID, p.P_nama, p.noIC
 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['lihat'])) {
+    if (isset($_POST['mohon'])) {
         if (isset($_POST['selectednoIC'])) {
             $selectednoIC = $_POST['selectednoIC'];
             // Perform necessary actions based on the selectednoIC value
@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('../../components/S_leftMenu.php'); ?>
+            <?php include('../../components/leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <th>No. Permohonan</th>
                                                 <th>Nama Pemohon</th>
                                                 <th>No. KP</th>
-                                                <th>Pengesahan</th>
+                                                <th>Pilih</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -138,13 +138,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td><?php echo $row['noIC']; ?></td>
                                                     <td>
                                                     <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
-                                                    <td>
-    <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
-    <button type="submit" name="delete" class="delete-button">
-        <img src="delete-icon.png" alt="Delete">
-    </button>
-</td>
-
 
                                                     </td>
                                                 </tr>
@@ -154,8 +147,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         </tbody>
                                     </table>
                                     <div class="box-footer">
-                                    <button type="submit" name="lihat" class="mohon-button">Lihat</button>
-
+                                        <button type="submit" name="mohon" class="mohon-button">Mohon</button>
                                     </div>
                                 </form>
                             </div>

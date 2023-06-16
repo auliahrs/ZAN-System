@@ -1,31 +1,39 @@
 <?php
-class MarriageRegistration {
 
-  private $connect;
 
-  //Registration controller's constructor
-  public function __construct($MarriageRegistration) {
-    $this->connect = $MarriageRegistration;
-  }
+class MarriageRegistration
+{
+    private $host;
+    private $dbname;
+    private $username;
+    private $password;
+    private $servername;
+    private $conn;
 
-  //This function will insert data in mySQL database
-  public function inputdetail($PEN_statusPendaftaran) {
-    $query = $this->connect->prepare("INSERT INTO testing_input (PEN_statusPendaftaran) VALUES (Lulus)");
-    $query->execute([$PEN_statusPendaftaran]);
+    public function __construct()
+    {
+    }
 
-  }
+    public function read($key, $tablename) //read data based on tablename, and ic
+    {
+        $host = 'localhost';
+        $dbname = 'munakahat';
+        $username = 'root';
+        $password = '';
+        // Create connection
+        $conn = new mysqli($host, $username, $password, $dbname);
 
-  public function inputdetail($PEN_jenisKahwin) {
-    $query = $this->connect->prepare("INSERT INTO testing_input (PEN_jenisKahwin) VALUES (Perkahwinan Dalam/Luar Negara)");
-    $query->execute([$PEN_jenisKahwin]);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+        // echo "Connected successfully";
 
-  }
-  public function inputdetail($PEN_sijilKahwin) {
-    $query = $this->connect->prepare("INSERT INTO testing_input (PEN_sijilKahwin) VALUES (Ada)");
-    $query->execute([$PEN_sijilKahwin]);
+        $sql = "SELECT * FROM $tablename WHERE noIC = '$key'";
+        $result = $conn->query($sql); // Use query() instead of mysqli_query()
+
+    return $result;
+    }
+
 }
-public function inputdetail($PEN_kadKahwin) {
-  $query = $this->connect->prepare("INSERT INTO testing_input (PEN_kadKahwin) VALUES (Ada)");
-  $query->execute([$PEN_kadKahwin]);
 
-?>
