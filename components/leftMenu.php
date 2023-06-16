@@ -44,7 +44,7 @@
     <!-- Aduan box -->
     <div class="menu-box">
         <h5>Aduan/Khidmat Nasihat</h5>
-        <a href="#">Borang Aduan/Khidmat Nasihat</a>
-        <a href="#">Sesi Konsultasi</a>
+        <a href="/ZAN-System/ManageConsultationApplication/Applicant/applicationForm.php">Borang Aduan/Khidmat Nasihat</a>
+        <a href="/ZAN-System/ManageBookingConsultation/Applicant/viewConsultantProfile.php">Sesi Konsultasi</a>
     </div>
 </div>
