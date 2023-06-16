@@ -118,6 +118,10 @@ function goToOldInterface() {
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
+                                        <?php
+                                        $controller = new MarriageRegController();
+                                        $PEN_jenisKahwin = $controller->getPEN_jenisKahwin('Perkahwinan Dalam/Luar Negara'); //assume ni hasil dari login
+                                        ?>
 
 <div class="document">
     DOKUMEN
