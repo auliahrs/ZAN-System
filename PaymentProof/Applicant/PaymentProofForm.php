@@ -82,12 +82,12 @@
   </style>
   <script>
 function goToOldInterface() {
-      window.location.href = "DocumentForm.php";
+      window.location.href = "/ZAN-System/Manage Marriage Registration/Applicant/DocumentForm.php";
 }
-    function goToNewInterface() {
-      window.location.href = "PaymentProofForm.php";
+
+    function displayPopup() {
+      alert("Resit Anda Sudah dihantar"); 
     }
-    
   </script>
 </style>
 
@@ -145,7 +145,7 @@ function goToOldInterface() {
         </div>
         <div class="button-container">
 <a class="button button-back" href="#" onclick="goToOldInterface()">Kembali</a>
-    <a class="button button-submit" href="#" onclick="goToNewInterface()">Seterusnya</a>
+<button class="button button-submit" onclick="displayPopup()">Submit</button>
 </div>
                                     </div>
                                 </div>

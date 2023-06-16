@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 12, 2023 at 04:53 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Jun 16, 2023 at 02:20 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.0.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -50,7 +50,7 @@ CREATE TABLE `info_saksi` (
 
 CREATE TABLE `info_wali` (
   `waliNoIC` int(12) NOT NULL,
-  `appID` int(20) NOT NULL,
+  `appID` int(11) NOT NULL,
   `W_hubunganWali` varchar(50) NOT NULL,
   `W_namaWali` varchar(50) NOT NULL,
   `W_DOBWali` date NOT NULL,
@@ -69,15 +69,23 @@ CREATE TABLE `info_wali` (
 
 CREATE TABLE `insentif_perkahwinan` (
   `insentifID` int(11) NOT NULL,
-  `noIC` varchar(20) NOT NULL,
+  `noIC` varchar(12) NOT NULL,
   `praPerkahwinanID` int(50) NOT NULL,
-  `staffID` int(10) NOT NULL,
+  `staffID` varchar(10) NOT NULL,
   `I_tarikh` date NOT NULL,
   `I_slipPendapatan` blob NOT NULL,
   `I_penyataBank` blob NOT NULL,
   `I_namaBank` varchar(20) NOT NULL,
   `I_noAkaunBank` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `insentif_perkahwinan`
+--
+
+INSERT INTO `insentif_perkahwinan` (`insentifID`, `noIC`, `praPerkahwinanID`, `staffID`, `I_tarikh`, `I_slipPendapatan`, `I_penyataBank`, `I_namaBank`, `I_noAkaunBank`) VALUES
+(24355, '013293044942', 53223, '23444', '2022-07-08', '', '', 'Bank Islam', '325598745677'),
+(31334, '013293044947', 35224, '23444', '2022-04-08', '', '', 'Bank Islam', '32559874543');
 
 -- --------------------------------------------------------
 
@@ -98,6 +106,14 @@ CREATE TABLE `matlumat_kursus` (
   `MK_terbitUmum` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `matlumat_kursus`
+--
+
+INSERT INTO `matlumat_kursus` (`kursus_ID`, `tempat_ID`, `MK_PAID`, `MK_tarikhMula`, `MK_tarikhTamat`, `MK_masaMula`, `MK_masaTamat`, `MK_kapasiti`, `MK_catatan`, `MK_terbitUmum`) VALUES
+(3562, 3522, '3445', '2022-06-08', '2022-06-15', '16:55:25', '18:55:25', 177, 'dsad', ''),
+(4334, 3455, '5453', '2022-06-03', '2022-06-22', '08:12:37', '14:12:37', 54, 'rerr', '');
+
 -- --------------------------------------------------------
 
 --
@@ -116,11 +132,18 @@ CREATE TABLE `pasangan` (
 --
 
 CREATE TABLE `pekerja` (
-  `staffID` int(10) NOT NULL,
+  `staffID` varchar(10) NOT NULL,
   `S_namaPekerja` varchar(20) NOT NULL,
   `S_noTelPekerja` varchar(20) NOT NULL,
   `S_emailPekerja` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pekerja`
+--
+
+INSERT INTO `pekerja` (`staffID`, `S_namaPekerja`, `S_noTelPekerja`, `S_emailPekerja`) VALUES
+('23444', 'Ahmad Abu', '017377445', 'Abu224@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -171,31 +194,32 @@ CREATE TABLE `pendaftaran_perkahwinan` (
 CREATE TABLE `pengguna` (
   `noIC` varchar(12) NOT NULL,
   `P_nama` varchar(50) NOT NULL,
-  `P_ email` varchar(20) NOT NULL,
-  `P_ jantina` varchar(10) NOT NULL,
-  `P_ NRICpolis_lama` varchar(20) NOT NULL,
-  `P_ tarikhLahir` date NOT NULL DEFAULT current_timestamp(),
-  `P_ umur` int(11) NOT NULL,
-  `P_ bangsa` varchar(20) NOT NULL,
-  `P_ warganegara` varchar(20) NOT NULL,
-  `P_ alamatIC` varchar(50) NOT NULL,
-  `P_ alamatSemasa` varchar(50) NOT NULL,
-  `P_ NoTelRumah` varchar(15) NOT NULL,
-  `P_ statusPelajaran` varchar(20) NOT NULL,
-  `P_ bahagianPekerjaan` varchar(20) NOT NULL,
-  `P_ jawatanPekerjaan` varchar(20) NOT NULL,
-  `P_ noTelPejabat` varchar(15) NOT NULL,
-  `P_ statusPerkahwinan` varchar(10) NOT NULL,
-  `P_ praPerkahwinanID` varchar(20) NOT NULL
+  `P_email` varchar(20) NOT NULL,
+  `P_jantina` varchar(10) NOT NULL,
+  `P_NRICpolis_lama` varchar(20) NOT NULL,
+  `P_tarikhLahir` date NOT NULL DEFAULT current_timestamp(),
+  `P_umur` int(11) NOT NULL,
+  `P_bangsa` varchar(20) NOT NULL,
+  `P_warganegara` varchar(20) NOT NULL,
+  `P_alamatIC` varchar(50) NOT NULL,
+  `P_alamatSemasa` varchar(50) NOT NULL,
+  `P_NoTelRumah` varchar(15) NOT NULL,
+  `P_statusPelajaran` varchar(20) NOT NULL,
+  `P_bahagianPekerjaan` varchar(20) NOT NULL,
+  `P_jawatanPekerjaan` varchar(20) NOT NULL,
+  `P_noTelPejabat` varchar(15) NOT NULL,
+  `P_statusPerkahwinan` varchar(10) NOT NULL,
+  `praperkahwinanID` varchar(20) NOT NULL,
+  `P_telefonBimbit` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `pengguna`
 --
 
-INSERT INTO `pengguna` (`noIC`, `P_nama`, `P_ email`, `P_ jantina`, `P_ NRICpolis_lama`, `P_ tarikhLahir`, `P_ umur`, `P_ bangsa`, `P_ warganegara`, `P_ alamatIC`, `P_ alamatSemasa`, `P_ NoTelRumah`, `P_ statusPelajaran`, `P_ bahagianPekerjaan`, `P_ jawatanPekerjaan`, `P_ noTelPejabat`, `P_ statusPerkahwinan`, `P_ praPerkahwinanID`) VALUES
-('013293044942', 'AHMAD ABU BIN DAUD', '', '', '', '2023-06-12', 0, '', '', '', '', '', '', '', '', '', '', ''),
-('013293044947', 'AHMAD AIMAN BIN ADAM', '', '', '', '2023-06-12', 0, '', '', '', '', '', '', '', '', '', '', '');
+INSERT INTO `pengguna` (`noIC`, `P_nama`, `P_email`, `P_jantina`, `P_NRICpolis_lama`, `P_tarikhLahir`, `P_umur`, `P_bangsa`, `P_warganegara`, `P_alamatIC`, `P_alamatSemasa`, `P_NoTelRumah`, `P_statusPelajaran`, `P_bahagianPekerjaan`, `P_jawatanPekerjaan`, `P_noTelPejabat`, `P_statusPerkahwinan`, `praperkahwinanID`, `P_telefonBimbit`) VALUES
+('013293044942', 'AHMAD ABU BIN DAUD', 'abu33@gmail.com', 'Lelaki', '', '2023-06-12', 26, 'Melayu', 'Malaysia', 'Kampung Mengkuang', 'Kampung Mengkuang', '012244244', 'Sarjana Muda', 'Kerajaan', 'Admin', '34673', 'Berkahwin', '35224', '0112345123'),
+('013293044947', 'AHMAD AIMAN BIN ADAM', 'aiman32@gmail.com', 'Lelaki', '', '2008-06-05', 23, 'Melayu', 'Malaysia', 'Kampung Mengkuang ss', 'Kampung Mengkuang ss', '013845537', 'Sarjana Muda', 'Kerajaan', 'AdminData', '34673', 'Berkahwin', '53223', '019338443');
 
 -- --------------------------------------------------------
 
@@ -206,7 +230,7 @@ INSERT INTO `pengguna` (`noIC`, `P_nama`, `P_ email`, `P_ jantina`, `P_ NRICpoli
 CREATE TABLE `permohonan_konsultasi` (
   `konsultasiID` int(20) NOT NULL,
   `noIC` varchar(12) NOT NULL,
-  `staffID` int(10) NOT NULL,
+  `staffID` varchar(10) NOT NULL,
   `K_tarikh` date NOT NULL,
   `K_masa` time NOT NULL,
   `K_ butiranKonsultasi` varchar(100) NOT NULL
@@ -226,6 +250,14 @@ CREATE TABLE `praperkahwinan` (
   `PP_status` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `praperkahwinan`
+--
+
+INSERT INTO `praperkahwinan` (`praperkahwinanID`, `Kursus_ID`, `PP_noSijilPerkahwinan`, `PP_ siriTaklimat`, `PP_status`) VALUES
+(35224, 3562, '366222', '1', 'dd'),
+(53223, 3562, '44555', '2', 'dd');
+
 -- --------------------------------------------------------
 
 --
@@ -234,12 +266,20 @@ CREATE TABLE `praperkahwinan` (
 
 CREATE TABLE `tempat_kursus` (
   `tempat_ID` int(11) NOT NULL,
-  `staffID` int(10) NOT NULL,
+  `staffID` varchar(10) NOT NULL,
   `T_tempat` varchar(50) NOT NULL,
   `T_alamat` varchar(50) NOT NULL,
   `T_daerah` varchar(50) NOT NULL,
   `T_noTel` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tempat_kursus`
+--
+
+INSERT INTO `tempat_kursus` (`tempat_ID`, `staffID`, `T_tempat`, `T_alamat`, `T_daerah`, `T_noTel`) VALUES
+(3455, '23444', 'Pejabat Daerah', 'Pejabat Daerah Pahang', 'Gambang', '013305552'),
+(3522, '23444', 'Pejabat Daerah', 'Pejabat Daerah Pahang', 'Kuantan', '014444576');
 
 --
 -- Indexes for dumped tables
@@ -345,25 +385,19 @@ ALTER TABLE `info_wali`
 -- AUTO_INCREMENT for table `insentif_perkahwinan`
 --
 ALTER TABLE `insentif_perkahwinan`
-  MODIFY `insentifID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `insentifID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31335;
 
 --
 -- AUTO_INCREMENT for table `matlumat_kursus`
 --
 ALTER TABLE `matlumat_kursus`
-  MODIFY `kursus_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `kursus_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4335;
 
 --
 -- AUTO_INCREMENT for table `pasangan`
 --
 ALTER TABLE `pasangan`
   MODIFY `pasanganID` int(50) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `pekerja`
---
-ALTER TABLE `pekerja`
-  MODIFY `staffID` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `pembayaran`
@@ -387,13 +421,13 @@ ALTER TABLE `permohonan_konsultasi`
 -- AUTO_INCREMENT for table `praperkahwinan`
 --
 ALTER TABLE `praperkahwinan`
-  MODIFY `praperkahwinanID` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `praperkahwinanID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53224;
 
 --
 -- AUTO_INCREMENT for table `tempat_kursus`
 --
 ALTER TABLE `tempat_kursus`
-  MODIFY `tempat_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `tempat_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3523;
 
 --
 -- Constraints for dumped tables

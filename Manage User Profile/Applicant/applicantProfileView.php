@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage User Profile/Applicant/applicantProfileView.php" method="post">
+                            <form action="/ZAN-System/Manage User Profile/Applicant/applicantEditForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
                                         <table>
@@ -43,97 +43,97 @@
                                                 <td>No. Kad Pengenalan </td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="text" name="noKP">
+                                                951101070191
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Nama Pemohon </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="nama">
+                                                Ahmad Aiman Bin Adam
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Tarikh Lahir </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="tarikhLahir">
+                                                1995-11-01
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Umur </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="umur">
+                                                28 Tahun
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Jantina </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="jantina">
+                                                Lelaki
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Bangsa </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="bangsa">
+                                               Melayu
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Kewarganegaraan </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="warganegara">
+                                                Malaysia
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Alamat </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="alamat">
+                                                NO 110, Taman Peramu Permai
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>No. Telefon (Bimbit) </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="noTel">
+                                                011-1234567
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>No. Telefon (Rumah) </td>
+                                                <td>No. Telefon (Pejabat) </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="noTelRumah">
+                                                06-123456
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Taraf Pendidikan </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="statusPelajaran">
+                                                Degree
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Sektor Kerajaan </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="bahagianPekerjaan">
+                                                Kerajaan
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Pekerjaan/Jawatan </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="jawatanPekerjaan">
+                                                Kerani
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Status Kahwin </td>
                                                 <td>:</td>
-                                                <td><input type="text" name="statusPerkahwinan">
+                                               <td>Bujang
                                                 </td>
                                             </tr>
                                            
@@ -141,7 +141,7 @@
                                                 <td>No. Sijil Kursus Pra Perkahwinan </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="praperkahwinanID">
+                                                121
                                                 </td>
                                             </tr>
                                         </table>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
-    <title>TITLE GOES HERE</title>
+    <title>Kemaskini profil</title>
 </head>
 
 <body>
@@ -18,23 +18,25 @@
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-        <?php include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
+            <?php include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
             <div class="col-md-10">
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="content-header">
-                            <h3>Akaun > Profil</h3>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="content-body">
+                    <div class="content-body-staff">  
+                        <div class="content-header">
+                            <h3>Akaun > Profil</h3>
+                        </div>
+                          
+                     
+
+                        <div class="row">
+                        <div class="col-md-12">
+                        <div class="content-body-staff">
                             <form action="/ZAN-System/Manage User Profile/Staff/StaffEditForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
@@ -43,28 +45,28 @@
                                                 <td>ID Staff</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="text" name="satffID">
+                                                1024
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Nama Staff </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_namaPekerja">
+                                                Rassidi Bin Mohd
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>No. Telefon  </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_noTelPekerja">
+                                              011-11223434
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Emel </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_emelPekerja">
+                                             rassidi@jaip.com
                                                 </td>
                                             </tr>
                                             
@@ -83,7 +85,9 @@
                                 </div>
                             </form>
                         </div>
+              
                     </div>
+                
                 </div>
 
             </div>

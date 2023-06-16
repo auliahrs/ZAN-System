@@ -9,7 +9,13 @@
                 <h5>Ahmad Aiman Bin Adam</h5>
             </div>
         </div>
+        </div>
+    <!-- Profil box -->
+    <div class="menu-box">
+        <h5>Akaun</h5>
+        <a class="active" href="/ZAN-System/Manage User Profile/Applicant/applicantProfileView.php">Profil</a>
     </div>
+   
     <!-- Pra perkahwinan box -->
     <div class="menu-box">
         <h5>Pra Perkahwinan</h5>
@@ -26,8 +32,8 @@
     <!-- Pendaftaran perkahwinan box -->
     <div class="menu-box">
         <h5>Pendaftaran Perkahwinan</h5>
-        <a href="#">Daftar Perkahwinan</a>
-        <a href="#">Sijil & Kad Perakuan Nikah</a>
+        <a href="/ZAN-System/Manage Marriage Registration/Applicant/MarriageTypeForm.php">Daftar Perkahwinan</a>
+        <a href="/ZAN-System/Marriage Certificate & Card Request/Applicant/RequestForm.php">Sijil & Kad Perakuan Nikah</a>
     </div>
     <!-- Insentif perkahwinan box -->
     <div class="menu-box">

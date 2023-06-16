@@ -1,3 +1,7 @@
+<?php
+include('../manageApplicationController.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,6 +43,11 @@
                                 <div class="row my-3">
                                     <div class="col-md-12 table-dpp">
                                         <p class="topic-header">Maklumat Perkahwinan</p>
+
+                                        <?php
+                                        $controller = new manageApplicationController();
+
+                                        ?>
                                         <table>
                                             <tr>
                                                 <td>Tarkih Permohonan</td>
