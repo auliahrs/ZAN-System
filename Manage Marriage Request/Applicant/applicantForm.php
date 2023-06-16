@@ -55,7 +55,7 @@ include('../manageApplicationController.php');
                                             <tr>
                                                 <td>Nama Pemohon </td>
                                                 <td>:</td>
-                                                <td><?php echo $applicantData['P_nama']; ?>/td>
+                                                <td><?php echo $applicantData['P_nama']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Tarikh Lahir </td>
