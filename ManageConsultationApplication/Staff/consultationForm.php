@@ -53,7 +53,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body-staff">
-                            <form action="/ZAN-System/ManageBookingSession/Applicant/bookSession.php" method="post">
+                            <form action="/ZAN-System/ManageConsultationApplication/Staff/consultationForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpph">
                                         <table>
@@ -126,7 +126,7 @@
                                             <hr>
                                             <br>
                                             <center><p><b>INFO ADUAN/ KHIDMAT NASIHAT</b></p></center>
-                                            <form action="/ZAN-System/ManageBookingSession/Applicant/cancelBookSession.php" method="post">
+                                            <form action="/ZAN-System/ManageConsultationApplication/Staff/consultationForm.php" method="post">
                                                 <table>
                                                     <tr>
                                                         <th><label for="aduan">Aduan/Khidmat Nasihat:&nbsp;</label></th>
@@ -145,7 +145,7 @@
                                                 <div class="row my-2">
                                                 <div class="col">
                                                 <div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/updateConsultantProfile.php">
+                                                        <a href="/ZAN-System/ManageBookingSession/Staff/updateConsultantProfile.php">
                                                                 <button type="button" class="btn btn-primary">TERIMA</button></a></div></div>
                                                                 <center><button onclick="showConfirmation()">Delete</button></center>
 

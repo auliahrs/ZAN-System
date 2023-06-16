@@ -66,7 +66,7 @@
                                                         <td>Staff ID</td>
                                                         <td>21075</td>
                                                         <td><div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/bookSession.php">
+                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/viewConsultantProfile.php">
                                                                 <button type="button" class="btn btn-primary">LIHAT</button></a></td>
                                                     </tr>
                                                     
