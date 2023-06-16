@@ -152,10 +152,10 @@ function goToOldInterface() {
 <div class="docname">
   <span class="docname-text">Slip Permohonan Perkahwinan</span>
   <div>
-    <a class="custom-button" href="path/to/download/Slip_Permohonan_Kahwin.pdf" download>Muat Turun Dokumen</a>
+    <a class="custom-button" href="path/to/download/Slip_Permohonan_Kahwin.pdf" download>Muat Turun Dokumen Asal</a>
 
     <input type="file" id="upload-input-1" style="display: none;">
-    <label for="upload-input-1" class="custom-button">Muat Naik Dokumen</label>
+    <label for="upload-input-1" class="custom-button">Muat Naik Dokumen Baru</label>
     <span id="file-name-1"></span>
 
     <script>
@@ -174,10 +174,10 @@ function goToOldInterface() {
 <div class="docname">
   <span class="docname-text">Borang Kebenaran Berkahwin</span>
   <div>
-    <a class="custom-button" href="path/to/download/Borang_Kebenaran_Kahwin.pdf" download>Muat Turun Dokumen</a>
+    <a class="custom-button" href="path/to/download/Borang_Kebenaran_Kahwin.pdf" download>Muat Turun Dokumen Asal</a>
 
     <input type="file" id="upload-input-2" style="display: none;">
-    <label for="upload-input-2" class="custom-button">Muat Naik Dokumen</label>
+    <label for="upload-input-2" class="custom-button">Muat Naik Dokumen Baru</label>
     <span id="file-name-2"></span>
 
     <script>
@@ -195,10 +195,10 @@ function goToOldInterface() {
 <div class="docname">
   <span class="docname-text">Catatan Akad Nikah</span>
   <div>
-    <a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Muat Turun Dokumen</a>
+    <a class="custom-button" href="path/to/download/Catatan_Akad_Nikah.pdf" download>Muat Turun Dokumen Asal</a>
 
     <input type="file" id="upload-input-3" style="display: none;">
-    <label for="upload-input-3" class="custom-button">Muat Naik Dokumen</label>
+    <label for="upload-input-3" class="custom-button">Muat Naik Dokumen Baru</label>
     <span id="file-name-3"></span>
 
     <script>
@@ -218,7 +218,7 @@ function goToOldInterface() {
   <div>
 
   <input type="file" id="upload-input-4" style="display: none;">
-    <label for="upload-input-4" class="custom-button">Muat Naik Dokumen</label>
+    <label for="upload-input-4" class="custom-button">Muat Naik Dokumen Baru</label>
     <span id="file-name-4"></span>
 
     <script>
@@ -238,7 +238,7 @@ function goToOldInterface() {
   <div>
 
   <input type="file" id="upload-input-5" style="display: none;">
-    <label for="upload-input-5" class="custom-button">Muat Naik Dokumen</label>
+    <label for="upload-input-5" class="custom-button">Muat Naik Dokumen Baru</label>
     <span id="file-name-5"></span>
 
     <script>
