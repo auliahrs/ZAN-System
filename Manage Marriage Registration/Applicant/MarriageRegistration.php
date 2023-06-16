@@ -35,16 +35,5 @@ class MarriageRegistration
     return $result;
     }
 
-    public function update()
-    {
-    }
-
-    public function insert()
-    {
-    }
-
-    public function delete()
-    {
-    }
 }
 
