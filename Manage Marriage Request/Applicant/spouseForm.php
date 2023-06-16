@@ -1,3 +1,6 @@
+<?php
+include('../manageApplicationController.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,94 +41,224 @@
                             <form action="/ZAN-System/Manage Marriage Request/Applicant/spouseForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
+                                        <?php
+                                        if (isset($_POST['search'])) {
+                                            $controller = new manageApplicationController();
+                                            $applicantData = $controller->getApplicantData($_POST['noKP']);
+                                        } else {
+                                            $applicantData = [];
+                                        }
+                                        ?>
                                         <table>
                                             <tr>
                                                 <td>No. Kad Pengenalan </td>
                                                 <td>:</td>
                                                 <td>
                                                     <input type="text" name="noKP">
-                                                    <button>MEMINTA MAKLUMAT</button>
+                                                    <button type="submit" name="search">MEMINTA MAKLUMAT</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Nama Pemohon </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_nama'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Tarikh Lahir </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_tarikhLahir'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Umur </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_umur'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Jantina </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_jantina'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Bangsa </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_bangsa'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Kewarganegaraan </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_warganegara'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Alamat </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_alamatIC'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>No. Telefon (Bimbit) </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_telefonBimbit'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>No. Telefon (Rumah) </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_NoTelRumah'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Taraf Pendidikan </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_statusPelajaran'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Sektor Kerajaan </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_bahagianPekerjaan'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Pekerjaan/Jawatan </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_jawatanPekerjaan'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Alamat Tempat Kerja </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_alamatSemasa'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Status Kahwin </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['P_statusPerkahwinan'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Status Saudara Baru </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    tiada
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>No. Sijil Kursus Pra Perkahwinan </td>
                                                 <td>:</td>
-                                                <td></td>
+                                                <td>
+                                                    <?php
+                                                    if ($applicantData) {
+                                                        echo $applicantData['praperkahwinanID'];
+                                                    } else {
+                                                        echo "";
+                                                    }
+                                                    ?>
+                                                </td>
                                             </tr>
                                         </table>
                                     </div>
