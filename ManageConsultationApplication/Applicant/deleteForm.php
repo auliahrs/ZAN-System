@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/ManageConsultationApplication/Applicant/deleteForm.php" method="post">
+                            <form action="/ZAN-System/ManageConsultationApplication/Applicant/applicationForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>

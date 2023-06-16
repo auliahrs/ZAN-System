@@ -7,22 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
-    <title>cancelBookSession</title>
+    <title>Daftar Jenis Perkahwinan</title>
 
-<style>
-    .button {
-    background-color: #1A2F77;
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 10px;
-  }
+    <style>
+
+.custom-button-container {
+      display: flex;
+      gap: 20px;
+    }
+     .custom-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 250px;
+      margin: 110px;
+      font-size: 20px;
+      border-radius: 10px;
+      background-color: #D7D7D7;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      color: black; 
+      text-decoration: none;
+    }
+
+    .custom-button:hover {
+      background-color: #A0A0A0;
+    }
+
+    .custom-button:active {
+      background-color: #707070;
+    }
   </style>
 </head>
 
@@ -43,7 +58,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Aduan/Khidmat Nasihat > Sesi Konsultasi</h3>
+                            <h3>Pendaftaran Perkahwinan > Daftar Perkahwinan</h3>
                         </div>
                     </div>
                 </div>
@@ -51,28 +66,27 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/ManageBookingSession/Applicant/cancelBookSession.php" method="post">
+                            <form action="/ZAN-System/Manage Marriage Registration/Applicant/MarriageTypeForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
-                                        <center><button onclick="showConfirmation()">Delete</button></center>
-
-                                            <script>
-                                                function showConfirmation() {
-                                                    if (confirm("Are you sure you want to delete?")) {
-                                                        // Code to perform delete operation
-                                                        // You can call your delete function or perform any other desired action here
-                                                        alert("Delete operation performed");
-                                                    } else {
-                                                        // Code to handle cancel or dismissal of the popup
-                                                        alert("Delete operation canceled");
-                                                    }
-                                                }
-                                            </script>
-                                            </table>
 
 
- 
+
+
+                                        <div class="custom-button-container">
+  <a class="custom-button" onclick="goToOldInterface()">Pendaftaran Nikah Dalam/Luar Negeri</a>
+  <a class="custom-button" onclick="goToOldInterface()">Pendaftaran Nikah Sukarela</a>
+</div>
+
+<script>
+    function goToOldInterface() {
+      window.location.href = "DocumentForm.php";
+    }
+
+    
+  </script>
+</div>
 
                                     </div>
                                 </div>
