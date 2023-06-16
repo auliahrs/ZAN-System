@@ -117,15 +117,36 @@ function goToOldInterface() {
                             <form action="/ZAN-System/Manage Marriage Registration/Applicant/DocumentForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
-                                        <table>
-                                        <?php
+                                    <?php
+                                    
+                                    include('MarriageRegController.php');
+                                    
                                         $controller = new MarriageRegController();
-                                        $PEN_jenisKahwin = $controller->getPEN_jenisKahwin('Perkahwinan Dalam/Luar Negara'); //assume ni hasil dari login
+                                        $applicantData = $controller->getApplicantData('013293044947'); //assume from login
                                         ?>
+                                        <table>
+                                        
 
 <div class="document">
     DOKUMEN
 </div>
+<table>
+                                            <tr>
+                                                <td>No. Kad Pengenalan </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['noIC']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nama Pemohon </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_nama']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tarikh Lahir </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_tarikhLahir']; ?></td>
+                                            </tr>
+</table>
 
 <!-- First doc -->
 <div class="docname">
