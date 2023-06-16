@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="applicationForm.php" method="post" onsubmit="return confirm('Are you sure you want to save the data?');">
+                            <form action="IncentiveForm.php" method="post" onsubmit="return confirm('Are you sure you want to save the data?');">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
                                        
