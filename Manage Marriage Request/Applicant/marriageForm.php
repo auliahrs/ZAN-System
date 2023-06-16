@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Request/Applicant/A_MaklumatPerkahwian.php" method="post">
+                            <form action="/ZAN-System/Manage Marriage Request/Applicant/marriageInfo.php" method="post">
                                 <div class="row my-3">
                                     <div class="col-md-12 table-dpp">
                                         <p class="topic-header">Maklumat Perkahwinan</p>
@@ -305,6 +305,7 @@
                                                             <option value="">-SILA PILIH-</option>
                                                             <option value="bukan">BUKAN PERNIKAHAN SEMULA</option>
                                                             <option value="semula">PERNIKAHAN SEMULA</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
