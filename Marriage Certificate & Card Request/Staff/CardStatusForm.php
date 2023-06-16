@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Permohonan Berkahwin > Senarai Permohonan</h3>
+                            <h3>Permohonan Berkahwin > Sijil & Kad Perakuan Nikah</h3>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                                         </tr>
                                         <tr>
                                             <td>AHMAD AIMAN BIN ADAM</td>
-                                            <td><a href="mailto:hattarahman1@gmail.com" target="_blank"><button>Hantar Notis Kepada Pemohon</button></a></td>
+                                            <td><a href="mailto:AimanAdam@gmail.com" target="_blank"><button>Hantar Notis Kepada Pemohon</button></a></td>
                                     </table>
                                 </div>
                             </div>
