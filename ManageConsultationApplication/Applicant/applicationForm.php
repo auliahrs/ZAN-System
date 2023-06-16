@@ -1,3 +1,6 @@
+<?php
+include('../applicationController.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,6 +60,10 @@
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
+                                        <?php
+                                        $controller = new applicationController();
+                                        $applicantData = $controller->getapplicationData('1111'); //konsultasiID
+                                        ?>
 
                                             <div class="document">BORANG PERMOHONAN KONSULTASI</div>
                                             <table>
