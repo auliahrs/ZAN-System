@@ -1,3 +1,6 @@
+<?php
+include('../consultationController.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,6 +58,10 @@
                         <div class="content-body-staff">
                             <form action="/ZAN-System/ManageBookingSession/Staff/updateSession.php" method="post">
                                 <div class="row my-3">
+                                <?php
+                                        $controller = new consultationController();
+                                        $applicantData = $controller->getconsultationData('1111'); //konsultasiID
+                                        ?>
                                     <div class="col table-dpph">
                                         <table>
 

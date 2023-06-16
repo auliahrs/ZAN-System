@@ -1,3 +1,6 @@
+<?php
+include('../bookController.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,6 +62,10 @@
                                     <div class="col table-dpp">
                                         <table>
                                         <div class="document">BIODATA PENASIHAT</div>
+                                        <?php
+                                        $controller = new bookController();
+                                        $applicantData = $controller->getbookData('1111'); //konsultasiID
+                                        ?>
                                                 <table>
                                                     
                                                     <tr>

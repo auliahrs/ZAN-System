@@ -1,3 +1,6 @@
+<?php
+include('../applicationController.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,6 +59,10 @@
                                         <div class="document">BORANG PERMOHONAN KONSULTASI</div>
                                         <center><p><b>INFO ADUAN/ KHIDMAT NASIHAT</b></p></center>
                                             <form action="/ZAN-System/ManageConsultationApplication/Applicant/viewForm.php" method="post">
+                                            <?php
+                                                $controller = new applicationController();
+                                                $applicantData = $controller->getapplicationData('1111'); //konsultasiID
+                                            ?>
                                                 <table>
                                                     <tr>
                                                         <th><label for="aduan">Aduan/Khidmat Nasihat:&nbsp;</label></th>
