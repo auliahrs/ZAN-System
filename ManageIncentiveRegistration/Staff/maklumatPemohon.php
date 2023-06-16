@@ -100,7 +100,7 @@
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-                <?php include('../../components/leftMenu.php'); ?>
+                <?php include('../../components/S_leftMenu.php'); ?>
             
             <!-- LEFT MENU ENDS HERE -->
 
@@ -165,17 +165,17 @@
                                                 $updateStmt->bindParam(':noIC', $noIC);
 
                                                 if ($updateStmt->execute()) {
-                                                    header("Location: maklumatPasangan.php");
+                                                    header("Location: maklumatPemohon.php");
                                                     exit();
                                                 } else {
                                                     echo "Failed to update data in the database.";
                                                 }
                                             }
                                             ?>
-
-<form method="POST" action="IncentiveController.php?noIC=<?php echo $noIC; ?>">
-<form action="maklumatPasangan.php" method="POST">
-    <p>
+<form action="documentPage.php" method="POST">
+    <input type="hidden" name="noIC" value="<?php echo $noIC; ?>">
+    
+</form>
         <span class="label">Nama:</span>
         <input type="text" name="P_nama" value="<?php echo $nama; ?>">
     </p>
@@ -209,6 +209,13 @@
     </p>
     
     <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>
+</form>
+
+<form action="documentPage.php" method="POST">
+    <input type="hidden" name="noIC" value="<?php echo $noIC; ?>">
+    <button type="submit" name="senarai_document" class="btn btn-primary">Document</button>
+</form>
+</form>
 </form>
 
                                         <?php
