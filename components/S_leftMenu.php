@@ -16,6 +16,7 @@
         <h5>Akaun</h5>
         <a href="/ZAN-System/Manage User Profile/Staff/staffProfileView.php"> Profil</a>
         <a href="/ZAN-System/Manage User Profile/Staff/viewApplicantProfile.php">Senarai Akaun</a>
+        <a href="/ZAN-System/Manage User Profile/Staff/createStaffAccount.php">Cipta Akaun Staff</a>
     </div>
     <!-- Kursus Pra Perkahwinan box -->
     <div class="menu-box">

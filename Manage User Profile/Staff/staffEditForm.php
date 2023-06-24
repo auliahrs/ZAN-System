@@ -38,6 +38,10 @@
                             <form action="/ZAN-System/Manage User Profile/Staff/staffProfileView.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
+                                    <?php
+                                        $controller = new staffController();
+                                        $staffData = $controller->getStaffData('1024'); 
+                                        ?>
                                         <table>
                                             <tr>
                                                 <td>ID Staff</td>

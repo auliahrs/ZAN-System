@@ -38,6 +38,10 @@
                             <div class="row">
                                 <div class="col table-dpp">
                                     <form action="/ZAN-System/Manage Marriage Request/Staff/viewApplicantProfile.php" method="get">
+                                    <?php
+                                        $controller = new applicantController();
+                                        $applicantData = $controller->getApplicantData('013293044947'); 
+                                        ?>
                                         <table>
                                             <tr>
                                                 <td>
@@ -48,6 +52,93 @@
                                                 <td><input type="text" name="carian"></td>
                                                 <td><button type="submit" name="search" value="search"><img src="/ZAN-System/images/search.png" alt="Search icon"></button></td>
                                             </tr>
+                                            <table>
+                                            <tr>
+                                                <td>No. Kad Pengenalan </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['noIC']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nama Pemohon </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_nama']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tarikh Lahir </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_tarikhLahir']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Umur </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_umur']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jantina </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_jantina']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bangsa </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_bangsa']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kewarganegaraan </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_warganegara']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Alamat </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_alamatIC']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>No. Telefon (Bimbit) </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_telefonBimbit']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>No. Telefon (Rumah) </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_NoTelRumah']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Taraf Pendidikan </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_statusPelajaran']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sektor Kerajaan </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_bahagianPekerjaan']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pekerjaan/Jawatan </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_jawatanPekerjaan']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Alamat Tempat Kerja </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_alamatSemasa']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Status Kahwin </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['P_statusPerkahwinan']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Status Saudara Baru </td>
+                                                <td>:</td>
+                                                <td>Tidak</td>
+                                            </tr>
+                                            <tr>
+                                                <td>No. Sijil Kursus Pra Perkahwinan </td>
+                                                <td>:</td>
+                                                <td><?php echo $applicantData['praperkahwinanID']; ?></td>
+                                            </tr>
+                                        </table>
                                         </table>
                                     </form>
                                 </div>
