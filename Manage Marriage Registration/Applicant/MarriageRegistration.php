@@ -1,7 +1,7 @@
 <?php
 
 
-class applicationData
+class MarriageRegistration
 {
     private $host;
     private $dbname;
@@ -14,7 +14,7 @@ class applicationData
     {
     }
 
-    public function read($key, $tablename) //read data based on tablename, and konsultasiID
+    public function read($key, $tablename) //read data based on tablename, and ic
     {
         $host = 'localhost';
         $dbname = 'munakahat';
@@ -29,21 +29,11 @@ class applicationData
         }
         // echo "Connected successfully";
 
-        $sql = "SELECT * FROM $tablename WHERE konsultasiID = '$key'";
-        $result = mysqli_query($conn, $sql);
+        $sql = "SELECT * FROM $tablename WHERE noIC = '$key'";
+        $result = $conn->query($sql); // Use query() instead of mysqli_query()
 
-        return $result;
+    return $result;
     }
 
-    public function update()
-    {
-    }
-
-    public function insert()
-    {
-    }
-
-    public function delete()
-    {
-    }
 }
+

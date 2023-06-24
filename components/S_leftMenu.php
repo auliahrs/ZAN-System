@@ -44,12 +44,12 @@
     <!-- Insentif Perkahwinan box -->
     <div class="menu-box">
         <h5>Insentif Perkahwinan</h5>
-        <a href="/ZAN-System/ManageIncentiveRegistration/Staff/applicationForm.php">Senarai Pemohon Insentif</a>
+        <a href="#">Senarai Pemohon Insentif</a>
     </div>
     <!-- Aduan box -->
     <div class="menu-box">
         <h5>Aduan/Khidmat Nasihat</h5>
-        <a href="#">Borang Aduan/Khidmat Nasihat</a>
-        <a href="#">Sesi Konsultasi</a>
+        <a href="/ZAN-System/ManageConsultationApplication/Staff/approveForm.php">Borang Aduan/Khidmat Nasihat</a>
+        <a href="/ZAN-System/ManageBookingApplication/Staff/updateConsultantProfile.php">Sesi Konsultasi</a>
     </div>
 </div>

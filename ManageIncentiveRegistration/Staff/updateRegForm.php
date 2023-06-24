@@ -138,8 +138,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td><?php echo $row['noIC']; ?></td>
                                                     <td>
                                                     <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
-                                                    <button type="submit" name="approve" class="mohon-button">Approve</button>
-<button type="submit" name="reject" class="mohon-button">Reject</button>
+                                                    <td>
+    <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
+    <button type="submit" name="delete" class="delete-button">
+        <img src="delete-icon.png" alt="Delete">
+    </button>
+</td>
+
 
                                                     </td>
                                                 </tr>

@@ -1,3 +1,6 @@
+<?php
+include('../applicationController.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,13 +52,17 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/ManageBookingSession/Applicant/bookSession.php" method="post">
+                            <form action="/ZAN-System/ManageConsultationApplication/Applicant/editForm.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
+                                    <?php
+                                        $controller = new applicationController();
+                                        $applicantData = $controller->getapplicationData('1111'); //konsultasiID
+                                        ?>
                                         <table>
                                         <div class="document">BORANG PERMOHONAN KONSULTASI</div>
                                         <center><p><b>INFO ADUAN/ KHIDMAT NASIHAT</b></p></center>
-                                            <form action="/ZAN-System/ManageConsultationApplication/Applicant/viewForm.php" method="post">
+                                            <form action="/ZAN-System/ManageConsultationApplication/Applicant/editForm.php" method="post">
                                                 <table>
                                                     <tr>
                                                         <th><label for="aduan">Aduan/Khidmat Nasihat:&nbsp;</label></th>

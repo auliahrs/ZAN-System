@@ -1,3 +1,6 @@
+<?php
+include('../bookController.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,7 +69,11 @@
                                                         <td>Staff ID</td>
                                                         <td>21075</td>
                                                         <td><div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/bookSession.php">
+                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/viewConsultantProfile.php">
+                                                        <?php
+                                        $controller = new bookController();
+                                        $applicantData = $controller->getbookData('1111'); //konsultasiID
+                                        ?>
                                                                 <button type="button" class="btn btn-primary">LIHAT</button></a></td>
                                                     </tr>
                                                     

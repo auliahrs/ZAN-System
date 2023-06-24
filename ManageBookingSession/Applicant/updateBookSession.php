@@ -1,3 +1,6 @@
+<?php
+include('../bookController.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,11 +57,15 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/ManageBookingSession/Applicant/bookSession.php" method="post">
+                            <form action="/ZAN-System/ManageBookingSession/Applicant/updateBookSession.php" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
                                         <div class="document">BIODATA PENASIHAT</div>
+                                        <?php
+                                        $controller = new bookController();
+                                        $applicantData = $controller->getbookData('1111'); //konsultasiID
+                                        ?>
                                                 <table>
                                                     
                                                     <tr>

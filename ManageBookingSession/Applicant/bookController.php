@@ -1,29 +1,17 @@
 <?php
 
+include('bookData.php');
 
 class bookController
 {
-    private $module4Repository;
-    
-    public function __construct($module4Repository)
+    public function __construct()
     {
-        $this->module4Repository = $module4Repository;
     }
 
-    public function insertForm($konsultasiID, $noIC, $staffID, $K_tarikh, $K_masa, $K_butiranKonsultasi)
+    public function getbookData($konsultasiID) //retrieve bookData data
     {
-        $this->module4Repository->insertForm($konsultasiID, $noIC, $staffID, $K_tarikh, $K_masa, $K_butiranKonsultasi);
-
-    }
-    public function getbookData()
-    {
-        return $this->module4Repository->getbookData();
-    }
-    
-    public function getbookDataBykonsultasiID($konsultasiID)
-    {
-        return $this->module4Repository->getbookData($konsultasiID);
+        $minfo = new bookData();
+        $result = $minfo->read($konsultasiID, '21075');
+        return $result->fetch_assoc();
     }
 }
-
-?>

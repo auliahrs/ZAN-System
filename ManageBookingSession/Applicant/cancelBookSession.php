@@ -1,3 +1,6 @@
+<?php
+include('../bookController.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,8 +54,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/ManageBookingSession/Applicant/viewConsultantProfile.php" method="post">
+                            <form action="/ZAN-System/ManageBookingSession/Applicant/cancelBookSession.php" method="post">
                                 <div class="row my-3">
+                                <?php
+                                        $controller = new bookController();
+                                        $applicantData = $controller->getbookData('1111'); //konsultasiID
+                                        ?>
                                     <div class="col table-dpp">
                                         <table>
                                         <center><button onclick="showConfirmation()">Delete</button></center>

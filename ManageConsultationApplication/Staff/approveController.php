@@ -1,29 +1,17 @@
 <?php
 
+include('approveFormData.php');
 
 class approveController
 {
-    private $module4Repository;
-    
-    public function __construct($module4Repository)
+    public function __construct()
     {
-        $this->module4Repository = $module4Repository;
     }
 
-    public function insertForm($konsultasiID, $noIC, $staffID, $K_tarikh, $K_masa, $K_butiranKonsultasi)
+    public function getapproveFormData($konsultasiID) //retrieve approveFormData data
     {
-        $this->module4Repository->insertForm($konsultasiID, $noIC, $staffID, $K_tarikh, $K_masa, $K_butiranKonsultasi);
-
-    }
-    public function getapproveData()
-    {
-        return $this->module4Repository->getapproveData();
-    }
-    
-    public function getapproveDataBykonsultasiID($konsultasiID)
-    {
-        return $this->module4Repository->getapproveData($konsultasiID);
+        $minfo = new approveFormData();
+        $result = $minfo->read($konsultasiID, '21075');
+        return $result->fetch_assoc();
     }
 }
-
-?>
