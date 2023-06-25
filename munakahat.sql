@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 25, 2023 at 10:05 AM
+-- Generation Time: Jun 25, 2023 at 12:34 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -142,15 +142,17 @@ CREATE TABLE `pekerja` (
   `staffID` varchar(10) NOT NULL,
   `S_namaPekerja` varchar(50) NOT NULL,
   `S_noTelPekerja` varchar(20) NOT NULL,
-  `S_emailPekerja` varchar(50) NOT NULL
+  `S_emailPekerja` varchar(50) NOT NULL,
+  `S_kataLaluan` varchar(20) NOT NULL,
+  `S_sahKataLaluan` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `pekerja`
 --
 
-INSERT INTO `pekerja` (`staffID`, `S_namaPekerja`, `S_noTelPekerja`, `S_emailPekerja`) VALUES
-('23444', 'Ahmad Abu', '017377445', 'Abu224@gmail.com');
+INSERT INTO `pekerja` (`staffID`, `S_namaPekerja`, `S_noTelPekerja`, `S_emailPekerja`, `S_kataLaluan`, `S_sahKataLaluan`) VALUES
+('23444', 'Ahmad Abu', '017377445', 'Abu224@gmail.com', '', '');
 
 -- --------------------------------------------------------
 
@@ -197,15 +199,16 @@ CREATE TABLE `pendaftaran_perkahwinan` (
   `PEN_statusPendaftaran` varchar(10) NOT NULL,
   `PEN_ jenisKahwin` varchar(50) NOT NULL,
   `PEN_ sijilKahwin` varchar(50) NOT NULL,
-  `PEN_ kadKahwin` varchar(50) NOT NULL
+  `PEN_ kadKahwin` varchar(50) NOT NULL,
+  `PEN_dokumen` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `pendaftaran_perkahwinan`
 --
 
-INSERT INTO `pendaftaran_perkahwinan` (`appID`, `noIC`, `pasanganID`, `PEN_tarikhPermohonan`, `PEN_ negara`, `PEN_ negeri`, `PEN_ tarikhAkad`, `PEN_ alamatKahwin`, `PEN_ jenisMasKahwin`, `PEN_ jumMasKahwin`, `PEN_ hantaran`, `PEN_ pemberianLain`, `PEN_statusPendaftaran`, `PEN_ jenisKahwin`, `PEN_ sijilKahwin`, `PEN_ kadKahwin`) VALUES
-(1, '013293044942', 1, '2023-03-09', 'MALAYSIA', 'PAHANG', '2023-07-08', 'DEWAN KAMARIAH', 'TUNAI', 280, '', '', 'DALAM PROS', 'BUKAN PERNIKAHAN SEMULA', '', '');
+INSERT INTO `pendaftaran_perkahwinan` (`appID`, `noIC`, `pasanganID`, `PEN_tarikhPermohonan`, `PEN_ negara`, `PEN_ negeri`, `PEN_ tarikhAkad`, `PEN_ alamatKahwin`, `PEN_ jenisMasKahwin`, `PEN_ jumMasKahwin`, `PEN_ hantaran`, `PEN_ pemberianLain`, `PEN_statusPendaftaran`, `PEN_ jenisKahwin`, `PEN_ sijilKahwin`, `PEN_ kadKahwin`, `PEN_dokumen`) VALUES
+(1, '013293044942', 1, '2023-03-09', 'MALAYSIA', 'PAHANG', '2023-07-08', 'DEWAN KAMARIAH', 'TUNAI', 280, '', '', 'DALAM PROS', 'BUKAN PERNIKAHAN SEMULA', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -218,7 +221,8 @@ CREATE TABLE `pengguna` (
   `P_nama` varchar(50) NOT NULL,
   `P_email` varchar(20) NOT NULL,
   `P_jantina` varchar(10) NOT NULL,
-  `P_NRICpolis_lama` varchar(20) NOT NULL,
+  `P_kataLaluan` varchar(20) NOT NULL,
+  `P_sahKataLaluan` varchar(20) NOT NULL,
   `P_tarikhLahir` date NOT NULL DEFAULT current_timestamp(),
   `P_umur` int(11) NOT NULL,
   `P_bangsa` varchar(20) NOT NULL,
@@ -239,10 +243,10 @@ CREATE TABLE `pengguna` (
 -- Dumping data for table `pengguna`
 --
 
-INSERT INTO `pengguna` (`noIC`, `P_nama`, `P_email`, `P_jantina`, `P_NRICpolis_lama`, `P_tarikhLahir`, `P_umur`, `P_bangsa`, `P_warganegara`, `P_alamatIC`, `P_alamatSemasa`, `P_NoTelRumah`, `P_statusPelajaran`, `P_bahagianPekerjaan`, `P_jawatanPekerjaan`, `P_noTelPejabat`, `P_statusPerkahwinan`, `praperkahwinanID`, `P_telefonBimbit`) VALUES
-('013293044942', 'AHMAD ABU BIN DAUD', 'abu33@gmail.com', 'Lelaki', '', '2023-06-12', 26, 'Melayu', 'Malaysia', 'Kampung Mengkuang', 'Kampung Mengkuang', '012244244', 'Sarjana Muda', 'Kerajaan', 'Admin', '34673', 'Berkahwin', '35224', '0112345123'),
-('013293044947', 'AHMAD AIMAN BIN ADAM', 'aiman32@gmail.com', 'Lelaki', '', '2008-06-05', 23, 'Melayu', 'Malaysia', 'Kampung Mengkuang ss', 'Kampung Mengkuang ss', '013845537', 'Sarjana Muda', 'Kerajaan', 'AdminData', '34673', 'Berkahwin', '53223', '019338443'),
-('990521146634', 'NUR FATIMAH BINTI HALIM', 'nurfath22@gmail.c', 'PEREMPUAN', '', '1999-05-21', 24, 'MELAYU', 'MALAYSIA', 'KG PUAH, JALAN PUAH, 63100 MELAKA', 'LOT 18-A, JALAN TEGAK, 26600', '09-22560234', 'DIPLOMA', 'KERAJAAN', 'GURU', '03-23660255', 'BUJANG', '55029', '0135565260');
+INSERT INTO `pengguna` (`noIC`, `P_nama`, `P_email`, `P_jantina`, `P_kataLaluan`, `P_sahKataLaluan`, `P_tarikhLahir`, `P_umur`, `P_bangsa`, `P_warganegara`, `P_alamatIC`, `P_alamatSemasa`, `P_NoTelRumah`, `P_statusPelajaran`, `P_bahagianPekerjaan`, `P_jawatanPekerjaan`, `P_noTelPejabat`, `P_statusPerkahwinan`, `praperkahwinanID`, `P_telefonBimbit`) VALUES
+('013293044942', 'AHMAD ABU BIN DAUD', 'abu33@gmail.com', 'Lelaki', '12345', '12345', '2023-06-12', 26, 'Melayu', 'Malaysia', 'Kampung Mengkuang', 'Kampung Mengkuang', '012244244', 'Sarjana Muda', 'Kerajaan', 'Admin', '34673', 'Berkahwin', '35224', '0112345123'),
+('013293044947', 'AHMAD AIMAN BIN ADAM', 'aiman32@gmail.com', 'Lelaki', 'aiman', 'aiman', '2008-06-05', 23, 'Melayu', 'Malaysia', 'Kampung Mengkuang ss', 'Kampung Mengkuang ss', '013845537', 'Sarjana Muda', 'Kerajaan', 'AdminData', '34673', 'Berkahwin', '53223', '019338443'),
+('990521146634', 'NUR FATIMAH BINTI HALIM', 'nurfath22@gmail.c', 'PEREMPUAN', 'fath55', 'fath55', '1999-05-21', 24, 'MELAYU', 'MALAYSIA', 'KG PUAH, JALAN PUAH, 63100 MELAKA', 'LOT 18-A, JALAN TEGAK, 26600', '09-22560234', 'DIPLOMA', 'KERAJAAN', 'GURU', '03-23660255', 'BUJANG', '55029', '0135565260');
 
 -- --------------------------------------------------------
 
