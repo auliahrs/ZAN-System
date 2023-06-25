@@ -78,8 +78,8 @@
                                             </tr>
                                             <tr>
                                                 <div>
-                                                    <td><button name="kembali" type="submit" value="kembali" style="margin-top: 20px;">KEMBALI</button></td>
-                                                    <td><button name="simpan" type="submit" value="simpan" style="margin-top: 20px;">SIMPAN</button></td>
+                                                    <td><a href="regVenueForm.php" style="background-color: #929292; color:black;">KEMBALI</button></td>
+                                                    <td><a href="editVenueForm.php">SIMPAN</button></td>
                                                 </div>
                                             </tr>
                                         </table>

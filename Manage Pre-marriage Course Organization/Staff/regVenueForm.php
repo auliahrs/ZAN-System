@@ -43,16 +43,7 @@
                                             <tr>
                                                 <td><span style="color:red">*</span>Tempat</td>
                                                 <td>:</td>
-                                                <td>
-                                                    <select name="tempat" id="tempat">
-                                                        <option value="">-SILA PILIH-</option>
-                                                        <option value="tempat1">DEWAN AS SAKINAH</option>
-                                                        <option value="tempat2">DEWAN SEMINAR MASJID TEPIAN PUTRA</option>
-                                                        <option value="tempat3">DEWAN SEMINAR BANDAR PEKAN</option>
-                                                        <option value="tempat4">DEWAN SEMINAR KUANTAN</option>
-                                                        <option value="daerah5">DEWAN SEMINAR TEMERLOH</option>
-                                                    </select>
-                                                </td>
+                                                <td><input type="text" name="tempatKursus"></td>
                                             </tr>
                                             <tr>
                                                 <td><span style="color:red">*</span>Alamat</td>
@@ -157,8 +148,8 @@
                                                     <td>BENTONG</td>
                                                     <td>0195884537</td>
                                                     <td>
-                                                        <a href="#">EDIT</a>
-                                                        <a href="#">DELETE</a>
+                                                        <a href="editVenueForm.php">EDIT</a>
+                                                        <a href="#" style="background-color: red; color:white;">DELETE</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -168,8 +159,8 @@
                                                     <td>KUANTAN</td>
                                                     <td>0179235007</td>
                                                     <td>
-                                                        <a href="#">EDIT</a>
-                                                        <a href="#">DELETE</a>
+                                                        <a href="editVenueForm.php">EDIT</a>
+                                                        <a href="#" style="background-color: red; color:white;">DELETE</a>
                                                     </td>
                                                 </tr>
                                             </table>
