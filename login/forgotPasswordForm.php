@@ -24,7 +24,7 @@
             <!-- THE CONTENT -->
             <div class="col-md-10" style="display:flex; justify-content: center;">
              
-                <div style=''>
+                <div>
                 <div class="row">
                     <div class="col-md-12" style="width: 500px; text-align:center; justify-content: center;">
                         <div class="content-header">
