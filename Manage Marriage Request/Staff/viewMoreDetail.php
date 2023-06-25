@@ -44,42 +44,42 @@
                                                     <tr>
                                                         <td>Tarikh Permohonan </td>
                                                         <td>:</td>
-                                                        <td></td>
+                                                        <td>13/11/2022</td>
                                                     </tr>
                                                     <tr>
                                                         <td>No Permohonan </td>
                                                         <td>:</td>
-                                                        <td></td>
+                                                        <td>KP1311BTG03</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Nama Pemohon </td>
                                                         <td>:</td>
-                                                        <td></td>
+                                                        <td>AHMAD AIMAN BIN ADAM</td>
                                                     </tr>
                                                     <tr>
                                                         <td>No Kad Pengenalan </td>
                                                         <td>:</td>
-                                                        <td></td>
+                                                        <td>990125060617</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Nama Pasangan </td>
                                                         <td>:</td>
-                                                        <td></td>
+                                                        <td>AMINAH BINTI MANSOR</td>
                                                     </tr>
                                                     <tr>
                                                         <td>No Kad Pengenalan Pasangan </td>
                                                         <td>:</td>
-                                                        <td></td>
+                                                        <td>990521146634</td>
                                                     </tr>
                                                     <tr>
                                                         <td>No. Telefon (Bimbit) </td>
                                                         <td>:</td>
-                                                        <td></td>
+                                                        <td>0135565260</td>
                                                     </tr>
                                                     <tr>
                                                         <td>No. Sijil Kursus Pra Perkahwinan </td>
                                                         <td>:</td>
-                                                        <td></td>
+                                                        <td>KKPHG/004/2023</td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -90,7 +90,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <form action="viewApprovedApplication.php">
-                                        <button type="submit" name="kembali" value="kembali" >KEMBALI</button>
+                                        <button type="submit" name="kembali" value="kembali">KEMBALI</button>
                                     </form>
                                 </div>
                             </div>

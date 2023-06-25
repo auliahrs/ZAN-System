@@ -72,7 +72,17 @@
                                             <td>KP1311BTG03</td>
                                             <td>AHMAD AIMAN BIN ADAM</td>
                                             <td>990125060617</td>
-                                            <td><img src="../../images/moredetail.png" width="30px" height="auto"><img src="../../images/approve.png" width="53px" height="auto"><img src="../../images/reject.png" width="40px" height="auto"></td>
+                                            <td>
+                                                <a href="viewMoreDetail.php" style="background-color: #D9D9D9;">
+                                                    <img src="../../images/moredetail.png" width="30px" height="auto">
+                                                </a>
+                                                <a href="viewMoreDetail.php" style="background-color: #D9D9D9;">
+                                                    <img src="../../images/approve.png" width="53px" height="auto">
+                                                </a>
+                                                <a href="viewMoreDetail.php" style="background-color: #D9D9D9;">
+                                                    <img src="../../images/reject.png" width="40px" height="auto">
+                                                </a>
+                                            </td>
                                         </tr>
                                     </table>
                                 </div>

@@ -241,13 +241,6 @@ include('../manageApplicationController.php');
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Status Saudara Baru </td>
-                                                <td>:</td>
-                                                <td>
-                                                    tiada
-                                                </td>
-                                            </tr>
-                                            <tr>
                                                 <td>No. Sijil Kursus Pra Perkahwinan </td>
                                                 <td>:</td>
                                                 <td>
@@ -269,8 +262,8 @@ include('../manageApplicationController.php');
 
                                     </div>
                                     <div class="col-md-6">
-                                        <button onclick="window.print()">Print</button>
-                                        <button name="simpan" type="submit" value="simpan">Simpan</button>
+                                        <a href="window.print()"><button onclick="window.print()" style="background-color: #929292; border: none; color: black; font-weight: bold;">Print</button></a>
+                                        <a href="marriageForm.php">Simpan</a>
                                     </div>
                                 </div>
                             </form>
