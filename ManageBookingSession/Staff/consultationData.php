@@ -1,45 +1,49 @@
 <?php
 
-class Module4Repository
-{
-    private $db;
 
-    public function __construct($db)
+class consultationData
+{
+    private $host;
+    private $dbname;
+    private $username;
+    private $password;
+    private $servername;
+    private $conn;
+
+    public function __construct()
     {
-        $this->db = $db;
     }
 
-    public function insertForm($konsultasiID, $noIC, $staffID, $K_tarikh, $K_masa, $K_butiranKonsultasi)
-{
-    $stmt = $this->db->prepare("INSERT INTO permohonan_konsultasi (konsultasiID, noIC, staffID, K_tarikh, K_masa, K_butiranKonsultasi) VALUES (:konsultasiID, :noIC, :staffID, :K_tarikh, :K_masa, :K_butiranKonsultasi)");
-    $stmt->bindParam(':konsultasiID', $konsultasiID);
-    $stmt->bindParam(':noIC', $noIC);
-    $stmt->bindParam(':staffID', $staffID);
-    $stmt->bindParam(':K_tarikh', $K_tarikh);
-    $stmt->bindParam(':K_masa', $K_masa);
-    $stmt->bindParam(':K_butiranKonsultasi', $K_butiranKonsultasi);
-    
-
-    if ($stmt->execute()) {
-        echo "Form data inserted successfully!";
-    } else {
-        echo "Error inserting form data: " . $stmt->errorInfo()[2];
-    }
-
-    $stmt->closeCursor();
-}
-public function getconsultationData($konsultasiID = null)
+    public function read($key, $tablename) //read data based on tablename, and konsultasiID
     {
-        if ($konsultasiID) {
-            // Filter the data based on the selected office
-            $stmt = $this->db->prepare("SELECT * FROM book WHERE konsultasiID = ?");
-            $stmt->execute([$konsultasiID]);
-        } else {
-            // Retrieve all the data
-            $stmt = $this->db->query("SELECT * FROM book");
+        $host = 'localhost';
+        $dbname = 'munakahat';
+        $username = 'root';
+        $password = '';
+        // Create connection
+        $conn = new mysqli($host, $username, $password, $dbname);
+
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
         }
+        // echo "Connected successfully";
 
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $sql = "SELECT * FROM $tablename WHERE konsultasiID = '$key'";
+        $result = mysqli_query($conn, $sql);
+
+        return $result;
+    }
+
+    public function update()
+    {
+    }
+
+    public function insert()
+    {
+    }
+
+    public function delete()
+    {
     }
 }
-?>

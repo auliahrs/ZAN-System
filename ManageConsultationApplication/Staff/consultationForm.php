@@ -1,3 +1,6 @@
+<?php
+include('../approveController.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,6 +57,10 @@
                     <div class="col-md-12">
                         <div class="content-body-staff">
                             <form action="/ZAN-System/ManageConsultationApplication/Staff/consultationForm.php" method="post">
+                            <?php
+                                 $controller = new approveController();
+                                 $applicantData = $controller->getapproveFormData('1111'); //konsultasiID
+                             ?>
                                 <div class="row my-3">
                                     <div class="col table-dpph">
                                         <table>

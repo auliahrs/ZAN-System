@@ -1,7 +1,7 @@
 <?php
 
 
-class applicationData
+class Applicant
 {
     private $host;
     private $dbname;
@@ -14,7 +14,7 @@ class applicationData
     {
     }
 
-    public function read($key, $tablename) //read data based on tablename, and konsultasiID
+    public function read($key, $tablename) //read data based on tablename, and ic
     {
         $host = 'localhost';
         $dbname = 'munakahat';
@@ -29,7 +29,7 @@ class applicationData
         }
         // echo "Connected successfully";
 
-        $sql = "SELECT * FROM $tablename WHERE konsultasiID = '$key'";
+        $sql = "SELECT * FROM $tablename WHERE noIC = '$key'";
         $result = mysqli_query($conn, $sql);
 
         return $result;

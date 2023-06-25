@@ -123,8 +123,16 @@ function goToOldInterface() {
                                     <div class="col table-dpp">
                                         <table>
                                         <div class="PaymentProof">
-            BUKTI PEMBAYARAN (Resit)
+            PEMBAYARAN (Resit)
         </div>
+
+        <button onclick="redirectToBankPayment()">Payment RM:35.00</button><script>
+        function redirectToBankPayment() {
+            // Replace the URL below with the actual URL of your bank payment page
+            var bankPaymentURL = "https://www.bankislam.biz/";
+            window.location.href = bankPaymentURL;
+        }
+    </script>
         <div class="Receipt">
             <img src="/ZAN-System/images/Receipt.jpg" alt="Receipt">
 
