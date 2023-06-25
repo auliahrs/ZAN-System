@@ -1,28 +1,14 @@
 <?php
 include '../../connection/connection.php';
+include 'applicationData.php';
 
-// Retrieve data from the database
-$stmt = $pdo->query("SELECT i.I_tarikh, i.insentifID, p.P_nama, p.noIC
-                     FROM insentif_perkahwinan AS i
-                     JOIN pengguna AS p ON i.noIC = p.noIC");
-$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+session_start();
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['mohon'])) {
-        if (isset($_POST['selectednoIC'])) {
-            $selectednoIC = $_POST['selectednoIC'];
-            // Perform necessary actions based on the selectednoIC value
-            // Example: Store the selectednoIC in the session or redirect to another page
-            // You can add your own logic here based on your requirements
-            // For now, let's just echo the selectednoIC value
-            echo "Selected noIC: " . $selectednoIC;
-        } else {
-            echo "No noIC selected.";
-        }
-    }
-}
+$applicationID = $_SESSION['applicationID'];
+
+$data = getApplicationData($pdo, $applicationID);
+
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,39 +38,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .box-header h2 {
             margin: 0;
         }
-
-        .box-footer {
-    display: flex;
-    justify-content: flex-end; /* Align button to the right */
-    padding: 20px;
-}
-
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        table th,
-        table td {
-            padding: 10px;
-            text-align: left;
-        }
-
-        .mohon-button {
-            background-color: #1A2F77;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .mohon-button:hover {
-            background-color: #0D1747;
-        }
     </style>
-    <title>Permohonan Insentif Perkahwinan</title>
+    <title>Application Status</title>
 </head>
 
 <body>
@@ -104,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-header">
-                            <h3>Insentif Perkahwinan > Permohonan</h3>
+                            <h3>Insentif Perkahwinan > Permohonan > Application Status</h3>
                         </div>
                     </div>
                 </div>
@@ -113,55 +68,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="col-md-12">
                         <div class="content-body">
                             <div class="box-content">
-                            <form method="post" action="maklumatPemohon.php">
-
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Bil</th>
-                                                <th>Tarikh Permohonan</th>
-                                                <th>No. Permohonan</th>
-                                                <th>Nama Pemohon</th>
-                                                <th>No. KP</th>
-                                                <th>Pilih</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php
-                                            $counter = 1;
-                                            foreach ($data as $row): ?>
-                                                <tr>
-                                                    <td><?php echo $counter; ?></td>
-                                                    <td><?php echo $row['I_tarikh']; ?></td>
-                                                    <td><?php echo $row['insentifID']; ?></td>
-                                                    <td><?php echo $row['P_nama']; ?></td>
-                                                    <td><?php echo $row['noIC']; ?></td>
-                                                    <td>
-                                                    <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
-
-                                                    </td>
-                                                </tr>
-                                                <?php
-                                                $counter++;
-                                            endforeach; ?>
-                                        </tbody>
-                                    </table>
-                                    <div class="box-footer">
-                                        <button type="submit" name="mohon" class="mohon-button">Mohon</button>
-                                    </div>
-                                </form>
+                                <?php if ($data['status'] == 'success'): ?>
+                                    <h4>Application Details</h4>
+                                    <p><strong>Nama Pemohon:</strong> <?php echo $data['P_nama']; ?></p>
+                                    <p><strong>No. KP:</strong> <?php echo $data['noIC']; ?></p>
+                                    <p><strong>No. Permohonan:</strong> <?php echo $data['insentifID']; ?></p>
+                                    <p>Status: <strong>Successful</strong></p>
+                                <?php elseif ($data['status'] == 'failed'): ?>
+                                    <h4>Application Details</h4>
+                                    <p><strong>Nama Pemohon:</strong> <?php echo $data['P_nama']; ?></p>
+                                    <p><strong>No. KP:</strong> <?php echo $data['noIC']; ?></p>
+                                    <p><strong>No. Permohonan:</strong> <?php echo $data['insentifID']; ?></p>
+                                    <p>Status: <strong>Failed</strong></p>
+                                <?php else: ?>
+                                    <p>Application not found.</p>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-                                            
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
     </div>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

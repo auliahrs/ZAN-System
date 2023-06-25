@@ -172,7 +172,7 @@
                                                 }
                                             }
                                             ?>
-<form action="documentPage.php" method="POST">
+<form action="maklumatPasangan.php" method="POST">
     <input type="hidden" name="noIC" value="<?php echo $noIC; ?>">
     
 </form>
