@@ -38,7 +38,7 @@
                             <div class="row my-3">
                                 <div class="col-md-12 table-dpp">
                                     <p>(<span style="color:red">*</span>)<em> adalah wajib diisi</em></p>
-                                    <form action="/ZAN-System/Manage Pre-marriage Course Organization/Staff/editVenueForm.php" method="post">
+                                    <form action="/ZAN-System/Manage Pre-marriage Course Organization/Staff/editCourseInfoForm.php" method="post">
                                         <table>
                                             <tr>
                                                 <td><span style="color:red">*</span>PAID</td>
@@ -123,22 +123,22 @@
                                             <tr>
                                                 <td><span style="color:red">*</span>Kapasiti</td>
                                                 <td>:</td>
-                                                <td><input type="text" name="kapasiti"></td>
+                                                <td><input type="text" name="kapasiti" value="97"></td>
                                             </tr>
                                             <tr>
                                                 <td><span style="color:red">*</span>Pegawai Dihubungi</td>
                                                 <td>:</td>
-                                                <td><input type="text" name="pegawaiDihubungi"></td>
+                                                <td><input type="text" name="pegawaiDihubungi" value="BAH. UNDANG-UNDANG KELUARGA ISLAM JAIP"></td>
                                             </tr>
                                             <tr>
                                                 <td><span style="color:red">*</span>No. Telefon</td>
                                                 <td>:</td>
-                                                <td><input type="text" name="noTelefon"></td>
+                                                <td><input type="text" name="noTelefon" value="09427119"></td>
                                             </tr>
                                             <tr>
                                                 <td>Catatan</td>
                                                 <td>:</td>
-                                                <td><input type="text" name="catatan"></td>
+                                                <td><input type="text" name="catatan" value="PENYERTAAN KURSUS INI ADALAH TERBUKA KHAS KEPADA PELAJAR YARMOUK UNIVERSITY JORDAN SAHAJA."></td>
                                                 <td><span style="color:red">*</span>Terbit Umum</td>
                                                 <td>:</td>
                                                 <td>
@@ -154,8 +154,8 @@
                                             </tr>
                                             <tr>
                                                 <div>
-                                                    <td><button name="kembali" type="submit" value="kembali" style="margin-top: 20px;">KEMBALI</button></td>
-                                                    <td><button name="simpan" type="submit" value="simpan" style="margin-top: 20px;">SIMPAN</button></td>
+                                                    <td><a href="regCourseInfoForm.php" style="background-color: #929292; color:black;">KEMBALI</a></td>
+                                                    <td><a href="editCourseInfoForm.php">SIMPAN</button></td>
                                                 </div>
                                             </tr>
                                         </table>

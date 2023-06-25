@@ -147,8 +147,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <button type="submit" name="simpan" value="simpan">KEMBALI</button>
-                                                    <button type="submit" name="simpan" value="simpan">KEMBALI</button>
+                                                    <button type="submit" name="simpan" value="simpan">SIMPAN</button>
                                                 </td>
                                             </tr>
                                         </table>
@@ -208,8 +207,8 @@
                                                     <td>YA</td>
                                                     <td>50</td>
                                                     <td>
-                                                        <a href="#">EDIT</a>
-                                                        <a href="#">DELETE</a>
+                                                        <a href="editCourseInfoForm.php">EDIT</a>
+                                                        <a href="#" style="background-color: red; color:white;">DELETE</a>
                                                     </td>
                                                 </tr>
                                             </table>
