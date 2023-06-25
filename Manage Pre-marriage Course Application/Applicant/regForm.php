@@ -128,7 +128,7 @@
                                     <div class="col-md-6">
                                         <button name="simpan" type="submit" value="simpan">Simpan</button>
                                         <!-- Kat path jadi lain ?? hmm :( -->
-                                        <button onclick="./paymentForm.php" name="upload" type="submit" value="upload">Muat Naik Bukti Pembayaran</button>
+                                        <button onclick="paymentForm.php" name="upload" type="submit" value="upload">Muat Naik Bukti Pembayaran</button>
                                     </div>
                                 </div>
                             </form>

@@ -80,7 +80,7 @@
                                                     <button style="border: none; background-color: #D9D9D9"><img src="/ZAN-System/images/moredetail.png"></button>
                                                 </form>
                                             </td>
-                                            <td><a href="/ZAN-System/Manage Pre-marriage Course Application/Applicant/regForm.php/?id=">Register</a></td>
+                                            <td><a href="/ZAN-System/Manage Pre-marriage Course Application/Applicant/regForm.php/?id=">Daftar</a></td>
                                         </tr>
                                     </table>
                                 </div>

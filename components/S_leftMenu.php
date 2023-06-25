@@ -25,8 +25,8 @@
         <a href="/ZAN-System/Manage Pre-marriage Course Organization/Staff/regCourseInfoForm.php">Daftar Maklumat Kursus</a>
         <a href="#">Maklumat Peserta</a>
             <div class="submenu">
-                <a href="/ZAN-System/Manage Pre-marriage Course Organization/Staff/attendanceForm.php">Kehadiran</a>
-                <a href="/ZAN-System/Manage Pre-marriage Course Organization/Staff/approvalForm.php">Kehadiran</a>
+                <a href="/ZAN-System/Manage Pre-marriage Course Application/Staff/attendanceForm.php">Kehadiran</a>
+                <a href="/ZAN-System/Manage Pre-marriage Course Application/Staff/approvalForm.php">Kelulusan</a>
             </div>
     </div>
     <!-- Permohonan Berkahwin box -->

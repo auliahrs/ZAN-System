@@ -89,7 +89,7 @@
                                 </div>
                             </div>
                             <hr class="pt-1" style="color:black">
-                            <form action="/ZAN-System/Manage Pre-marriage Course Application/Staff/S_MaklumatPesertaKehadiran.php" method="get">
+                            <form action="/ZAN-System/Manage Pre-marriage Course Application/Staff/attendanceForm.php" method="get">
                                 <div class="row my-3">
                                     <div class="col-md-12">
                                         <div class="row">
@@ -146,7 +146,7 @@
                                                         <td>AHMAD AIMAN BIN ADAM</td>
                                                         <td>990125060617</td>
                                                         <td>LELAKI</td>
-                                                        <td>HADIR</td>
+                                                        <td></td>
                                                         <td><textarea name="value" rows="4" cols="50"></textarea></td>
                                                         <td><input type="checkbox" name="choose"></td>
                                                     </tr>
