@@ -135,7 +135,7 @@
                                                         <td>AHMAD AIMAN BIN ADAM</td>
                                                         <td>990125060617</td>
                                                         <td>LELAKI</td>
-                                                        <td>YA</td>
+                                                        <td>HADIR</td>
                                                         <td>LULUS</td>
                                                     </tr>
                                                 </table>

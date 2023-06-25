@@ -37,7 +37,7 @@
                         <div class="content-body">
                             <div class="row">
                                 <div class="col my-3">
-                                    <form action="A_DaftarPraPerkahwinanHome.php" method="get">
+                                    <form action="viewOrganizationList.php" method="get">
                                         <select name="paid" id="paid">
                                             <option value="">Pilih Anjuran</option>
                                             <option value="paid1">JABATAN AGAMA ISLAM NEGERI PAHANG</option>
