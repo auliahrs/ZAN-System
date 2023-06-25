@@ -1,5 +1,50 @@
 <?php
 include '../../connection/connection.php';
+include 'manageIncentiveRegistration.php';
+
+class IncentiveController {
+    public function handleRegistration() {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
+            $noIC = $_GET['noIC'];
+            $nama = $_POST['P_nama'];
+            $alamatIC = $_POST['P_alamatIC'];
+            $noTelRumah = $_POST['P_NoTelRumah'];
+            $tarikhLahir = $_POST['P_tarikhLahir'];
+            $bangsa = $_POST['P_bangsa'];
+            $warganegara = $_POST['P_warganegara'];
+            $namaBank = $_POST['I_namaBank'];
+            $noAkaunBank = $_POST['I_noAkaunbank'];
+
+            // Create an instance of the manageIncentiveRegistration model
+            $model = new manageIncentiveRegistration($pdo);
+
+            // Call the method to update basic information
+            $updateResult = $model->updateBasicInformation($noIC, $nama, $alamatIC, $noTelRumah, $tarikhLahir, $bangsa, $warganegara);
+
+            // Handle file uploads
+            $slipGaji = $_FILES['slipGaaji'];
+            $penyataBank = $_FILES['PenyataBank'];
+
+            if ($updateResult) {
+                // Call the method to handle slip gaji upload
+                $slipGajiResult = $model->handleSlipGajiUpload($noIC, $slipGaji);
+                // Call the method to handle penyata bank upload
+                $penyataBankResult = $model->handlePenyataBankUpload($noIC, $penyataBank);
+
+                if ($slipGajiResult && $penyataBankResult) {
+                    // Redirect to the desired page after successful update
+                    header("Location: applicationForm.php");
+                    exit();
+                } else {
+                    echo "Failed to handle file uploads.";
+                }
+            } else {
+                echo "Failed to update basic information.";
+            }
+        }
+    }
+}
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['simpan'])) {
     $noIC = $_GET['noIC'];
@@ -28,4 +73,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['simpan'])) {
         echo "Failed to update data in the database.";
     }
 }
+$controller = new IncentiveController();
+
+// Call the handleRegistration method
+$controller->handleRegistration();
 ?>

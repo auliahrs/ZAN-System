@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
         }
 
         // Redirect to the desired page after successful update
-        header("Location: maklumatPasangan.php");
+        header("Location: applicationForm.php");
         exit();
     } else {
         echo "Failed to update data in the database.";

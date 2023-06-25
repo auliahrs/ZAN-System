@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="col-md-12">
                         <div class="content-body">
                             <div class="box-content">
-                            <form method="post" action="maklumatPemohon.php">
+                            <form method="post" action="applicationStatus.php">
 
                                     <table>
                                         <thead>
@@ -147,7 +147,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         </tbody>
                                     </table>
                                     <div class="box-footer">
-                                        <button type="submit" name="mohon" class="mohon-button">Mohon</button>
+                                        <button type="submit" name="mohon" class="mohon-button">Semak</button>
                                     </div>
                                 </form>
                             </div>
