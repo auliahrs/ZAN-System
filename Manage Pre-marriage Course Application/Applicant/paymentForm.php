@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Pre-marriage Course Application/Applicant/A_DaftarPraPerkahwinan.php" method="post">
+                            <form action="/ZAN-System/pre-marriagePaymentView" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
@@ -110,7 +110,7 @@
 
                                 <div class="row my-3 link-button-general">
                                     <div class="col-md-6">
-                                        <a href="regForm.php">
+                                        <a href="/ZAN-System/pre-marriageRegisterView">
                                             < Kembali</a>
                                     </div>
                                     <div class="col-md-6">
