@@ -1,5 +1,5 @@
 <?php
-include('../consultationController.php');
+include('consultationController.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +13,8 @@ include('../consultationController.php');
     <title>updateConsultantProfile</title>
 
     <style>
-    .document{
-        background-color: #1A2F77;
+        .document {
+            background-color: #1A2F77;
             color: #FFFFFF;
             height: 40px;
             text-align: center;
@@ -22,18 +22,18 @@ include('../consultationController.php');
             line-height: 40px;
             width: 1000px;
             margin: 20px auto;
-    }
-    .center{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 
 </head>
 
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
         <!-- HEADER BAR -->
         <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
@@ -57,27 +57,27 @@ include('../consultationController.php');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body-staff">
-                            <form action="/ZAN-System/ManageBookingSession/Staff/updateConsultantProfile.php" method="post">
+                            <form action="/ZAN-System/consultationUpdateProfileView" method="post">
                                 <div class="row my-3">
-                                <?php
-                                        $controller = new consultationController();
-                                        $applicantData = $controller->getconsultationData('1111'); //konsultasiID
-                                        ?>
+                                    <?php
+                                    $controller = new consultationController();
+                                    $applicantData = $controller->getconsultationData('1111'); //konsultasiID
+                                    ?>
                                     <div class="col table-dpph">
                                         <table>
-                                        <div class="document">BIODATA PENASIHAT</div>
-                                                <table>
-                                                    
-                                                    <tr>
-                                                        <table class="center">
-                                                            <tr>
-                                                                <th>INFO PENASIHAT&nbsp;&nbsp;&nbsp;</th>
-                                                                <th>TEMPAHAN SESI</th>
-                                                            </tr>
-                                                            <tr>
-                                                                
-                                                                <td>Staff ID: 21075</td>
-                                                                <td><input type="radio" name="datetime" datetime="2023-05-09T08:00">
+                                            <div class="document">BIODATA PENASIHAT</div>
+                                            <table>
+
+                                                <tr>
+                                                    <table class="center">
+                                                        <tr>
+                                                            <th>INFO PENASIHAT&nbsp;&nbsp;&nbsp;</th>
+                                                            <th>TEMPAHAN SESI</th>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Staff ID: 21075</td>
+                                                            <td><input type="radio" name="datetime" datetime="2023-05-09T08:00">
                                                                 <label for="datetime">9 MAY 2023, JAM 0800 - JAM1000</label><br>
                                                                 <input type="radio" name="datetime" datetime="2023-05-09T014:00">
                                                                 <label for="datetime">9 MAY 2023, JAM 1400 - JAM1600</label><br>
@@ -89,61 +89,58 @@ include('../consultationController.php');
                                                                 <label for="datetime">9 MAY 2023, JAM 0800 - JAM1000</label><br>
                                                                 <button type="button" onclick="addInput()">Add More</button>
                                                                 <br><br>
-                                                                <input type="submit" value="Submit"> 
-                                                                </td>
-                                                                <script>
-                                                                    function addInput() {
-                                                                        var inputContainer = document.getElementById('inputContainer');
-                                                                        var newInput = document.createElement('input');
-                                                                        newInput.type = 'text';
-                                                                        newInput.name = 'inputField[]';
-                                                                        newInput.placeholder = 'Input Field ' + (inputContainer.children.length + 1);
-                                                                        inputContainer.appendChild(newInput);
-                                                                    }
-                                                                </script>
-                                                            </tr>
-                                                        </table>
-                                                        
-                                                        <div class="container">
-                                                        
-                                                                <div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/updateConsultantProfile.php">
-                                                                <center><button onclick="showConfirmation()">BATALKAN</button></center>
-
+                                                                <input type="submit" value="Submit">
+                                                            </td>
                                                             <script>
-                                                                function showConfirmation() {
-                                                                    if (confirm("Are you sure you want to delete?")) {
-                                                                        // Code to perform delete operation
-                                                                        // You can call your delete function or perform any other desired action here
-                                                                        alert("Delete operation performed");
-                                                                    } else {
-                                                                        // Code to handle cancel or dismissal of the popup
-                                                                        alert("Delete operation canceled");
-                                                                    }
+                                                                function addInput() {
+                                                                    var inputContainer = document.getElementById('inputContainer');
+                                                                    var newInput = document.createElement('input');
+                                                                    newInput.type = 'text';
+                                                                    newInput.name = 'inputField[]';
+                                                                    newInput.placeholder = 'Input Field ' + (inputContainer.children.length + 1);
+                                                                    inputContainer.appendChild(newInput);
                                                                 }
                                                             </script>
+                                                        </tr>
+                                                    </table>
 
-                                                <script>
+                                                    <div class="container">
 
-                                            </form>
-                                            
+                                                        <div class="container">
+                                                            <a href="/ZAN-System/consultationUpdateProfileView">
+                                                                <center><button onclick="showConfirmation()">BATALKAN</button></center>
 
- 
+                                                                <script>
+                                                                    function showConfirmation() {
+                                                                        if (confirm("Are you sure you want to delete?")) {
+                                                                            // Code to perform delete operation
+                                                                            // You can call your delete function or perform any other desired action here
+                                                                            alert("Delete operation performed");
+                                                                        } else {
+                                                                            // Code to handle cancel or dismissal of the popup
+                                                                            alert("Delete operation canceled");
+                                                                        }
+                                                                    }
+                                                                </script>
 
-                                    </div>
-                                </div>
+
                             </form>
+
+
+
+
                         </div>
                     </div>
+                    </form>
                 </div>
-
             </div>
-            <!-- THE CONTENT ENDS HERE -->
         </div>
-        <!-- BODY ENDS -->
-</div>
 
-    
+    </div>
+    </div>
+    </div>
+
+
 </body>
 
 </html>

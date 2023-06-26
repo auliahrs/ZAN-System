@@ -11,7 +11,7 @@ class consultationController
     public function getconsultationData($konsultasiID) //retrieve consultationData data
     {
         $minfo = new consultationData();
-        $result = $minfo->read($konsultasiID, '21075');
+        $result = $minfo->read($konsultasiID, 'permohonan_konsultasi');
         return $result->fetch_assoc();
     }
 }

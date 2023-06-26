@@ -11,7 +11,7 @@ class applicationController
     public function getapplicationData($konsultasiID) //retrieve applicationData data
     {
         $minfo = new applicationData();
-        $result = $minfo->read($konsultasiID, '21075');
+        $result = $minfo->read($konsultasiID, 'permohonan_konsultasi');
         return $result->fetch_assoc();
     }
 }

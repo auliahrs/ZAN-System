@@ -11,10 +11,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['lihat'])) {
         if (isset($_POST['selectednoIC'])) {
             $selectednoIC = $_POST['selectednoIC'];
-            // Perform necessary actions based on the selectednoIC value
-            // Example: Store the selectednoIC in the session or redirect to another page
-            // You can add your own logic here based on your requirements
-            // For now, let's just echo the selectednoIC value
             echo "Selected noIC: " . $selectednoIC;
         } else {
             echo "No noIC selected.";
@@ -54,10 +50,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         .box-footer {
-    display: flex;
-    justify-content: flex-end; /* Align button to the right */
-    padding: 20px;
-}
+            display: flex;
+            justify-content: flex-end;
+            /* Align button to the right */
+            padding: 20px;
+        }
 
 
         table {
@@ -90,13 +87,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="container-fluid">
         <!-- HEADER BAR -->
-        <?php include('../../components/titleBar.php'); ?>
+        <?php include('components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
 
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('../../components/S_leftMenu.php'); ?>
+            <?php include('components/S_leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -113,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="col-md-12">
                         <div class="content-body">
                             <div class="box-content">
-                            <form method="post" action="maklumatPemohon.php">
+                                <form method="post" action="/ZAN-System/incentiveMaklumatPemohonView">
 
                                     <table>
                                         <thead>
@@ -129,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         <tbody>
                                             <?php
                                             $counter = 1;
-                                            foreach ($data as $row): ?>
+                                            foreach ($data as $row) : ?>
                                                 <tr>
                                                     <td><?php echo $counter; ?></td>
                                                     <td><?php echo $row['I_tarikh']; ?></td>
@@ -137,24 +134,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td><?php echo $row['P_nama']; ?></td>
                                                     <td><?php echo $row['noIC']; ?></td>
                                                     <td>
-                                                    <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
+                                                        <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
                                                     <td>
-    <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
-    <button type="submit" name="delete" class="delete-button">
-        <img src="delete-icon.png" alt="Delete">
-    </button>
-</td>
+                                                        <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
+                                                        <button type="submit" name="delete" class="delete-button">
+                                                            <img src="delete-icon.png" alt="Delete">
+                                                        </button>
+                                                    </td>
 
 
                                                     </td>
                                                 </tr>
-                                                <?php
+                                            <?php
                                                 $counter++;
                                             endforeach; ?>
                                         </tbody>
                                     </table>
                                     <div class="box-footer">
-                                    <button type="submit" name="lihat" class="mohon-button">Lihat</button>
+                                        <button type="submit" name="lihat" class="mohon-button">Lihat</button>
 
                                     </div>
                                 </form>
@@ -163,13 +160,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
             </div>
-                                            
+
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
     </div>
 
-    <script src="script.js"></script>
+    <script src="/ZAN-System/js/script.js"></script>
 </body>
 
 </html>

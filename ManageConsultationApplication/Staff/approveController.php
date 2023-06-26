@@ -11,7 +11,7 @@ class approveController
     public function getapproveFormData($konsultasiID) //retrieve approveFormData data
     {
         $minfo = new approveFormData();
-        $result = $minfo->read($konsultasiID, '21075');
+        $result = $minfo->read($konsultasiID, 'permohonan_konsultasi');
         return $result->fetch_assoc();
     }
 }

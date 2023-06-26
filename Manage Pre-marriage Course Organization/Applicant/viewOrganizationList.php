@@ -37,7 +37,7 @@
                         <div class="content-body">
                             <div class="row">
                                 <div class="col my-3">
-                                    <form action="viewOrganizationList.php" method="get">
+                                    <form action="/ZAN-System/pre-marriageOrganizationView" method="get">
                                         <select name="paid" id="paid">
                                             <option value="">Pilih Anjuran</option>
                                             <option value="paid1">JABATAN AGAMA ISLAM NEGERI PAHANG</option>
@@ -76,11 +76,11 @@
                                             <td>50</td>
                                             <td>35</td>
                                             <td>
-                                                <form action="viewMoreDetail.php">
+                                                <form action="/ZAN-System/marriageMoreDetailView">
                                                     <button style="border: none; background-color: #D9D9D9"><img src="/ZAN-System/images/moredetail.png"></button>
                                                 </form>
                                             </td>
-                                            <td><a href="/ZAN-System/Manage Pre-marriage Course Application/Applicant/regForm.php/?id=">Daftar</a></td>
+                                            <td><a href="/ZAN-System/pre-marriageRegisterView/?id=">Daftar</a></td>
                                         </tr>
                                     </table>
                                 </div>

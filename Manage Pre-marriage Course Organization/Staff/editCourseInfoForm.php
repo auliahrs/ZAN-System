@@ -38,26 +38,26 @@
                             <div class="row my-3">
                                 <div class="col-md-12 table-dpp">
                                     <p>(<span style="color:red">*</span>)<em> adalah wajib diisi</em></p>
-                                    <form action="/ZAN-System/Manage Pre-marriage Course Organization/Staff/editCourseInfoForm.php" method="post">
+                                    <form action="/ZAN-System/pre-marriageEditCourseInfoView" method="post">
                                         <table>
                                             <tr>
                                                 <td><span style="color:red">*</span>PAID</td>
                                                 <td>:</td>
                                                 <td>
                                                     <select name="paid" id="paid">
-                                                            <option value="">Pilih Anjuran</option>
-                                                            <option value="paid1">JABATAN AGAMA ISLAM NEGERI PAHANG</option>
-                                                            <option value="paid2">PEJABAT AGAMA ISLAM BENTONG</option>
-                                                            <option value="paid3">PEJABAT AGAMA ISLAM BERA</option>
-                                                            <option value="paid4">PEJABAT AGAMA ISLAM CAMERON HIGHLANDS</option>
-                                                            <option value="paid5">PEJABAT AGAMA ISLAM KUANTAN</option>
-                                                            <option value="paid6">PEJABAT AGAMA ISLAM KUANTAN BARAT</option>
-                                                            <option value="paid7">PEJABAT AGAMA ISLAM LIPIS</option>
-                                                            <option value="paid9">PEJABAT AGAMA ISLAM MARAN</option>
-                                                            <option value="paid10">PEJABAT AGAMA ISLAM PEKAN</option>
-                                                            <option value="paid11">PEJABAT AGAMA ISLAM RAUB</option>
-                                                            <option value="paid12">PEJABAT AGAMA ISLAM ROMPIN</option>
-                                                            <option value="paid13">PEJABAT AGAMA ISLAM TEMERLOH</option>
+                                                        <option value="">Pilih Anjuran</option>
+                                                        <option value="paid1">JABATAN AGAMA ISLAM NEGERI PAHANG</option>
+                                                        <option value="paid2">PEJABAT AGAMA ISLAM BENTONG</option>
+                                                        <option value="paid3">PEJABAT AGAMA ISLAM BERA</option>
+                                                        <option value="paid4">PEJABAT AGAMA ISLAM CAMERON HIGHLANDS</option>
+                                                        <option value="paid5">PEJABAT AGAMA ISLAM KUANTAN</option>
+                                                        <option value="paid6">PEJABAT AGAMA ISLAM KUANTAN BARAT</option>
+                                                        <option value="paid7">PEJABAT AGAMA ISLAM LIPIS</option>
+                                                        <option value="paid9">PEJABAT AGAMA ISLAM MARAN</option>
+                                                        <option value="paid10">PEJABAT AGAMA ISLAM PEKAN</option>
+                                                        <option value="paid11">PEJABAT AGAMA ISLAM RAUB</option>
+                                                        <option value="paid12">PEJABAT AGAMA ISLAM ROMPIN</option>
+                                                        <option value="paid13">PEJABAT AGAMA ISLAM TEMERLOH</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -87,9 +87,9 @@
                                             </tr>
                                             <tr>
                                                 <td><span style="color:red">*</span>Alamat</td>
-                                                    <td>:</td>
-                                                    <td>MASJID SULTAN HAJI AHMAD SHAH BENTONG</td>
-                                                </tr>
+                                                <td>:</td>
+                                                <td>MASJID SULTAN HAJI AHMAD SHAH BENTONG</td>
+                                            </tr>
                                             <tr>
                                                 <td><span style="color:red">*</span>Masa Dari</td>
                                                 <td>:</td>
@@ -154,8 +154,8 @@
                                             </tr>
                                             <tr>
                                                 <div>
-                                                    <td><a href="regCourseInfoForm.php" style="background-color: #929292; color:black;">KEMBALI</a></td>
-                                                    <td><a href="editCourseInfoForm.php">SIMPAN</button></td>
+                                                    <td><a href="/ZAN-System/pre-marriageRegisterCourseInfoView" style="background-color: #929292; color:black;">KEMBALI</a></td>
+                                                    <td><a href="/ZAN-System/pre-marriageEditCourseInfoView">SIMPAN</button></td>
                                                 </div>
                                             </tr>
                                         </table>

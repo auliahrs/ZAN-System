@@ -1,5 +1,5 @@
 <?php
-include('../applicationController.php');
+include('applicationController.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +13,8 @@ include('../applicationController.php');
     <title>applicationForm</title>
 
     <style>
-    .document{
-        background-color: #1A2F77;
+        .document {
+            background-color: #1A2F77;
             color: #FFFFFF;
             height: 40px;
             text-align: center;
@@ -22,17 +22,16 @@ include('../applicationController.php');
             line-height: 40px;
             width: 1000px;
             margin: 20px auto;
-    }
-    h{
-        border: 1px solid black;
-    }
-    
+        }
 
+        h {
+            border: 1px solid black;
+        }
     </style>
 </head>
 
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
         <!-- HEADER BAR -->
         <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
@@ -56,14 +55,14 @@ include('../applicationController.php');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/ManageConsultationApplication/Applicant/applicationForm.php" method="post">
+                            <form action="/ZAN-System/consultationApplicationView" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
-                                        <?php
-                                        $controller = new applicationController();
-                                        $applicantData = $controller->getapplicationData('1111'); //konsultasiID
-                                        ?>
+                                            <?php
+                                            $controller = new applicationController();
+                                            $applicantData = $controller->getapplicationData('1111'); //konsultasiID
+                                            ?>
 
                                             <div class="document">BORANG PERMOHONAN KONSULTASI</div>
                                             <table>
@@ -127,29 +126,31 @@ include('../applicationController.php');
                                                     <td>Alamat Pejabat</td>
                                                     <td>SMK PEKAN</td>
                                                 </tr>
-    
+
                                             </table>
                                             <br>
                                             <hr>
                                             <br>
-                                            <center><p><b>INFO ADUAN/ KHIDMAT NASIHAT</b></p></center>
+                                            <center>
+                                                <p><b>INFO ADUAN/ KHIDMAT NASIHAT</b></p>
+                                            </center>
                                             <form action="" method="post">
                                                 <table>
                                                     <tr>
                                                         <th><label for="aduan">Aduan/Khidmat Nasihat:&nbsp;</label></th>
                                                         <td><select name="aduan" id="aduan" class="form-control">
-                                                     <option value="Aduan">Aduan</option>
-                                                     <option value="Khidmat Nasihat">Khidmat Nasihat</option>
+                                                                <option value="Aduan">Aduan</option>
+                                                                <option value="Khidmat Nasihat">Khidmat Nasihat</option>
                                                             </select>
                                                     </tr>
                                                     <tr>
                                                         <th><label for="aduan">Maklumat Aduan/Khidmat Nasihat:&nbsp;</label></th>
                                                         <td><textarea name="aduan" id="aduan" cols="50" rows="5"></textarea></td>
                                                     </tr>
-                                                        <?php
-                                                        // Assuming you have already established a connection to the database
-                                                        
-                                                        /*if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                                                    <?php
+                                                    // Assuming you have already established a connection to the database
+
+                                                    /*if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                           // Retrieve the form data
                                                           
                                                           $K_butiranKonsultasi = $_POST['K_butiranKonsultasi'];
@@ -179,31 +180,35 @@ include('../applicationController.php');
                                                           $stmt->close();
                                                           $conn->close();
                                                         }*/
-                                                        ?>
-                                                        
-          
-                                                        
+                                                    ?>
+
+
+
 
                                                     </tr>
                                                 </table>
                                                 <div class="row my-2">
-                                                <div class="col">
-                                                <div class="container">
-                                                        <a href="/ZAN-System/ManageConsultationApplication/Applicant/applicationForm.php">
-                                                                <button type="button" class="btn btn-primary">TAMBAH</button></a></div></div>
-                                                <div class="col">
-                                                <div class="container">
-                                                        <a href="/ZAN-System/ManageConsultationApplication/Applicant/viewForm.php">
-                                                                <button type="button" class="btn btn-primary">LIHAT</button></a></div></div>
-                                                 
+                                                    <div class="col">
+                                                        <div class="container">
+                                                            <a href="/ZAN-System/consultationApplicationView">
+                                                                <button type="button" class="btn btn-primary">TAMBAH</button></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="container">
+                                                            <a href="/ZAN-System/consultationSeeApplicationView">
+                                                                <button type="button" class="btn btn-primary">LIHAT</button></a>
+                                                        </div>
+                                                    </div>
+
                                             </form>
 
 
 
-                                                
-                                                
 
- 
+
+
+
 
                                     </div>
                                 </div>
@@ -216,9 +221,9 @@ include('../applicationController.php');
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
-</div>
+    </div>
 
-    
+
 </body>
 
 </html>

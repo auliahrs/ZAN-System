@@ -1,5 +1,5 @@
 <?php
-include('../consultationController.php');
+include('consultationController.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +13,8 @@ include('../consultationController.php');
     <title>updateSession</title>
 
     <style>
-    .document{
-        background-color: #1A2F77;
+        .document {
+            background-color: #1A2F77;
             color: #FFFFFF;
             height: 40px;
             text-align: center;
@@ -22,17 +22,16 @@ include('../consultationController.php');
             line-height: 40px;
             width: 1000px;
             margin: 20px auto;
-    }
-    h{
-        border: 1px solid black;
-    }
-    
+        }
 
+        h {
+            border: 1px solid black;
+        }
     </style>
 </head>
 
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
         <!-- HEADER BAR -->
         <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
@@ -56,12 +55,12 @@ include('../consultationController.php');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body-staff">
-                            <form action="/ZAN-System/ManageBookingSession/Staff/updateSession.php" method="post">
+                            <form action="/ZAN-System/consultationUpdateSessionView" method="post">
                                 <div class="row my-3">
-                                <?php
-                                        $controller = new consultationController();
-                                        $applicantData = $controller->getconsultationData('1111'); //konsultasiID
-                                        ?>
+                                    <?php
+                                    $controller = new consultationController();
+                                    $applicantData = $controller->getconsultationData('1111'); //konsultasiID
+                                    ?>
                                     <div class="col table-dpph">
                                         <table>
 
@@ -127,22 +126,24 @@ include('../consultationController.php');
                                                     <td>Alamat Pejabat</td>
                                                     <td>SMK PEKAN</td>
                                                 </tr>
-    
+
                                             </table>
                                             <br>
                                             <hr>
                                             <br>
-                                            
-                                            <form action="/ZAN-System/ManageBookingSession/Staff/updateSession.php" method="post">
+
+                                            <form action="/ZAN-System/consultationUpdateSessionView" method="post">
                                                 <label for="session">SESI PERTAMA (9 MAY 2023, JAM 0800 - 1000)</label>
                                                 <textarea id="session" name="session" rows="4" cols="50"></textarea>
                                             </form>
                                             <div class="col">
                                                 <div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Staff/updateConsultantProfile.php">
-                                                                <button type="button" class="btn btn-primary">KEMASKINI</button></a></div></div>
+                                                    <a href="/ZAN-System/consultationUpdateProfileView">
+                                                        <button type="button" class="btn btn-primary">KEMASKINI</button></a>
+                                                </div>
+                                            </div>
 
- 
+
 
                                     </div>
                                 </div>
@@ -155,9 +156,9 @@ include('../consultationController.php');
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
-</div>
+    </div>
 
-    
+
 </body>
 
 </html>

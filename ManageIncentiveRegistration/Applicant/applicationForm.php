@@ -1,5 +1,5 @@
 <?php
-include '../../connection/connection.php';
+include 'connection/connection.php';
 
 // Retrieve data from the database
 $stmt = $pdo->query("SELECT i.I_tarikh, i.insentifID, p.P_nama, p.noIC
@@ -54,10 +54,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         .box-footer {
-    display: flex;
-    justify-content: flex-end; /* Align button to the right */
-    padding: 20px;
-}
+            display: flex;
+            justify-content: flex-end;
+            /* Align button to the right */
+            padding: 20px;
+        }
 
 
         table {
@@ -90,13 +91,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="container-fluid">
         <!-- HEADER BAR -->
-        <?php include('../../components/titleBar.php'); ?>
+        <?php include('components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
 
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('../../components/leftMenu.php'); ?>
+            <?php include('components/leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -113,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="col-md-12">
                         <div class="content-body">
                             <div class="box-content">
-                            <form method="post" action="maklumatPemohon.php">
+                                <form method="post" action="ZAN-System/incentiveMaklumatPemohonView">
 
                                     <table>
                                         <thead>
@@ -129,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         <tbody>
                                             <?php
                                             $counter = 1;
-                                            foreach ($data as $row): ?>
+                                            foreach ($data as $row) : ?>
                                                 <tr>
                                                     <td><?php echo $counter; ?></td>
                                                     <td><?php echo $row['I_tarikh']; ?></td>
@@ -137,11 +138,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td><?php echo $row['P_nama']; ?></td>
                                                     <td><?php echo $row['noIC']; ?></td>
                                                     <td>
-                                                    <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
+                                                        <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
 
                                                     </td>
                                                 </tr>
-                                                <?php
+                                            <?php
                                                 $counter++;
                                             endforeach; ?>
                                         </tbody>
@@ -155,7 +156,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
             </div>
-                                            
+
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->

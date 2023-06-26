@@ -1,5 +1,5 @@
 <?php
-include '../../connection/connection.php';
+include 'connection/connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     $noIC = $_GET['noIC'];
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
         }
 
         // Redirect to the desired page after successful update
-        header("Location: applicationForm.php");
+        header("Location: /ZAN-System/incentiveApplicationFormView");
         exit();
     } else {
         echo "Failed to update data in the database.";
@@ -111,45 +111,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                                             <tr>
                                                 <td>KAD PENGENALAN PENGANTIN LELAKI</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="IC">
+                                                    <img src="/XAN-System/images/upload.png" height="30px"><input type="file" name="IC">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>KAD PENGENALAN PENGANTIN PEREMPUAN</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="IC">
+                                                    <img src="/XAN-System/images/upload.png" height="30px"><input type="file" name="IC">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>KAD PERKAHWINAN</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="KadKahwin">
+                                                    <img src="/XAN-System/images/upload.png" height="30px"><input type="file" name="KadKahwin">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>PENYATA BANK</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="PenyataBank">
+                                                    <img src="/XAN-System/images/upload.png" height="30px"><input type="file" name="PenyataBank">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>SLIP PENDAPATAN 3 BULAN SEBELUM</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="slipGaji">
+                                                    <img src="/XAN-System/images/upload.png" height="30px"><input type="file" name="slipGaji">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>PENGESAHAN</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="pengesahan">
+                                                    <img src="/XAN-System/images/upload.png" height="30px"><input type="file" name="pengesahan">
                                                 </td>
                                             </tr>
-                                            
+
                                         </table>
 
                                         <div class="row my-3 link-button-general">
                                             <div class="col-md-6">
-                                                <a href="maklumatPasangan.php">
+                                                <a href="/ZAN-System/incentiveMaklumatPasanganView">
                                                     < Kembali</a>
                                             </div>
                                             <div class="col-md-6">
@@ -171,4 +171,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     </div>
 </body>
 
-</html> 
+</html>

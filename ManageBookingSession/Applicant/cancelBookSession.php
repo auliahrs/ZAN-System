@@ -1,5 +1,5 @@
 <?php
-include('../bookController.php');
+include('bookController.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,25 +12,25 @@ include('../bookController.php');
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
     <title>cancelBookSession</title>
 
-<style>
-    .button {
-    background-color: #1A2F77;
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 10px;
-  }
-  </style>
+    <style>
+        .button {
+            background-color: #1A2F77;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
         <!-- HEADER BAR -->
         <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
@@ -54,15 +54,15 @@ include('../bookController.php');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/ManageBookingSession/Applicant/cancelBookSession.php" method="post">
+                            <form action="/ZAN-System/consultationCancelBookSessionView" method="post">
                                 <div class="row my-3">
-                                <?php
-                                        $controller = new bookController();
-                                        $applicantData = $controller->getbookData('1111'); //konsultasiID
-                                        ?>
+                                    <?php
+                                    $controller = new bookController();
+                                    $applicantData = $controller->getbookData('1111'); //konsultasiID
+                                    ?>
                                     <div class="col table-dpp">
                                         <table>
-                                        <center><button onclick="showConfirmation()">Delete</button></center>
+                                            <center><button onclick="showConfirmation()">Delete</button></center>
 
                                             <script>
                                                 function showConfirmation() {
@@ -76,10 +76,10 @@ include('../bookController.php');
                                                     }
                                                 }
                                             </script>
-                                            </table>
+                                        </table>
 
 
- 
+
 
                                     </div>
                                 </div>
@@ -92,9 +92,9 @@ include('../bookController.php');
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
-</div>
+    </div>
 
-    
+
 </body>
 
 </html>

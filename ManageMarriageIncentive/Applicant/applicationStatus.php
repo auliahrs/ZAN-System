@@ -1,14 +1,14 @@
 <?php
-include '../../connection/connection.php';
+include 'connection/connection.php';
 include 'applicationData.php';
 
 session_start();
-
 $applicationID = $_SESSION['applicationID'];
 
 $data = getApplicationData($pdo, $applicationID);
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,15 +29,6 @@ $data = getApplicationData($pdo, $applicationID);
             padding: 20px;
             border-radius: 10px;
         }
-
-        .box-header {
-            padding-bottom: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .box-header h2 {
-            margin: 0;
-        }
     </style>
     <title>Application Status</title>
 </head>
@@ -45,13 +36,13 @@ $data = getApplicationData($pdo, $applicationID);
 <body>
     <div class="container-fluid">
         <!-- HEADER BAR -->
-        <?php include('../../components/titleBar.php'); ?>
+        <?php include('components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
 
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('../../components/leftMenu.php'); ?>
+            <?php include('components/leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -68,30 +59,55 @@ $data = getApplicationData($pdo, $applicationID);
                     <div class="col-md-12">
                         <div class="content-body">
                             <div class="box-content">
-                                <?php if ($data['status'] == 'success'): ?>
-                                    <h4>Application Details</h4>
-                                    <p><strong>Nama Pemohon:</strong> <?php echo $data['P_nama']; ?></p>
-                                    <p><strong>No. KP:</strong> <?php echo $data['noIC']; ?></p>
-                                    <p><strong>No. Permohonan:</strong> <?php echo $data['insentifID']; ?></p>
-                                    <p>Status: <strong>Successful</strong></p>
-                                <?php elseif ($data['status'] == 'failed'): ?>
-                                    <h4>Application Details</h4>
-                                    <p><strong>Nama Pemohon:</strong> <?php echo $data['P_nama']; ?></p>
-                                    <p><strong>No. KP:</strong> <?php echo $data['noIC']; ?></p>
-                                    <p><strong>No. Permohonan:</strong> <?php echo $data['insentifID']; ?></p>
-                                    <p>Status: <strong>Failed</strong></p>
-                                <?php else: ?>
-                                    <p>Application not found.</p>
-                                <?php endif; ?>
+                                <form method="post" action="/ZAN-System/marriageIncentiveStaffMaklumatPemohonView">
+
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Bil</th>
+                                                <th>Tarikh Permohonan</th>
+                                                <th>No. Permohonan</th>
+                                                <th>Nama Pemohon</th>
+                                                <th>No. KP</th>
+                                                <th>Pilih</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $counter = 1;
+                                            foreach ($data as $row) : ?>
+                                                <tr>
+                                                    <td><?php echo $counter; ?></td>
+                                                    <td><?php echo $row['I_tarikh']; ?></td>
+                                                    <td><?php echo $row['insentifID']; ?></td>
+                                                    <td><?php echo $row['P_nama']; ?></td>
+                                                    <td><?php echo $row['noIC']; ?></td>
+                                                    <td>
+                                                        <input type="radio" name="selectednoIC" value="<?php echo $row['noIC']; ?>">
+
+                                                    </td>
+                                                </tr>
+                                            <?php
+                                                $counter++;
+                                            endforeach; ?>
+                                        </tbody>
+                                    </table>
+                                    <div class="box-footer">
+                                        <button type="submit" name="mohon" class="mohon-button">Mohon</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

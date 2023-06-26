@@ -1,10 +1,10 @@
 <!-- <?php
 
-    // Start up your PHP Session
-    session_start();
+        // Start up your PHP Session
+        session_start();
 
-    //If the user is not logged in send him/her to the login form
-    if(!isset($_SESSION['currentUserIC'])) {
+        //If the user is not logged in send him/her to the login form
+        if (!isset($_SESSION['currentUserIC'])) {
         ?>
         <script>
             alert("Access denied !!!")
@@ -12,19 +12,19 @@
         </script>
         <?php
 
-    }else{
+        } else {
 
-        // Retrieve the serialized and URL-encoded data from the URL parameter
-        $encodedData = $_GET['returnInfo'];
-        
-        // Decode the URL-encoded data and unserialize it
-        $decodedApplicantData = unserialize(urldecode($encodedData));
+            // Retrieve the serialized and URL-encoded data from the URL parameter
+            $encodedData = $_GET['returnInfo'];
 
-        //Sidebar Active path
-        $_SESSION['route'] = 'editProfile';
-    }
-    
-?> -->
+            // Decode the URL-encoded data and unserialize it
+            $decodedApplicantData = unserialize(urldecode($encodedData));
+
+            //Sidebar Active path
+            $_SESSION['route'] = 'editProfile';
+        }
+
+        ?> -->
 
 
 <!DOCTYPE html>
@@ -47,7 +47,7 @@
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-        <?php include('C:/xampp/htdocs/ZAN-System/components/leftMenu.php'); ?>
+            <?php include('C:/xampp/htdocs/ZAN-System/components/leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -64,7 +64,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage User Profile/Applicant/applicantEditForm.php" method="post">
+                            <form action="/ZAN-System/Manage User Profile/applicantEditView" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
                                         <table>
@@ -72,105 +72,105 @@
                                                 <td>No. Kad Pengenalan </td>
                                                 <td>:</td>
                                                 <td>
-                                                951101070191
+                                                    951101070191
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Nama Pemohon </td>
                                                 <td>:</td>
                                                 <td>
-                                                Ahmad Aiman Bin Adam
+                                                    Ahmad Aiman Bin Adam
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Tarikh Lahir </td>
                                                 <td>:</td>
                                                 <td>
-                                                1995-11-01
+                                                    1995-11-01
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Umur </td>
                                                 <td>:</td>
                                                 <td>
-                                                28 Tahun
+                                                    28 Tahun
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Jantina </td>
                                                 <td>:</td>
                                                 <td>
-                                                Lelaki
+                                                    Lelaki
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Bangsa </td>
                                                 <td>:</td>
                                                 <td>
-                                               Melayu
+                                                    Melayu
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Kewarganegaraan </td>
                                                 <td>:</td>
                                                 <td>
-                                                Malaysia
+                                                    Malaysia
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Alamat </td>
                                                 <td>:</td>
                                                 <td>
-                                                NO 110, Taman Peramu Permai
+                                                    NO 110, Taman Peramu Permai
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>No. Telefon (Bimbit) </td>
                                                 <td>:</td>
                                                 <td>
-                                                011-1234567
+                                                    011-1234567
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>No. Telefon (Pejabat) </td>
                                                 <td>:</td>
                                                 <td>
-                                                06-123456
+                                                    06-123456
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Taraf Pendidikan </td>
                                                 <td>:</td>
                                                 <td>
-                                                Degree
+                                                    Degree
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Sektor Kerajaan </td>
                                                 <td>:</td>
                                                 <td>
-                                                Kerajaan
+                                                    Kerajaan
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Pekerjaan/Jawatan </td>
                                                 <td>:</td>
                                                 <td>
-                                                Kerani
+                                                    Kerani
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Status Kahwin </td>
                                                 <td>:</td>
-                                               <td>Bujang
+                                                <td>Bujang
                                                 </td>
                                             </tr>
-                                           
+
                                             <tr>
                                                 <td>No. Sijil Kursus Pra Perkahwinan </td>
                                                 <td>:</td>
                                                 <td>
-                                                121
+                                                    121
                                                 </td>
                                             </tr>
                                         </table>
@@ -182,7 +182,7 @@
 
                                     </div>
                                     <div class="col-md-6">
-                                       
+
                                         <button name="simpan" type="submit" value="simpan">Kemaskini</button>
                                     </div>
                                 </div>

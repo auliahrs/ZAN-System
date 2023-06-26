@@ -1,3 +1,6 @@
+<?php
+include 'Manage User Profile/Staff/staffController.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +21,7 @@
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-        <?php include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
+            <?php include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -35,12 +38,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body-staff">
-                            <form action="/ZAN-System/Manage User Profile/Staff/staffProfileView.php" method="post">
+                            <form action="/ZAN-System/staffProfileView" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
-                                    <?php
+                                        <?php
                                         $controller = new staffController();
-                                        $staffData = $controller->getStaffData('1024'); 
+                                        $staffData = $controller->getStaffData('1024');
                                         ?>
                                         <table>
                                             <tr>
@@ -54,24 +57,24 @@
                                                 <td>Nama Staff </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_namaPekerja" placeholder="Rassidi Bin Mohd">
+                                                    <input type="text" name="S_namaPekerja" placeholder="Rassidi Bin Mohd">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>No. Telefon  </td>
+                                                <td>No. Telefon </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_noTelPekerja" placeholder="011-11223434">
+                                                    <input type="text" name="S_noTelPekerja" placeholder="011-11223434">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Emel </td>
                                                 <td>:</td>
                                                 <td>
-                                                <input type="text" name="S_emelPekerja" placeholder="rassidi@jaip.com">
+                                                    <input type="text" name="S_emelPekerja" placeholder="rassidi@jaip.com">
                                                 </td>
                                             </tr>
-                                            
+
                                         </table>
                                     </div>
                                 </div>
@@ -81,7 +84,7 @@
 
                                     </div>
                                     <div class="col-md-6">
-                                        
+
                                         <button name="simpan" type="submit" value="simpan">Simpan</button>
                                     </div>
                                 </div>

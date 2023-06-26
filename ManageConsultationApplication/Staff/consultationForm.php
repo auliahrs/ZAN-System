@@ -1,5 +1,5 @@
 <?php
-include('../approveController.php');
+include('approveController.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +13,8 @@ include('../approveController.php');
     <title>Borang Aduan/Khidmat Nasihat</title>
 
     <style>
-    .document{
-        background-color: #1A2F77;
+        .document {
+            background-color: #1A2F77;
             color: #FFFFFF;
             height: 40px;
             text-align: center;
@@ -22,17 +22,16 @@ include('../approveController.php');
             line-height: 40px;
             width: 1000px;
             margin: 20px auto;
-    }
-    h{
-        border: 1px solid black;
-    }
-    
+        }
 
+        h {
+            border: 1px solid black;
+        }
     </style>
 </head>
 
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
         <!-- HEADER BAR -->
         <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
@@ -56,11 +55,11 @@ include('../approveController.php');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body-staff">
-                            <form action="/ZAN-System/ManageConsultationApplication/Staff/consultationForm.php" method="post">
-                            <?php
-                                 $controller = new approveController();
-                                 $applicantData = $controller->getapproveFormData('1111'); //konsultasiID
-                             ?>
+                            <form action="/ZAN-System/consultationFormView" method="post">
+                                <?php
+                                $controller = new approveController();
+                                $applicantData = $controller->getapproveFormData('1111'); //konsultasiID
+                                ?>
                                 <div class="row my-3">
                                     <div class="col table-dpph">
                                         <table>
@@ -127,47 +126,51 @@ include('../approveController.php');
                                                     <td>Alamat Pejabat</td>
                                                     <td>SMK PEKAN</td>
                                                 </tr>
-    
+
                                             </table>
                                             <br>
                                             <hr>
                                             <br>
-                                            <center><p><b>INFO ADUAN/ KHIDMAT NASIHAT</b></p></center>
-                                            <form action="/ZAN-System/ManageConsultationApplication/Staff/consultationForm.php" method="post">
+                                            <center>
+                                                <p><b>INFO ADUAN/ KHIDMAT NASIHAT</b></p>
+                                            </center>
+                                            <form action="/ZAN-System/consultationFormView" method="post">
                                                 <table>
                                                     <tr>
                                                         <th><label for="aduan">Aduan/Khidmat Nasihat:&nbsp;</label></th>
                                                         <td><select name="aduan" id="aduan" class="form-control">
-                                                     <option value="Aduan">Aduan</option>
-                                                     <option value="Khidmat Nasihat">Khidmat Nasihat</option>
+                                                                <option value="Aduan">Aduan</option>
+                                                                <option value="Khidmat Nasihat">Khidmat Nasihat</option>
                                                             </select>
                                                     </tr>
                                                     <tr>
                                                         <th><label for="aduan">Maklumat Aduan/Khidmat Nasihat:&nbsp;</label></th>
                                                         <td><textarea name="aduan" id="aduan" cols="50" rows="5">
-                                                             
+
                                                         </textarea></td>
                                                     </tr>
                                                 </table>
                                                 <div class="row my-2">
-                                                <div class="col">
-                                                <div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Staff/updateConsultantProfile.php">
-                                                                <button type="button" class="btn btn-primary">TERIMA</button></a></div></div>
-                                                                <center><button onclick="showConfirmation()">Delete</button></center>
+                                                    <div class="col">
+                                                        <div class="container">
+                                                            <a href="/ZAN-System/consultationUpdateProfileView">
+                                                                <button type="button" class="btn btn-primary">TERIMA</button></a>
+                                                        </div>
+                                                    </div>
+                                                    <center><button onclick="showConfirmation()">Delete</button></center>
 
-                                                                <script>
-                                                                    function showConfirmation() {
-                                                                        if (confirm("Are you sure you want to delete?")) {
-                                                                            // Code to perform delete operation
-                                                                            // You can call your delete function or perform any other desired action here
-                                                                            alert("Delete operation performed");
-                                                                        } else {
-                                                                            // Code to handle cancel or dismissal of the popup
-                                                                            alert("Delete operation canceled");
-                                                                        }
-                                                                    }
-                                                                </script>
+                                                    <script>
+                                                        function showConfirmation() {
+                                                            if (confirm("Are you sure you want to delete?")) {
+                                                                // Code to perform delete operation
+                                                                // You can call your delete function or perform any other desired action here
+                                                                alert("Delete operation performed");
+                                                            } else {
+                                                                // Code to handle cancel or dismissal of the popup
+                                                                alert("Delete operation canceled");
+                                                            }
+                                                        }
+                                                    </script>
                                             </form>
                                     </div>
                                 </div>
@@ -180,9 +183,9 @@ include('../approveController.php');
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
-</div>
+    </div>
 
-    
+
 </body>
 
 </html>

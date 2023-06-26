@@ -1,5 +1,5 @@
 <?php
-include('../bookController.php');
+include('bookController.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +13,8 @@ include('../bookController.php');
     <title>viewConsultantProfile</title>
 
     <style>
-    .document{
-        background-color: #1A2F77;
+        .document {
+            background-color: #1A2F77;
             color: #FFFFFF;
             height: 40px;
             text-align: center;
@@ -22,17 +22,16 @@ include('../bookController.php');
             line-height: 40px;
             width: 1000px;
             margin: 20px auto;
-    }
-    h{
-        border: 1px solid black;
-    }
-    
+        }
 
+        h {
+            border: 1px solid black;
+        }
     </style>
 </head>
 
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
         <!-- HEADER BAR -->
         <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
@@ -68,52 +67,62 @@ include('../bookController.php');
                                                     <tr>
                                                         <td>Staff ID</td>
                                                         <td>21075</td>
-                                                        <td><div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/viewConsultantProfile.php">
-                                                        <?php
-                                        $controller = new bookController();
-                                        $applicantData = $controller->getbookData('1111'); //konsultasiID
-                                        ?>
-                                                                <button type="button" class="btn btn-primary">LIHAT</button></a></td>
+                                                        <td>
+                                                            <div class="container">
+                                                                <a href="/ZAN-System/consultationProfileView">
+                                                                    <?php
+                                                                    $controller = new bookController();
+                                                                    $applicantData = $controller->getbookData('1111'); //konsultasiID
+                                                                    ?>
+                                                                    <button type="button" class="btn btn-primary">LIHAT</button></a>
+                                                        </td>
                                                     </tr>
-                                                    
+
                                                     <tr>
                                                         <td>Staff ID</td>
                                                         <td>21079</td>
-                                                        <td><div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/bookSession.php">
-                                                                <button type="button" class="btn btn-primary">LIHAT</button></a></td>
+                                                        <td>
+                                                            <div class="container">
+                                                                <a href="/ZAN-System/consultationBookSessionView">
+                                                                    <button type="button" class="btn btn-primary">LIHAT</button></a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>Staff ID</td>
                                                         <td>21080</td>
-                                                        <td><div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/bookSession.php">
-                                                                <button type="button" class="btn btn-primary">LIHAT</button></a></td>
+                                                        <td>
+                                                            <div class="container">
+                                                                <a href="/ZAN-System/consultationBookSessionView">
+                                                                    <button type="button" class="btn btn-primary">LIHAT</button></a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>Staff ID</td>
                                                         <td>21031</td>
-                                                        <td><div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/bookSession.php">
-                                                                <button type="button" class="btn btn-primary">LIHAT</button></a></td>
+                                                        <td>
+                                                            <div class="container">
+                                                                <a href="/ZAN-System/consultationBookSessionView">
+                                                                    <button type="button" class="btn btn-primary">LIHAT</button></a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>Staff ID</td>
                                                         <td>20078</td>
-                                                        <td><div class="container">
-                                                        <a href="/ZAN-System/ManageBookingSession/Applicant/bookSession.php">
-                                                                <button type="button" class="btn btn-primary">LIHAT</button></a></td>
+                                                        <td>
+                                                            <div class="container">
+                                                                <a href="/ZAN-System/consultationBookSessionView">
+                                                                    <button type="button" class="btn btn-primary">LIHAT</button></a>
+                                                        </td>
                                                     </tr>
-                                                        
 
 
 
 
-                                                
-                                                
 
- 
+
+
+
+
 
                                     </div>
                                 </div>
@@ -126,9 +135,9 @@ include('../bookController.php');
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
-</div>
+    </div>
 
-    
+
 </body>
 
 </html>

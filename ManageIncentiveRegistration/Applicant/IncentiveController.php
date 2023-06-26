@@ -1,9 +1,11 @@
 <?php
-include '../../connection/connection.php';
-include 'manageIncentiveRegistration.php';
+include 'connection/connection.php';
+include 'ManageIncentiveRegistration/Applicant/manageIncentiveRegistration.php';
 
-class IncentiveController {
-    public function handleRegistration() {
+class IncentiveController
+{
+    public function handleRegistration()
+    {
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
             $noIC = $_GET['noIC'];
             $nama = $_POST['P_nama'];
@@ -67,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['simpan'])) {
     $updateStmt->bindParam(':noIC', $noIC);
 
     if ($updateStmt->execute()) {
-        header("Location: maklumatPasangan.php");
+        header("Location: /ZAN-System/incentiveMaklumatPasanganView");
         exit();
     } else {
         echo "Failed to update data in the database.";
@@ -77,4 +79,3 @@ $controller = new IncentiveController();
 
 // Call the handleRegistration method
 $controller->handleRegistration();
-?>

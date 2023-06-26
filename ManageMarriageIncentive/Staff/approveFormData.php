@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,14 +94,14 @@
 <body>
     <div class="container-fluid">
         <!-- HEADER BAR -->
-        <?php include('../../components/titleBar.php'); ?>
+        <?php include('components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
 
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-                <?php include('../../components/S_leftMenu.php'); ?>
-            
+            <?php include('components/S_leftMenu.php'); ?>
+
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
@@ -118,8 +118,8 @@
                     <div class="col-md-12">
                         <div class="box-content">
                             <div class="rounded-rectangle">
-                            <?php
-                                include '../../connection/connection.php';
+                                <?php
+                                include 'connection/connection.php';
 
                                 if (isset($_POST['selectednoIC'])) {
                                     $noIC = $_POST['selectednoIC'];
@@ -165,60 +165,60 @@
                                                 $updateStmt->bindParam(':noIC', $noIC);
 
                                                 if ($updateStmt->execute()) {
-                                                    header("Location: maklumatPasangan.php");
+                                                    header("Location: /ZAN-System/incentiveMaklumatPasanganView");
                                                     exit();
                                                 } else {
                                                     echo "Failed to update data in the database.";
                                                 }
                                             }
-                                            ?>
-<form action="documentPage.php" method="POST">
-    <input type="hidden" name="noIC" value="<?php echo $noIC; ?>">
-    
-</form>
-        <span class="label">Nama:</span>
-        <input type="text" name="P_nama" value="<?php echo $nama; ?>">
-    </p>
-    <p>
-        <span class="label">Alamat IC:</span>
-        <input type="text" name="P_alamatIC" value="<?php echo $alamatIC; ?>">
-    </p>
-    <p>
-        <span class="label">No. Tel Rumah:</span>
-        <input type="text" name="P_NoTelRumah" value="<?php echo $noTelRumah; ?>">
-    </p>
-    <p>
-        <span class="label">Tarikh Lahir:</span>
-        <input type="text" name="P_tarikhLahir" value="<?php echo $tarikhLahir; ?>">
-    </p>
-    <p>
-        <span class="label">Bangsa:</span>
-        <input type="text" name="P_bangsa" value="<?php echo $bangsa; ?>">
-    </p>
-    <p>
-        <span class="label">Warganegara:</span>
-        <input type="text" name="P_warganegara" value="<?php echo $warganegara; ?>">
-    </p>
-    <p>
-        <span class="label">Nama Bank:</span>
-        <input type="text" name="I_namaBank" value="<?php echo $namaBank; ?>">
-    </p>
-    <p>
-        <span class="label">Nombor Akaun Bank:</span>
-        <input type="text" name="I_noAkaunbank" value="<?php echo $noAkaunBank; ?>">
-    </p>
-    
-    <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>
-</form>
+                                ?>
+                                            <form action="/ZAN-System/incentiveDocumentPageView" method="POST">
+                                                <input type="hidden" name="noIC" value="<?php echo $noIC; ?>">
 
-<form action="documentPage.php" method="POST">
-    <input type="hidden" name="noIC" value="<?php echo $noIC; ?>">
-    <button type="submit" name="senarai_document" class="btn btn-primary">Document</button>
-</form>
-</form>
-</form>
+                                            </form>
+                                            <span class="label">Nama:</span>
+                                            <input type="text" name="P_nama" value="<?php echo $nama; ?>">
+                                            </p>
+                                            <p>
+                                                <span class="label">Alamat IC:</span>
+                                                <input type="text" name="P_alamatIC" value="<?php echo $alamatIC; ?>">
+                                            </p>
+                                            <p>
+                                                <span class="label">No. Tel Rumah:</span>
+                                                <input type="text" name="P_NoTelRumah" value="<?php echo $noTelRumah; ?>">
+                                            </p>
+                                            <p>
+                                                <span class="label">Tarikh Lahir:</span>
+                                                <input type="text" name="P_tarikhLahir" value="<?php echo $tarikhLahir; ?>">
+                                            </p>
+                                            <p>
+                                                <span class="label">Bangsa:</span>
+                                                <input type="text" name="P_bangsa" value="<?php echo $bangsa; ?>">
+                                            </p>
+                                            <p>
+                                                <span class="label">Warganegara:</span>
+                                                <input type="text" name="P_warganegara" value="<?php echo $warganegara; ?>">
+                                            </p>
+                                            <p>
+                                                <span class="label">Nama Bank:</span>
+                                                <input type="text" name="I_namaBank" value="<?php echo $namaBank; ?>">
+                                            </p>
+                                            <p>
+                                                <span class="label">Nombor Akaun Bank:</span>
+                                                <input type="text" name="I_noAkaunbank" value="<?php echo $noAkaunBank; ?>">
+                                            </p>
 
-                                        <?php
+                                            <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>
+                                            </form>
+
+                                            <form action="/ZAN-System/incentiveDocumentPageView" method="POST">
+                                                <input type="hidden" name="noIC" value="<?php echo $noIC; ?>">
+                                                <button type="submit" name="senarai_document" class="btn btn-primary">Document</button>
+                                            </form>
+                                            </form>
+                                            </form>
+
+                                <?php
                                         } else {
                                             echo "No data found for the selected noIC.";
                                         }
@@ -229,7 +229,7 @@
                                     echo "No noIC selected.";
                                 }
                                 ?>
-                                
+
                             </div>
                         </div>
                     </div>

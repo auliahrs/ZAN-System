@@ -1,5 +1,4 @@
 <?php
-require 'Manage Marriage Request/manageApplicationController.php';
 
 // create objects
 // $manageApplicationControllerObj = new manageApplicationController();
@@ -55,11 +54,12 @@ $routes = [
 
     //manage user profile applicant
     "$root/applicantProfileView" => "Manage User Profile/Applicant/applicantProfileView.php",
+    "$root/applicantEditView" => "Manage User Profile/Applicant/applicantEditForm.php",
+    "$root/applicantProfileView" => "Manage User Profile/Applicant/viewApplicantProfile.php",
     //manage user profile staff
     "$root/createStaffAccView" => "Manage User Profile/Staff/createStaffAccount.php",
     "$root/staffEditView" => "Manage User Profile/Staff/staffEditForm.php",
     "$root/staffProfileView" => "Manage User Profile/Staff/staffProfileView.php",
-    "$root/applicantProfileView" => "Manage User Profile/Staff/viewApplicationProfile.php",
 
     //manage booking session applicant
     "$root/consultationBookSessionView" => "ManageBookingSession/Applicant/bookSession.php",
@@ -76,7 +76,7 @@ $routes = [
     "$root/consultationEditApplicationView" => "ManageConsultationApplication/Applicant/editForm.php",
     "$root/consultationSeeApplicationView" => "ManageConsultationApplication/Applicant/viewForm.php",
     //manage consultation application staff
-    "$root/consultationFormView" => "ManageBookingSession/Staff/consultationForm.php",
+    "$root/consultationFormView" => "ManageConsultationApplication/Staff/consultationForm.php",
 
     //manage incentive registration applicant
     "$root/incentiveApplicationFormView" => "ManageIncentiveRegistration/Applicant/applicationForm.php",

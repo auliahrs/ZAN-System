@@ -38,7 +38,7 @@
                             <div class="row my-3">
                                 <div class="col-md-12 table-dpp">
                                     <p>(<span style="color:red">*</span>)<em> adalah wajib diisi</em></p>
-                                    <form action="/ZAN-System/Manage Pre-marriage Course Organization/Staff/regVenueForm.php" method="post">
+                                    <form action="/ZAN-System/pre-marriageRegisterVenueView" method="post">
                                         <table>
                                             <tr>
                                                 <td><span style="color:red">*</span>Tempat</td>
@@ -148,7 +148,7 @@
                                                     <td>BENTONG</td>
                                                     <td>0195884537</td>
                                                     <td>
-                                                        <a href="editVenueForm.php">EDIT</a>
+                                                        <a href="/ZAN-System/pre-marriageEditVenueView">EDIT</a>
                                                         <a href="#" style="background-color: red; color:white;">DELETE</a>
                                                     </td>
                                                 </tr>
@@ -159,7 +159,7 @@
                                                     <td>KUANTAN</td>
                                                     <td>0179235007</td>
                                                     <td>
-                                                        <a href="editVenueForm.php">EDIT</a>
+                                                        <a href="/ZAN-System/pre-marriageEditVenueView">EDIT</a>
                                                         <a href="#" style="background-color: red; color:white;">DELETE</a>
                                                     </td>
                                                 </tr>

@@ -1,5 +1,5 @@
 <?php
-include '../../connection/connection.php';
+include 'connection/connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['simpan'])) {
     $noIC = $_GET['noIC'];
@@ -22,10 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['simpan'])) {
     $updateStmt->bindParam(':noIC', $noIC);
 
     if ($updateStmt->execute()) {
-        header("Location: maklumatPasangan.php");
+        header("Location: /ZAN-System/incentiveMaklumatPasanganView");
         exit();
     } else {
         echo "Failed to update data in the database.";
     }
 }
-?>

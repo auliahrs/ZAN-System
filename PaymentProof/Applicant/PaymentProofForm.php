@@ -10,91 +10,91 @@
     <title>Daftar Jenis Perkahwinan</title>
 
     <style>
-    .PaymentProof {
-        background-color: #1A2F77;
-        color: #FFFFFF;
-        height: 40px;
-        text-align: center;
-        font-size: 20px;
-        line-height: 40px;
-        width: 1000px;
-        margin: 20px auto;
-    }
-    
-    .Receipt {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        margin: 50px 100px;
-    }
-    
-    .Receipt img {
-        max-width: 400px;
-        max-height: 400px;
-    }
+        .PaymentProof {
+            background-color: #1A2F77;
+            color: #FFFFFF;
+            height: 40px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 40px;
+            width: 1000px;
+            margin: 20px auto;
+        }
 
-    .custom-button {
-      display: inline-block;
-      width: 100px;
-      height: 30px;
-      margin: 20px;
-      font-size: 14px;
-      border-radius: 5px;
-      text-align: center;
-      line-height: 30px;
-      background-color: #0047FF;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      text-decoration: none;
-      color: #FFFFFF;
+        .Receipt {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin: 50px 100px;
+        }
 
-    }
+        .Receipt img {
+            max-width: 400px;
+            max-height: 400px;
+        }
 
-    .custom-button:hover {
-      background-color: #1A2F77;
-    }
+        .custom-button {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            margin: 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+            background-color: #0047FF;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            color: #FFFFFF;
 
-    .button {
-    background-color: #1A2F77;
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 10px;
-  }
+        }
 
-  .button-container{
-      position: relative;
-    }
+        .custom-button:hover {
+            background-color: #1A2F77;
+        }
 
-    .button-back {
-    left: 10px;
-  }
-  
-  .button-submit {
-    right: 10px;
-  }
-  </style>
-  <script>
-function goToOldInterface() {
-      window.location.href = "/ZAN-System/Manage Marriage Registration/Applicant/DocumentForm.php";
-}
+        .button {
+            background-color: #1A2F77;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 10px;
+        }
 
-    function displayPopup() {
-      alert("Resit Anda Sudah dihantar"); 
-    }
-  </script>
-</style>
+        .button-container {
+            position: relative;
+        }
+
+        .button-back {
+            left: 10px;
+        }
+
+        .button-submit {
+            right: 10px;
+        }
+    </style>
+    <script>
+        function goToOldInterface() {
+            window.location.href = "/ZAN-System/marriageRegisterView";
+        }
+
+        function displayPopup() {
+            alert("Resit Anda Sudah dihantar");
+        }
+    </script>
+    </style>
 
 </head>
 
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
         <!-- HEADER BAR -->
         <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
@@ -118,43 +118,44 @@ function goToOldInterface() {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Registration/Applicant/PaymentProofForm.php" method="post">
+                            <form action="/ZAN-System/paymentProofView" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
-                                        <div class="PaymentProof">
-            PEMBAYARAN (Resit)
-        </div>
+                                            <div class="PaymentProof">
+                                                PEMBAYARAN (Resit)
+                                            </div>
 
-        <button onclick="redirectToBankPayment()">Payment RM:35.00</button><script>
-        function redirectToBankPayment() {
-            // Replace the URL below with the actual URL of your bank payment page
-            var bankPaymentURL = "https://www.bankislam.biz/";
-            window.location.href = bankPaymentURL;
-        }
-    </script>
-        <div class="Receipt">
-            <img src="/ZAN-System/images/Receipt.jpg" alt="Receipt">
+                                            <button onclick="redirectToBankPayment()">Payment RM:35.00</button>
+                                            <script>
+                                                function redirectToBankPayment() {
+                                                    // Replace the URL below with the actual URL of your bank payment page
+                                                    var bankPaymentURL = "https://www.bankislam.biz/";
+                                                    window.location.href = bankPaymentURL;
+                                                }
+                                            </script>
+                                            <div class="Receipt">
+                                                <img src="/ZAN-System/images/Receipt.jpg" alt="Receipt">
 
-            <div>
-    <input type="file" id="upload-input-1" style="display: none;">
-    <label for="upload-input-1" class="custom-button">Muat Naik Resit</label>
-    <span id="file-name-1"></span>
+                                                <div>
+                                                    <input type="file" id="upload-input-1" style="display: none;">
+                                                    <label for="upload-input-1" class="custom-button">Muat Naik Resit</label>
+                                                    <span id="file-name-1"></span>
 
-    <script>
-      document.getElementById("upload-input-1").addEventListener("change", function(event) {
-        var file = event.target.files[0];
-        // Handle the uploaded file here, e.g., send it to a server or perform operations with it
-        console.log("Uploaded file:", file.name);
-        document.getElementById("file-name-1").textContent = file.name;
-  });
-</script>
-</div>    
-        </div>
-        <div class="button-container">
-<a class="button button-back" href="#" onclick="goToOldInterface()">Kembali</a>
-<button class="button button-submit" onclick="displayPopup()">Submit</button>
-</div>
+                                                    <script>
+                                                        document.getElementById("upload-input-1").addEventListener("change", function(event) {
+                                                            var file = event.target.files[0];
+                                                            // Handle the uploaded file here, e.g., send it to a server or perform operations with it
+                                                            console.log("Uploaded file:", file.name);
+                                                            document.getElementById("file-name-1").textContent = file.name;
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                            <div class="button-container">
+                                                <a class="button button-back" href="#" onclick="goToOldInterface()">Kembali</a>
+                                                <button class="button button-submit" onclick="displayPopup()">Submit</button>
+                                            </div>
                                     </div>
                                 </div>
                             </form>
@@ -166,9 +167,9 @@ function goToOldInterface() {
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
-</div>
+    </div>
 
-    
+
 </body>
 
 </html>

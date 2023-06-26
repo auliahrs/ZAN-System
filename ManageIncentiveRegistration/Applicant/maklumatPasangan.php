@@ -1,5 +1,5 @@
 <?php
-include '../../connection/connection.php';
+include 'connection/connection.php';
 
 // Retrieve all the data from the pasangan table
 $stmt = $pdo->prepare("SELECT pasanganID, noIC FROM pasangan");
@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['simpan'])) {
     $stmt->bindParam(':noIC', $selectedData);
     $stmt->execute();
 
-    header("Location: documentPage.php");
+    header("Location: /ZAN-System/incentiveDocumentPageView");
     exit();
     echo "Data saved.";
 }
@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['simpan'])) {
 <!DOCTYPE html>
 <html lang="en">
 
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -165,13 +165,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['simpan'])) {
 <body>
     <div class="container-fluid">
         <!-- HEADER BAR -->
-        <?php include('../../components/titleBar.php'); ?>
+        <?php include('/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
 
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php include('../../components/leftMenu.php'); ?>
+            <?php include('/ZAN-System/components/leftMenu.php'); ?>
 
             <!-- LEFT MENU ENDS HERE -->
 
@@ -189,57 +189,57 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['simpan'])) {
                     <div class="col-md-12">
                         <div class="box-content">
                             <div class="rounded-rectangle">
-                            <form method="post">
-    <label for="data-select">Select Data:</label>
-    <select name="data" id="data-select">
-        <?php foreach ($data as $row) : ?>
-            <option value="<?php echo $row['noIC']; ?>"><?php echo $row['pasanganID'] . ' - ' . $row['noIC']; ?></option>
-        <?php endforeach; ?>
-    </select>
-    <button type="submit" name="submit">Display</button>
-</form>
+                                <form method="post">
+                                    <label for="data-select">Select Data:</label>
+                                    <select name="data" id="data-select">
+                                        <?php foreach ($data as $row) : ?>
+                                            <option value="<?php echo $row['noIC']; ?>"><?php echo $row['pasanganID'] . ' - ' . $row['noIC']; ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                    <button type="submit" name="submit">Display</button>
+                                </form>
 
-<form method="POST">
-    <!-- Input fields -->
+                                <form method="POST">
+                                    <!-- Input fields -->
 
-</form>
-                                
-<form method="POST" action="">
-    <p>
-        <span class="label">Nama:</span>
-        <input type="text" name="P_nama" value="<?php echo isset($nama) ? $nama : ''; ?>">
-    </p>
-    <p>
-        <span class="label">Alamat IC:</span>
-        <input type="text" name="P_alamatIC" value="<?php echo isset($alamatIC) ? $alamatIC : ''; ?>">
-    </p>
-    <p>
-        <span class="label">No. Tel Rumah:</span>
-        <input type="text" name="P_NoTelRumah" value="<?php echo isset($noTelRumah) ? $noTelRumah : ''; ?>">
-    </p>
-    <p>
-        <span class="label">Tarikh Lahir:</span>
-        <input type="text" name="P_tarikhLahir" value="<?php echo isset($tarikhLahir) ? $tarikhLahir : ''; ?>">
-    </p>
-    <p>
-        <span class="label">Bangsa:</span>
-        <input type="text" name="P_bangsa" value="<?php echo isset($bangsa) ? $bangsa : ''; ?>">
-    </p>
-    <p>
-        <span class="label">Warganegara:</span>
-        <input type="text" name="P_warganegara" value="<?php echo isset($warganegara) ? $warganegara : ''; ?>">
-    </p>
-    <p>
-        <span class="label">Nama Bank:</span>
-        <input type="text" name="I_namaBank" value="<?php echo isset($namaBank) ? $namaBank : ''; ?>">
-    </p>
-    <p>
-        <span class="label">Nombor Akaun Bank:</span>
-        <input type="text" name="I_noAkaunbank" value="<?php echo isset($noAkaunBank) ? $noAkaunBank : ''; ?>">
-    </p>
+                                </form>
 
-    <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>
-</form>
+                                <form method="POST" action="">
+                                    <p>
+                                        <span class="label">Nama:</span>
+                                        <input type="text" name="P_nama" value="<?php echo isset($nama) ? $nama : ''; ?>">
+                                    </p>
+                                    <p>
+                                        <span class="label">Alamat IC:</span>
+                                        <input type="text" name="P_alamatIC" value="<?php echo isset($alamatIC) ? $alamatIC : ''; ?>">
+                                    </p>
+                                    <p>
+                                        <span class="label">No. Tel Rumah:</span>
+                                        <input type="text" name="P_NoTelRumah" value="<?php echo isset($noTelRumah) ? $noTelRumah : ''; ?>">
+                                    </p>
+                                    <p>
+                                        <span class="label">Tarikh Lahir:</span>
+                                        <input type="text" name="P_tarikhLahir" value="<?php echo isset($tarikhLahir) ? $tarikhLahir : ''; ?>">
+                                    </p>
+                                    <p>
+                                        <span class="label">Bangsa:</span>
+                                        <input type="text" name="P_bangsa" value="<?php echo isset($bangsa) ? $bangsa : ''; ?>">
+                                    </p>
+                                    <p>
+                                        <span class="label">Warganegara:</span>
+                                        <input type="text" name="P_warganegara" value="<?php echo isset($warganegara) ? $warganegara : ''; ?>">
+                                    </p>
+                                    <p>
+                                        <span class="label">Nama Bank:</span>
+                                        <input type="text" name="I_namaBank" value="<?php echo isset($namaBank) ? $namaBank : ''; ?>">
+                                    </p>
+                                    <p>
+                                        <span class="label">Nombor Akaun Bank:</span>
+                                        <input type="text" name="I_noAkaunbank" value="<?php echo isset($noAkaunBank) ? $noAkaunBank : ''; ?>">
+                                    </p>
+
+                                    <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>
+                                </form>
 
 
 
@@ -252,7 +252,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['simpan'])) {
         <!-- BODY ENDS -->
     </div>
 
-    <script src="script.js"></script>
+    <script src="/ZAN-System/js/script.js"></script>
 </body>
 
 </html>

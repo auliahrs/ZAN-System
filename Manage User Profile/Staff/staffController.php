@@ -1,6 +1,6 @@
 <?php
 
-include('Staff.php');
+include('Manage User Profile/Staff/Staff.php');
 
 class staffController
 {
@@ -11,7 +11,7 @@ class staffController
     public function getStaffData($staffID) //retrieve applicant data
     {
         $minfo = new Staff();
-        $result = $minfo->read($noIC, 'pekerja');
+        $result = $minfo->read($staffID, 'pekerja');
         return $result->fetch_assoc();
     }
 }

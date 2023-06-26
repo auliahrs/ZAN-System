@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="/ZAN-System/css/myCSS.css">
     <title>Daftar Jenis Perkahwinan</title>
 
-<style>
-
-.Cert{
-        background-color: #1A2F77;
+    <style>
+        .Cert {
+            background-color: #1A2F77;
             color: #FFFFFF;
             height: 40px;
             text-align: center;
@@ -20,52 +19,52 @@
             line-height: 40px;
             width: 1000px;
             margin: 20px auto;
-    }
+        }
 
-    .Sijil {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        margin: 50px 100px;
-    }
-    
-    .Sijil img {
-        max-width: 500px;
-        max-height: 500px;
-    }
+        .Sijil {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin: 50px 100px;
+        }
 
-    .custom-button {
-      display: inline-block;
-      width: 100px;
-      height: 30px;
-      margin: 20px;
-      font-size: 14px;
-      border-radius: 5px;
-      text-align: center;
-      line-height: 30px;
-      background-color: #0047FF;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      text-decoration: none;
-      color: #FFFFFF;
+        .Sijil img {
+            max-width: 500px;
+            max-height: 500px;
+        }
 
-    }
+        .custom-button {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            margin: 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+            background-color: #0047FF;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            color: #FFFFFF;
 
-    .custom-button:hover {
-      background-color: #1A2F77;
-    }
-    
-    .button {
-    background-color: #0047FF;
-    color: #FFFFFF;
-    width: 300px;
-    height: 30px;
-  }
-</style>
+        }
+
+        .custom-button:hover {
+            background-color: #1A2F77;
+        }
+
+        .button {
+            background-color: #0047FF;
+            color: #FFFFFF;
+            width: 300px;
+            height: 30px;
+        }
+    </style>
 </head>
 
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
         <!-- HEADER BAR -->
         <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
@@ -89,31 +88,31 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Registration/Applicant/MarriageTypeForm.php" method="post">
+                            <form action="/ZAN-System/marriageRegisterTypeView" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
                                         <table>
 
-<div class="Cert">
-    Sijil Perkahwinan & Permohonan Kad Perakuan Nikah
-</div>
-<div class="Sijil">
-<img src="/ZAN-System/images/sijil.png" alt="sijil">
-    <div>
-    <a class="custom-button" href="path/to/download/Sijil Perkahwinan.pdf" download>Muat Turun Sijil</a>
+                                            <div class="Cert">
+                                                Sijil Perkahwinan & Permohonan Kad Perakuan Nikah
+                                            </div>
+                                            <div class="Sijil">
+                                                <img src="/ZAN-System/images/sijil.png" alt="sijil">
+                                                <div>
+                                                    <a class="custom-button" href="path/to/download/Sijil Perkahwinan.pdf" download>Muat Turun Sijil</a>
 
-    <button class="button" onclick="showPopup()">Permohonan Kad Perakuan Nikah</button>
+                                                    <button class="button" onclick="showPopup()">Permohonan Kad Perakuan Nikah</button>
 
-<script>
-  function showPopup() {
-    alert("Permohonan Anda Sedang Diproses!");
-  }
-</script>
+                                                    <script>
+                                                        function showPopup() {
+                                                            alert("Permohonan Anda Sedang Diproses!");
+                                                        }
+                                                    </script>
 
-    </div>
+                                                </div>
 
+                                            </div>
                                     </div>
-                                </div>
                             </form>
                         </div>
                     </div>
@@ -123,9 +122,9 @@
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
-</div>
+    </div>
 
-    
+
 </body>
 
 </html>

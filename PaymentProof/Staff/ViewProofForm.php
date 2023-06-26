@@ -37,7 +37,7 @@
                         <div class="content-body-staff">
                             <div class="row">
                                 <div class="col table-dpp">
-                                    <form action="/ZAN-System/Manage Marriage Request/Staff/ViewProofForm" method="get">
+                                    <form action="/ZAN-System/paymentProofApprovalView" method="get">
                                     </form>
                                 </div>
                             </div>
@@ -51,9 +51,28 @@
                                         </tr>
                                         <tr>
                                             <td>AHMAD AIMAN BIN ADAM</td>
-                                            <td><button onclick="displayImage()">Bukti Pembayaran Pemohon</button><img id="Receipt" style="display: none;"><script>function displayImage() {var image = document.getElementById("Receipt"); image.src = "/ZAN-System/images/Receipt.jpg";image.style.display = "block";}</script></td>
-                                            <td><img src="/ZAN-System/images/approve.png" onclick="showLulusPopup()" style="cursor: pointer;"><script>function showLulusPopup() {alert("Pendaftaran Berjaya");}</script>          <img src="/ZAN-System/images/reject.png" onclick="showBatalPopup()" style="cursor: pointer;"><script>function showBatalPopup() {alert("Pendaftaran Dibatalkan");}</script></td>
-                                             
+                                            <td><button onclick="displayImage()">Bukti Pembayaran Pemohon</button><img id="Receipt" style="display: none;">
+                                                <script>
+                                                    function displayImage() {
+                                                        var image = document.getElementById("Receipt");
+                                                        image.src = "/ZAN-System/images/Receipt.jpg";
+                                                        image.style.display = "block";
+                                                    }
+                                                </script>
+                                            </td>
+                                            <td><img src="/ZAN-System/images/approve.png" onclick="showLulusPopup()" style="cursor: pointer;">
+                                                <script>
+                                                    function showLulusPopup() {
+                                                        alert("Pendaftaran Berjaya");
+                                                    }
+                                                </script> <img src="/ZAN-System/images/reject.png" onclick="showBatalPopup()" style="cursor: pointer;">
+                                                <script>
+                                                    function showBatalPopup() {
+                                                        alert("Pendaftaran Dibatalkan");
+                                                    }
+                                                </script>
+                                            </td>
+
                                     </table>
                                 </div>
                             </div>

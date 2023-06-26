@@ -13,11 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
             
-            header("Location: applicationStatus.php");
+            header("Location: /ZAN-System/marriageIncentiveApplicationStatusView");
             exit();
         } else {
             echo "No noIC selected.";
         }
     }
 }
-?>

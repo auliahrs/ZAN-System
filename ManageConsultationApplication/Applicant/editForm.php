@@ -1,5 +1,5 @@
 <?php
-include('../applicationController.php');
+include('applicationController.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +13,8 @@ include('../applicationController.php');
     <title>editForm</title>
 
     <style>
-    .document{
-        background-color: #1A2F77;
+        .document {
+            background-color: #1A2F77;
             color: #FFFFFF;
             height: 40px;
             text-align: center;
@@ -22,13 +22,13 @@ include('../applicationController.php');
             line-height: 40px;
             width: 1000px;
             margin: 20px auto;
-    }
+        }
     </style>
 
 </head>
 
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
         <!-- HEADER BAR -->
         <?php include('C:/xampp/htdocs/ZAN-System/components/titleBar.php'); ?>
         <!-- HEADER BAR ENDS -->
@@ -52,23 +52,25 @@ include('../applicationController.php');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/ManageConsultationApplication/Applicant/editForm.php" method="post">
+                            <form action="/ZAN-System/consultationEditApplicationView" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp">
-                                    <?php
+                                        <?php
                                         $controller = new applicationController();
                                         $applicantData = $controller->getapplicationData('1111'); //konsultasiID
                                         ?>
                                         <table>
-                                        <div class="document">BORANG PERMOHONAN KONSULTASI</div>
-                                        <center><p><b>INFO ADUAN/ KHIDMAT NASIHAT</b></p></center>
-                                            <form action="/ZAN-System/ManageConsultationApplication/Applicant/editForm.php" method="post">
+                                            <div class="document">BORANG PERMOHONAN KONSULTASI</div>
+                                            <center>
+                                                <p><b>INFO ADUAN/ KHIDMAT NASIHAT</b></p>
+                                            </center>
+                                            <form action="/ZAN-System/consultationEditApplicationView" method="post">
                                                 <table>
                                                     <tr>
                                                         <th><label for="aduan">Aduan/Khidmat Nasihat:&nbsp;</label></th>
                                                         <td><select name="aduan" id="aduan" class="form-control">
-                                                     <option value="Aduan">Aduan</option>
-                                                     <option value="Khidmat Nasihat">Khidmat Nasihat</option>
+                                                                <option value="Aduan">Aduan</option>
+                                                                <option value="Khidmat Nasihat">Khidmat Nasihat</option>
                                                             </select>
                                                     </tr>
                                                     <tr>
@@ -77,18 +79,24 @@ include('../applicationController.php');
                                                     </tr>
                                                 </table>
                                                 <div class="row my-3">
-                                                <div class="col">
-                                                <div class="container">
-                                                        <a href="/ZAN-System/ManageConsultationApplication/Applicant/applicationForm.php">
-                                                                <button type="button" class="btn btn-primary">KEMASKINI</button></a></div></div>
-                                                <div class="col">
-                                                <div class="container">
-                                                        <a href="/ZAN-System/ManageConsultationApplication/Applicant/deleteForm.php">
-                                                                <button type="button" class="btn btn-primary">BUANG</button></a></div></div>
-                                                 <div class="col">
-                                                 <div class="container">
-                                                        <a href="/ZAN-System/ManageConsultationApplication/Applicant/applicationForm.php">
-                                                                <button type="button" class="btn btn-primary">KEMBALI</button></a></div></div>
+                                                    <div class="col">
+                                                        <div class="container">
+                                                            <a href="/ZAN-System/consultationApplicationView">
+                                                                <button type="button" class="btn btn-primary">KEMASKINI</button></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="container">
+                                                            <a href="/ZAN-System/consultationDeleteApplicationView">
+                                                                <button type="button" class="btn btn-primary">BUANG</button></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="container">
+                                                            <a href="/ZAN-System/consultationApplicationView">
+                                                                <button type="button" class="btn btn-primary">KEMBALI</button></a>
+                                                        </div>
+                                                    </div>
                                             </form>
                                             <!-- <script>
                                                 function addInput() {
@@ -106,7 +114,7 @@ include('../applicationController.php');
                                                 }
                                             </script> -->
 
- 
+
 
                                     </div>
                                 </div>
@@ -119,9 +127,9 @@ include('../applicationController.php');
             <!-- THE CONTENT ENDS HERE -->
         </div>
         <!-- BODY ENDS -->
-</div>
+    </div>
 
-    
+
 </body>
 
 </html>
