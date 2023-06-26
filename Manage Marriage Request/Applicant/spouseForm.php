@@ -1,5 +1,5 @@
 <?php
-include('../manageApplicationController.php');
+include('Manage Marriage Request/manageApplicationController.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +38,7 @@ include('../manageApplicationController.php');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Request/Applicant/spouseForm.php" method="post">
+                            <form action="/ZAN-System/spouseView" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
                                         <?php
@@ -263,7 +263,7 @@ include('../manageApplicationController.php');
                                     </div>
                                     <div class="col-md-6">
                                         <a href="window.print()"><button onclick="window.print()" style="background-color: #929292; border: none; color: black; font-weight: bold;">Print</button></a>
-                                        <a href="marriageForm.php">Simpan</a>
+                                        <a href="/ZAN-System/marriageView">Simpan</a>
                                     </div>
                                 </div>
                             </form>

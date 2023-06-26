@@ -1,5 +1,5 @@
 <?php
-include('../manageApplicationController.php');
+include('Manage Marriage Request/manageApplicationController.php');
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ include('../manageApplicationController.php');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Request/Applicant/uploadDocForm.php" method="post">
+                            <form action="/ZAN-System/uploadDocView" method="post">
                                 <div class="row my-3">
                                     <div class="col-md-12 table-dpp">
                                         <p class="topic-header">Maklumat Perkahwinan</p>
@@ -327,8 +327,8 @@ include('../manageApplicationController.php');
                                     </div>
                                     <div class="col-md-6 link-button-general me-auto">
                                         <button onclick="window.print()">Print</button>
-                                        <form action="uploadDocForm.php">
-                                        <button name="simpan" type="submit" value="simpan">Simpan</button>
+                                        <form action="/ZAN-System/uploadDocView">
+                                            <button name="simpan" type="submit" value="simpan">Simpan</button>
                                         </form>
                                     </div>
                                 </div>

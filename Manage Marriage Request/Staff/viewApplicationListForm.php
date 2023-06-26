@@ -37,7 +37,7 @@
                         <div class="content-body-staff">
                             <div class="row">
                                 <div class="col table-dpp">
-                                    <form action="/ZAN-System/Manage Marriage Request/Staff/viewApplicationList.php" method="get">
+                                    <form action="/ZAN-System/marriageApplicationListView" method="get">
                                         <table>
                                             <tr>
                                                 <td>
@@ -50,7 +50,7 @@
                                                 </td>
                                                 <td><input type="text" name="carian"></td>
                                                 <form action="">
-                                                    <td><button type="submit" name="search" value="search" style="border: none; background-color: #D9D9D9"><img src="/ZAN-System/images/search.png" alt="Search icon" ></button></td>
+                                                    <td><button type="submit" name="search" value="search" style="border: none; background-color: #D9D9D9"><img src="/ZAN-System/images/search.png" alt="Search icon"></button></td>
                                                 </form>
                                             </tr>
                                         </table>
@@ -75,14 +75,14 @@
                                             <td>AHMAD AIMAN BIN ADAM</td>
                                             <td>990125060617</td>
                                             <td>
-                                                <a href="viewMoreDetail.php" style="background-color: #D9D9D9;">
-                                                    <img src="../../images/moredetail.png" width="30px" height="auto">
+                                                <a href="/ZAN-System/marriageMoreDetailView" style="background-color: #D9D9D9;">
+                                                    <img src="/ZAN-System/images/moredetail.png" width="30px" height="auto">
                                                 </a>
                                                 <a href="#" style="background-color: #D9D9D9;">
-                                                    <img src="../../images/approve.png" width="53px" height="auto">
+                                                    <img src="/ZAN-System/images/approve.png" width="53px" height="auto">
                                                 </a>
                                                 <a href="#" style="background-color: #D9D9D9;">
-                                                    <img src="../../images/reject.png" width="40px" height="auto">
+                                                    <img src="/ZAN-System/images/reject.png" width="40px" height="auto">
                                                 </a>
                                             </td>
                                         </tr>

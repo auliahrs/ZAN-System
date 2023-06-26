@@ -15,7 +15,4 @@ class MarriageRegController
     
         return $applicantData;
     }
-    
-    
-    
 }

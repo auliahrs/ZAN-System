@@ -37,7 +37,7 @@
                         <div class="content-body-staff">
                             <div class="row">
                                 <div class="col table-dpp">
-                                    <form action="/ZAN-System/Manage Marriage Request/Staff/viewMoreDetail.php" method="get">
+                                    <form action="/ZAN-System/marriageMoreDetailView" method="get">
                                         <div class="row my-3">
                                             <div class="col table-dpp link-button-general">
                                                 <table>
@@ -89,7 +89,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <form action="viewApprovedApplication.php">
+                                    <form action="/ZAN-System/marriageApprovedApplicationView">
                                         <button type="submit" name="kembali" value="kembali">KEMBALI</button>
                                     </form>
                                 </div>

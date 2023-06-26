@@ -18,60 +18,61 @@
         <!-- BODY -->
         <div class="row">
             <!-- LEFT MENU -->
-            <?php //include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); ?>
+            <?php //include('C:/xampp/htdocs/ZAN-System/components/S_leftMenu.php'); 
+            ?>
             <!-- LEFT MENU ENDS HERE -->
 
             <!-- THE CONTENT -->
             <div class="col-md-10" style="display:flex; justify-content: center;">
-             
+
                 <div>
-                <div class="row">
-                    <div class="col-md-12" style="width: 500px; text-align:center; justify-content: center;">
-                        <div class="content-header">
-                            <h3>Reset Kata Laluan</h3>
+                    <div class="row">
+                        <div class="col-md-12" style="width: 500px; text-align:center; justify-content: center;">
+                            <div class="content-header">
+                                <h3>Reset Kata Laluan</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-12" style="width: 500px;justify-content: center;">
-                        <div class="content-body">
-                            <form action="/ZAN-System/login/loginForm.php" method="post">
-                                <div class="row my-3">
-                                    <div class="col table-dpp link-button-general">
-                                        <table>
-                                            <tr>
-                                                <td>Kata Laluan </td>
-                                                <td>:</td>
-                                                <td>
-                                                    <input type="text" name="kataLaluan" style="width: 200px;">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Pengesahan Kata Laluan</td>
-                                                <td>:</td>
-                                                <td>
-                                                    <input type="text" name="pengesahanKataLaluan" style="width: 200px;">
-                                                </td>
-                                            </tr>
-                                            
-                                           
-                                        </table>
-                                    </div>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-12" style="width: 500px;justify-content: center;">
+                            <div class="content-body">
+                                <form action="/ZAN-System/" method="post">
+                                    <div class="row my-3">
+                                        <div class="col table-dpp link-button-general">
+                                            <table>
+                                                <tr>
+                                                    <td>Kata Laluan </td>
+                                                    <td>:</td>
+                                                    <td>
+                                                        <input type="text" name="kataLaluan" style="width: 200px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pengesahan Kata Laluan</td>
+                                                    <td>:</td>
+                                                    <td>
+                                                        <input type="text" name="pengesahanKataLaluan" style="width: 200px;">
+                                                    </td>
+                                                </tr>
 
-                                <div class="row my-3 link-button-general">
-                                    <div class="col-md-6">
-                                        <button type="button" onclick="window.location.href='/ZAN-System/login/loginForm.php'">Kembali</button>
+
+                                            </table>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <button type="submit">Reset</button>
+
+                                    <div class="row my-3 link-button-general">
+                                        <div class="col-md-6">
+                                            <button type="button" onclick="window.location.href='/ZAN-System/login/loginForm.php'">Kembali</button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button type="submit">Reset</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
 
             </div>

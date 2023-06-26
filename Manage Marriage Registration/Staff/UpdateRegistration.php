@@ -15,7 +15,5 @@ class formmodel {
     $query->execute([$firstname]);
 
   }
-
 }
-
 ?>

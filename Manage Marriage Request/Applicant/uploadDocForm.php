@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content-body">
-                            <form action="/ZAN-System/Manage Marriage Request/Applicant/uploadDocForm.php" method="post">
+                            <form action="/ZAN-System/uploadDocView" method="post">
                                 <div class="row my-3">
                                     <div class="col table-dpp link-button-general">
                                         <table>
@@ -55,50 +55,50 @@
                                             <tr>
                                                 <td>BORANG PERMOHONAN BERKAHWIN</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="borangkahwin">
+                                                    <img src="/ZAN-System/images/upload.png" height="30px"><input type="file" name="borangkahwin">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>BORANG PERSETUJUAN WAKALAH WALI</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="borangwali">
+                                                    <img src="/ZAN-System/images/upload.png" height="30px"><input type="file" name="borangwali">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>BORANG AKUAN PEMASTAUTIN (PEMOHON)</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="borangpemastautinpemohon">
+                                                    <img src="/ZAN-System/images/upload.png" height="30px"><input type="file" name="borangpemastautinpemohon">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>BORANG AKUAN PEMASTAUTIN (PASANGAN)</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="borangpemastautinpasangan">
+                                                    <img src="/ZAN-System/images/upload.png" height="30px"><input type="file" name="borangpemastautinpasangan">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>BORANG KEPUTUSAN UJIAN HIV (PEMOHON)</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="boranghivpemohon">
+                                                    <img src="/ZAN-System/images/upload.png" height="30px"><input type="file" name="boranghivpemohon">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>BORANG KEPUTUSAN UJIAN HIV (PASANGAN)</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="boranghivpasangan">
+                                                    <img src="/ZAN-System/images/upload.png" height="30px"><input type="file" name="boranghivpasangan">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>BUKTI PEMBAYARAN PERMOHONAN BERKAHWIN</td>
                                                 <td>
-                                                    <img src="../../images/upload.png" height="30px"><input type="file" name="buktibayaran">
+                                                    <img src="/ZAN-System/images/upload.png" height="30px"><input type="file" name="buktibayaran">
                                                 </td>
                                             </tr>
                                         </table>
 
                                         <div class="row my-3 link-button-general">
                                             <div class="col-md-6">
-                                                <a href="marriageForm.php">
+                                                <a href="/ZAN-System/marriageView">
                                                     < Kembali</a>
                                             </div>
                                             <div class="col-md-6">
